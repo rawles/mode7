@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+
+use mode7::draw;
+use mode7::font;
+use mode7::output;
+use mode7::screen;
+use mode7::file;
+use mode7::render;
+
+use strict;
+use warnings;
+
+# Read the font in
+my @font = read_font("fonts/teletext.uk.font");
+
+foreach my $demofile ( <demo/input/*.m7> ) { 
+	print "$demofile...\n";
+
+	my @parts = split(/\//, $demofile); my $stem = pop @parts; $stem =~ s/\.m7$//g;
+
+	# Initialise the screen object we'll be using:
+	my $screen = new_screen();
+
+	# Read the frame from the disk:
+	read_frame($screen, "demo/input/$stem.m7");
+
+	# Convert the characters in the frame to a graphics:
+	render($screen, \@font);
+
+	# ... and write it out to disk:
+	output_large($screen, "demo/output/large/$stem.png");
+	output_small($screen, "demo/output/small/$stem.png");
+	}
