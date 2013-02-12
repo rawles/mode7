@@ -1,5 +1,5 @@
-m7: BBC Micro Mode 7 frame renderer
-===================================
+BBC Micro Mode 7 frame renderer
+===============================
 
 What is it?
 -----------
