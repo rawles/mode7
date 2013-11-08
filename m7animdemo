@@ -1,0 +1,53 @@
+#!/usr/bin/perl
+
+use mode7::draw;
+use mode7::font;
+use mode7::output;
+use mode7::screen;
+use mode7::file;
+use mode7::render;
+
+use strict;
+use warnings;
+
+# Read the font in
+my @font = read_font("fonts/teletext.uk.font");
+
+# Read the stream in and set up each frame.
+print "Reading the stream...";
+my $stream = "";
+open(D, "demo/animation/input/crtc-aphex.m7"); while(<D>) { $stream .= $_ }; close(D);
+print " done\n";
+
+# Initialise the screen object we'll be using:
+my $screen = new_screen();
+
+if ( ! ( -e "/tmp/m7frames/" ) ) { 
+	mkdir "/tmp/m7frames";
+	}
+
+my $framenumber = 0;
+my $totallength = length($stream);
+while ( length($stream) > 0 ) { 
+
+	# Process the frame
+	my $newoffset = read_fromdata($screen, $stream);
+
+	# Convert into graphics
+	render($screen, \@font);
+	
+	# Write it out to the frame directory
+	my $fname = sprintf("%08d", $framenumber).".png";
+	output_large($screen, "/tmp/m7frames/$fname");
+	$framenumber++;
+	print "Frame $framenumber, ".(length($stream)-$newoffset)."b remain.\n";
+
+	if ( $newoffset == -1 ) { last; } 
+	$stream = substr($stream, $newoffset, length($stream)-$newoffset);
+	}
+
+print "Converting video...";
+my $cmd = "avconv -i /tmp/m7frames/%08d.png -r 50 -y demo/animation/output/video.mp4";
+system($cmd);
+print "done\n";
+
