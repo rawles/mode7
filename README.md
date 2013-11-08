@@ -119,6 +119,8 @@ Supported control characters
 To do
 -----
 
+* Double height smoothing doesn't occur in every instance - 
+  find out why and fix it!
 * Flashing
 * Reveal
 * Write it in C or something.
