@@ -47,8 +47,8 @@ You need to have the ImageMagick convert command on your path, so the
 script can convert from the ppm format to png. The Debian/Ubuntu
 package is "imagemagick".
 
-Stuff here
-----------
+Demonstrations
+--------------
 
 Have a look at the demo directory, which has some example frames, and 
 the output from them. There is also a reference directory which shows 
@@ -56,6 +56,15 @@ how the testcard frame should look.
 
 To re-render these frames, run the m7demo program, which also serves
 as a usage example.
+
+I've been playing around with using cursor control codes to make video
+from streams of characters in mode 7. There's an example stream in 
+demo/animation by @puppeh for CRTC's BBC teletext video player. You 
+can convert it with the m7animdemo program, but make sure you've got
+the avconv program, or the whole long process will fail at the last
+minute!
+
+More example frames (or character streams) are gratefully received.
 
 Supported control characters
 ----------------------------
@@ -110,13 +119,8 @@ Supported control characters
 To do
 -----
 
-* Allow update of the frame with a string of characters
-  at a given position, meaning animations will be easy
-  to render.
-* Apply smoothing on the reading of the font, rather than
-  on the way out when we write the file. This will make
-  the double-height characters look a lot better. At the
-  moment the font size is hard-coded throughout though.
+* Flashing
+* Reveal
 * Write it in C or something.
 
 See also
