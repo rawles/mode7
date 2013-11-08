@@ -6,6 +6,7 @@ use warnings;
 use strict;
 use mode7::draw;
 
+# Call render at any time to update the graphics part of the screen.
 sub render { 
 	my $screen = shift;
 	my $fontref = shift;

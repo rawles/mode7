@@ -27,25 +27,41 @@ sub output_large {
 			my $sbx = (2*$x) % 2;
 			my $sby = (2*$y) % 2;
 
-			# character in grid
+			# sub-block for double height
+			my $sbhy = (2*$y) % 4;
+
+			# character position in the grid
 			my $cx = int($x/6);
 			my $cy = int($y/9);
 
 			# pixel in char
 			my $px = ( int($x) % 6 );
 			my $py = ( int($y) % 9 );
-			
+
+			# character code here
+			my $cc = ord($screen->{frame}[$cx][$cy]);
+
+			my $cc1 = $cc; if ( $cc1 > 128 ) { $cc1 -= 128; } 
+			$cc1 = chr($cc1);
+
 			# check upper left pixels for overwriting
 			if (	$sbx == 0 
-			&&	$sby == 0
+
+			&&	( ( $sby == 0 && $screen->{dbtrib}[$cx][$cy] != 1 )
+				|| ( ( $sbhy==0 || $sbhy==1 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
+
 			&&	$px > 0 
 			&&	$py > 0 
-			&&	$screen->{gftrib}[$cx][$cy] == 0 
+
+			&&	( $screen->{gftrib}[$cx][$cy] == 0
+				|| $screen->{gftrib}[$cx][$cy] == 2
+				|| output_tigm($cc) == 1 ) 
 			&& 	$screen->{gfx}[$x][$y] == $screen->{bgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x-1][$y] == $screen->{fgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x][$y-1] == $screen->{fgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x-1][$y-1] == $screen->{bgtrib}[$cx][$cy]
 				) {
+
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
 				$gc = $screen->{fgtrib}[$cx][$cy] & 2; 
 				$bc = $screen->{fgtrib}[$cx][$cy] & 4; 
@@ -56,10 +72,15 @@ sub output_large {
 
 			# upper right
 			if (	$sbx == 1 
-			&&	$sby == 0
+
+			&&	( ( $sby == 0 && $screen->{dbtrib}[$cx][$cy] != 1 )
+				|| ( ( $sbhy==0 || $sbhy==1 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
+
 			&&	$px < 5 
 			&&	$py > 0 
-			&&	$screen->{gftrib}[$cx][$cy] == 0 
+			&&	(  $screen->{gftrib}[$cx][$cy] == 0
+				|| $screen->{gftrib}[$cx][$cy] == 2
+				|| output_tigm($cc) == 1 ) 
 			&& 	$screen->{gfx}[$x][$y] == $screen->{bgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x+1][$y] == $screen->{fgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x][$y-1] == $screen->{fgtrib}[$cx][$cy]
@@ -75,10 +96,15 @@ sub output_large {
 
 			# lower left
 			if (	$sbx == 0 
-			&&	$sby == 1
+
+			&&	( ( $sby == 1 && $screen->{dbtrib}[$cx][$cy] != 1 )
+				|| ( ( $sbhy==2 || $sbhy==3 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
+
 			&&	$px > 0 
 			&&	$py < 8 
-			&&	$screen->{gftrib}[$cx][$cy] == 0 
+			&&	( $screen->{gftrib}[$cx][$cy] == 0
+				|| $screen->{gftrib}[$cx][$cy] == 2
+				|| output_tigm($cc) == 1 ) 
 			&& 	$screen->{gfx}[$x][$y] == $screen->{bgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x-1][$y] == $screen->{fgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x][$y+1] == $screen->{fgtrib}[$cx][$cy]
@@ -94,10 +120,15 @@ sub output_large {
 
 			# lower right
 			if (	$sbx == 1 
-			&&	$sby == 1
+
+			&&	( ( $sby == 1 && $screen->{dbtrib}[$cx][$cy] != 1 )
+				|| ( ( $sbhy==2 || $sbhy==3 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
+
 			&&	$px < 5 
 			&&	$py < 8 
-			&&	$screen->{gftrib}[$cx][$cy] == 0 
+			&&	( $screen->{gftrib}[$cx][$cy] == 0
+				|| $screen->{gftrib}[$cx][$cy] == 2
+				|| output_tigm($cc) == 1 ) 
 			&& 	$screen->{gfx}[$x][$y] == $screen->{bgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x+1][$y] == $screen->{fgtrib}[$cx][$cy]
 			&& 	$screen->{gfx}[$x][$y+1] == $screen->{fgtrib}[$cx][$cy]
@@ -118,11 +149,13 @@ sub output_large {
 		}
 	close(F);
 
-	system("convert $fileName $finalName");
+	system("convert -define png:color-type=2 $fileName $finalName");
 	unlink($fileName);
 	}
 
 sub output_small {
+	# No smoothing is needed, so we can make this a lot simpler.
+
 	my $screen = shift;
 	my $finalName = shift;
 	my $fileName = "$finalName.tmp";
@@ -141,8 +174,16 @@ sub output_small {
 		}
 	close(F);
 
-	system("convert $fileName $finalName");
+	system("convert -define png:color-type=2 $fileName $finalName");
 	unlink($fileName);
+	unlink($fileName);
+	}
+
+sub output_tigm { # text in graphics mode
+	my $cc = shift;
+	if ( $cc >= 64 && $cc < 96 ) { return 1; } 
+	if ( $cc >= 192 && $cc < 224 ) { return 1; } 
+	return 0;
 	}
 
 1;

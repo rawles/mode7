@@ -14,7 +14,7 @@ use warnings;
 my @font = read_font("fonts/teletext.uk.font");
 
 foreach my $demofile ( <demo/input/*.m7> ) { 
-	print "$demofile...\n";
+	print "$demofile...";
 
 	my @parts = split(/\//, $demofile); my $stem = pop @parts; $stem =~ s/\.m7$//g;
 
@@ -30,4 +30,6 @@ foreach my $demofile ( <demo/input/*.m7> ) {
 	# ... and write it out to disk:
 	output_large($screen, "demo/output/large/$stem.png");
 	output_small($screen, "demo/output/small/$stem.png");
+
+	print "done\n";
 	}

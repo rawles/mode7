@@ -6,11 +6,18 @@ use warnings;
 use strict;
 use mode7::screen;
 
+# This module is a work in progress.
+
+# It represents an ideal teletext graphics layer, where each pixel can 
+# be assigned a colour independent of the others. The idea is that some
+# optimising routine can turn this into something which works for the 
+# teletext standard (as far as possible). A pixel can be transparent.
+
 sub new_gfxlayer {
 	my %layerhash = ();
 	my $layer = \%layerhash;
 
-	# All layers have this type set.
+	# All layers have this value set, to indicate its type.
 	$layer->{type} = 'gfx';
 
 	# Pixel colours:
@@ -27,26 +34,27 @@ sub new_gfxlayer {
 	}
 
 sub gfxlayer_set {
+	# Assign a colour to a pixel.
+
 	my $layer = shift;
 	if ( $layer->{type} ne 'gfx' ) { return; } 
-
 	
 	my $px = shift;
 	my $py = shift;
 	my $cc = shift;
-	print "($px, $py) <- $cc\n";
 	if ( $cc < 0 || $cc > 7 ) { return; } 
 
 	$layer->{px}[$px][$py] = $cc;
 	}
 
 sub gfxlayer_write {
+	# Write this grapics layer into the screen supplied.
+
 	my $layer = shift;
 	if ( $layer->{type} ne 'gfx' ) { return; } 
 
 	my $screen = shift;
-	print "(writing)\n";
-	my @gfxweights = (1,2,4,8,16,64);
+	my @gfxweights = (1, 2, 4, 8, 16, 64);
 
 	for ( my $x = 1; $x < 40; $x++ ) { 
 		for ( my $y = 0; $y < 25; $y++ ) { 
@@ -61,20 +69,17 @@ sub gfxlayer_write {
 					my $px = $x*2 + $gox;
 					my $py = $y*3 + $goy;
 					my $pc = $layer->{px}[$px][$py];
+
+					# The character code restricted to this weight.
 					my $ca = $weight & $c;
 
-					if ( $pc > -1 ) { 
-						print "$px,$py -> $weight & $c = $ca -> $pc\n";
-						print "was $pc now $ca\n";
-						}
-
 					if ( ( $pc > 0 ) && ( $ca == 0 ) ) {
-						print "+ $c\n";
+						# This is non-black, so we set the sub-cell
 						$c += $weight;
 						$screen->{frame}[$x][$y] = chr($c);
 						}
 					if ( ( $pc == 0 ) && ( $ca > 0 ) ) {
-						print "-\n";
+						# This is black, so we unset the sub-cell
 						$c -= $weight;
 						$screen->{frame}[$x][$y] = chr($c);
 						}
@@ -82,6 +87,8 @@ sub gfxlayer_write {
 				}
 			}
 		}
+
+	# Put a white graphic character in for now.
 	for ( my $y = 0; $y < 25; $y++ ) { 
 		$screen->{frame}[0][$y] = chr(151);
 		}
@@ -89,6 +96,8 @@ sub gfxlayer_write {
 	}
 
 sub gfxlayer_print {
+	# A convenience method for debugging.
+	
 	my $layer = shift;
 	if ( $layer->{type} ne 'gfx' ) { return; } 
 
@@ -96,8 +105,8 @@ sub gfxlayer_print {
 		for ( my $x = 0; $x < 80; $x++ ) { 
 			my $c = $layer->{px}[$x][$y];
 			$c = $c + 0;
-			if ( $c < 0 ) { $c = "_"; } 
-			if ( $c eq "" ) { $c = " "; } 
+			if ( $c < 0 ) { $c = "_"; }    # _ means transparent
+			if ( $c eq "" ) { $c = " "; }  # space means empty
 			print $c;
 			}
 		print "\n"; 

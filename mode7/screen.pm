@@ -1,7 +1,7 @@
 package mode7::screen;
 our $VERSION = '1.00';
 use base 'Exporter';
-our @EXPORT = qw(new_screen);
+our @EXPORT = qw(new_screen screen_advance_cursor screen_set_cursor screen_home_cursor screen_writechar screen_clear);
 use warnings;
 use strict;
 
@@ -62,6 +62,12 @@ sub new_screen {
 	#   1: held graphics
 	my @hgtrib = (); $screen->{hgtrib} = \@hgtrib;
 
+	screen_clear($screen);
+	return $screen;
+	}
+
+sub screen_clear {
+	my $screen = shift;
 	for ( my $y = 0; $y < 25; $y++ ) { # for each row,
 
 		# Initially, no double-height statuses are defined.
@@ -96,6 +102,10 @@ sub new_screen {
 			}
 		}
 
+	# cursor
+	$screen->{cursor}[0] = 0; # left of the screen
+	$screen->{cursor}[1] = 0; # top of the screen
+
 	for ( my $x = 0; $x < 240; $x++ ) { 
 		for ( my $y = 0; $y < 216; $y++ ) { 
 
@@ -104,8 +114,42 @@ sub new_screen {
 
 			}
 		}
-	
-	return $screen;
+	}
+
+sub screen_advance_cursor {
+	my $screen = shift;
+	$screen->{cursor}[0]++;
+	if ( $screen->{cursor}[0] >= 40 ) {
+		$screen->{cursor}[0] = 0;
+		$screen->{cursor}[1]++;
+		}
+	if ( $screen->{cursor}[1] >= 24 ) {
+		# we don't support scrolling.
+		$screen->{cursor}[1] = 0;
+		}
+	}
+
+sub screen_set_cursor {
+	my $screen = shift;
+	my $x = shift;
+	my $y = shift;
+	$screen->{cursor}[0] = $x;
+	$screen->{cursor}[1] = $y;
+	}
+
+sub screen_home_cursor {
+	my $screen = shift;
+	$screen->{cursor}[0] = 0;
+	$screen->{cursor}[1] = 0;
+	}
+
+sub screen_writechar {
+	my $screen = shift;
+	my $c = shift;
+	my $cx = $screen->{cursor}[0];
+	my $cy = $screen->{cursor}[1];
+	$screen->{frame}[$cx][$cy] = $c;
+	screen_advance_cursor($screen);
 	}
 
 1;
