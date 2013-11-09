@@ -1,0 +1,1001 @@
+x_ y_ code chr colour_ double_____ gfx______ hgchar_ hg__
+0  0  132      wht/blk normal/none text      32/con  none
+1  0  157      blu/blu normal/none text      32/con  none
+2  0  135      blu/blu normal/none text      32/con  none
+3  0  208  P   wht/blu normal/none text      32/con  none
+4  0  210  R   wht/blu normal/none text      32/con  none
+5  0  197  E   wht/blu normal/none text      32/con  none
+6  0  211  S   wht/blu normal/none text      32/con  none
+7  0  212  T   wht/blu normal/none text      32/con  none
+8  0  197  E   wht/blu normal/none text      32/con  none
+9  0  204  L   wht/blu normal/none text      32/con  none
+10 0  160      wht/blu normal/none text      32/con  none
+11 0  195  C   wht/blu normal/none text      32/con  none
+12 0  193  A   wht/blu normal/none text      32/con  none
+13 0  210  R   wht/blu normal/none text      32/con  none
+14 0  208  P   wht/blu normal/none text      32/con  none
+15 0  197  E   wht/blu normal/none text      32/con  none
+16 0  212  T   wht/blu normal/none text      32/con  none
+17 0  160      wht/blu normal/none text      32/con  none
+18 0  211  S   wht/blu normal/none text      32/con  none
+19 0  197  E   wht/blu normal/none text      32/con  none
+20 0  210  R   wht/blu normal/none text      32/con  none
+21 0  214  V   wht/blu normal/none text      32/con  none
+22 0  160      wht/blu normal/none text      32/con  none
+23 0  156      wht/blk normal/none text      32/con  none
+24 0  135      wht/blk normal/none text      32/con  none
+25 0  51   3   wht/blk normal/none text      32/con  none
+26 0  48   0   wht/blk normal/none text      32/con  none
+27 0  53   5   wht/blk normal/none text      32/con  none
+28 0  51   3   wht/blk normal/none text      32/con  none
+29 0  97   a   wht/blk normal/none text      32/con  none
+30 0  32       wht/blk normal/none text      32/con  none
+31 0  32       wht/blk normal/none text      32/con  none
+32 0  32       wht/blk normal/none text      32/con  none
+33 0  32       wht/blk normal/none text      32/con  none
+34 0  32       wht/blk normal/none text      32/con  none
+35 0  131      wht/blk normal/none text      32/con  none
+36 0  160      yel/blk normal/none text      32/con  none
+37 0  160      yel/blk normal/none text      32/con  none
+38 0  176  0   yel/blk normal/none text      32/con  none
+39 0  240  p   yel/blk normal/none text      32/con  none
+0  1  160      wht/blk normal/none text      32/con  none
+1  1  160      wht/blk normal/none text      32/con  none
+2  1  147      wht/blk normal/none text      32/con  none
+3  1  252  |   yel/blk normal/none solid     252/con none
+4  1  252  |   yel/blk normal/none solid     252/con none
+5  1  252  |   yel/blk normal/none solid     252/con none
+6  1  232  h   yel/blk normal/none solid     232/con none
+7  1  180  4   yel/blk normal/none solid     180/con none
+8  1  160      yel/blk normal/none solid     160/con none
+9  1  232  h   yel/blk normal/none solid     232/con none
+10 1  180  4   yel/blk normal/none solid     180/con none
+11 1  232  h   yel/blk normal/none solid     232/con none
+12 1  180  4   yel/blk normal/none solid     180/con none
+13 1  252  |   yel/blk normal/none solid     252/con none
+14 1  252  |   yel/blk normal/none solid     252/con none
+15 1  180  4   yel/blk normal/none solid     180/con none
+16 1  252  |   yel/blk normal/none solid     252/con none
+17 1  252  |   yel/blk normal/none solid     252/con none
+18 1  180  4   yel/blk normal/none solid     180/con none
+19 1  252  |   yel/blk normal/none solid     252/con none
+20 1  176  0   yel/blk normal/none solid     176/con none
+21 1  224  `   yel/blk normal/none solid     224/con none
+22 1  252  |   yel/blk normal/none solid     252/con none
+23 1  160      yel/blk normal/none solid     160/con none
+24 1  232  h   yel/blk normal/none solid     232/con none
+25 1  252  |   yel/blk normal/none solid     252/con none
+26 1  252  |   yel/blk normal/none solid     252/con none
+27 1  244  t   yel/blk normal/none solid     244/con none
+28 1  232  h   yel/blk normal/none solid     232/con none
+29 1  180  4   yel/blk normal/none solid     180/con none
+30 1  232  h   yel/blk normal/none solid     232/con none
+31 1  180  4   yel/blk normal/none solid     180/con none
+32 1  248  x   yel/blk normal/none solid     248/con none
+33 1  252  |   yel/blk normal/none solid     252/con none
+34 1  244  t   yel/blk normal/none solid     244/con none
+35 1  232  h   yel/blk normal/none solid     232/con none
+36 1  180  4   yel/blk normal/none solid     180/con none
+37 1  224  `   yel/blk normal/none solid     224/con none
+38 1  252  |   yel/blk normal/none solid     252/con none
+39 1  160      yel/blk normal/none solid     160/con none
+0  2  160      wht/blk normal/none text      32/con  none
+1  2  160      wht/blk normal/none text      32/con  none
+2  2  147      wht/blk normal/none text      32/con  none
+3  2  255      yel/blk normal/none solid     255/con none
+4  2  240  p   yel/blk normal/none solid     240/con none
+5  2  160      yel/blk normal/none solid     160/con none
+6  2  234  j   yel/blk normal/none solid     234/con none
+7  2  181  5   yel/blk normal/none solid     181/con none
+8  2  160      yel/blk normal/none solid     160/con none
+9  2  234  j   yel/blk normal/none solid     234/con none
+10 2  181  5   yel/blk normal/none solid     181/con none
+11 2  234  j   yel/blk normal/none solid     234/con none
+12 2  181  5   yel/blk normal/none solid     181/con none
+13 2  255      yel/blk normal/none solid     255/con none
+14 2  240  p   yel/blk normal/none solid     240/con none
+15 2  160      yel/blk normal/none solid     160/con none
+16 2  255      yel/blk normal/none solid     255/con none
+17 2  240  p   yel/blk normal/none solid     240/con none
+18 2  160      yel/blk normal/none solid     160/con none
+19 2  162  "   yel/blk normal/none solid     162/con none
+20 2  239  o   yel/blk normal/none solid     239/con none
+21 2  191  ?   yel/blk normal/none solid     191/con none
+22 2  161  !   yel/blk normal/none solid     161/con none
+23 2  160      yel/blk normal/none solid     160/con none
+24 2  234  j   yel/blk normal/none solid     234/con none
+25 2  181  5   yel/blk normal/none solid     181/con none
+26 2  162  "   yel/blk normal/none solid     162/con none
+27 2  255      yel/blk normal/none solid     255/con none
+28 2  234  j   yel/blk normal/none solid     234/con none
+29 2  181  5   yel/blk normal/none solid     181/con none
+30 2  234  j   yel/blk normal/none solid     234/con none
+31 2  181  5   yel/blk normal/none solid     181/con none
+32 2  255      yel/blk normal/none solid     255/con none
+33 2  160      yel/blk normal/none solid     160/con none
+34 2  163  #   yel/blk normal/none solid     163/con none
+35 2  234  j   yel/blk normal/none solid     234/con none
+36 2  253  }   yel/blk normal/none solid     253/con none
+37 2  191  ?   yel/blk normal/none solid     191/con none
+38 2  161  !   yel/blk normal/none solid     161/con none
+39 2  160      yel/blk normal/none solid     160/con none
+0  3  160      wht/blk normal/none text      32/con  none
+1  3  160      wht/blk normal/none text      32/con  none
+2  3  147      wht/blk normal/none text      32/con  none
+3  3  255      yel/blk normal/none solid     255/con none
+4  3  163  #   yel/blk normal/none solid     163/con none
+5  3  160      yel/blk normal/none solid     160/con none
+6  3  234  j   yel/blk normal/none solid     234/con none
+7  3  181  5   yel/blk normal/none solid     181/con none
+8  3  160      yel/blk normal/none solid     160/con none
+9  3  234  j   yel/blk normal/none solid     234/con none
+10 3  181  5   yel/blk normal/none solid     181/con none
+11 3  234  j   yel/blk normal/none solid     234/con none
+12 3  181  5   yel/blk normal/none solid     181/con none
+13 3  255      yel/blk normal/none solid     255/con none
+14 3  163  #   yel/blk normal/none solid     163/con none
+15 3  160      yel/blk normal/none solid     160/con none
+16 3  255      yel/blk normal/none solid     255/con none
+17 3  163  #   yel/blk normal/none solid     163/con none
+18 3  160      yel/blk normal/none solid     160/con none
+19 3  160      yel/blk normal/none solid     160/con none
+20 3  234  j   yel/blk normal/none solid     234/con none
+21 3  181  5   yel/blk normal/none solid     181/con none
+22 3  160      yel/blk normal/none solid     160/con none
+23 3  160      yel/blk normal/none solid     160/con none
+24 3  234  j   yel/blk normal/none solid     234/con none
+25 3  181  5   yel/blk normal/none solid     181/con none
+26 3  224  `   yel/blk normal/none solid     224/con none
+27 3  255      yel/blk normal/none solid     255/con none
+28 3  234  j   yel/blk normal/none solid     234/con none
+29 3  181  5   yel/blk normal/none solid     181/con none
+30 3  234  j   yel/blk normal/none solid     234/con none
+31 3  181  5   yel/blk normal/none solid     181/con none
+32 3  255      yel/blk normal/none solid     255/con none
+33 3  160      yel/blk normal/none solid     160/con none
+34 3  240  p   yel/blk normal/none solid     240/con none
+35 3  234  j   yel/blk normal/none solid     234/con none
+36 3  191  ?   yel/blk normal/none solid     191/con none
+37 3  253  }   yel/blk normal/none solid     253/con none
+38 3  176  0   yel/blk normal/none solid     176/con none
+39 3  160      yel/blk normal/none solid     160/con none
+0  4  160      wht/blk normal/none text      32/con  none
+1  4  160      wht/blk normal/none text      32/con  none
+2  4  147      wht/blk normal/none text      32/con  none
+3  4  175  /   yel/blk normal/none solid     175/con none
+4  4  160      yel/blk normal/none solid     160/con none
+5  4  160      yel/blk normal/none solid     160/con none
+6  4  170  *   yel/blk normal/none solid     170/con none
+7  4  175  /   yel/blk normal/none solid     175/con none
+8  4  175  /   yel/blk normal/none solid     175/con none
+9  4  170  *   yel/blk normal/none solid     170/con none
+10 4  175  /   yel/blk normal/none solid     175/con none
+11 4  175  /   yel/blk normal/none solid     175/con none
+12 4  165  %   yel/blk normal/none solid     165/con none
+13 4  175  /   yel/blk normal/none solid     175/con none
+14 4  160      yel/blk normal/none solid     160/con none
+15 4  160      yel/blk normal/none solid     160/con none
+16 4  175  /   yel/blk normal/none solid     175/con none
+17 4  160      yel/blk normal/none solid     160/con none
+18 4  160      yel/blk normal/none solid     160/con none
+19 4  160      yel/blk normal/none solid     160/con none
+20 4  170  *   yel/blk normal/none solid     170/con none
+21 4  165  %   yel/blk normal/none solid     165/con none
+22 4  160      yel/blk normal/none solid     160/con none
+23 4  160      yel/blk normal/none solid     160/con none
+24 4  170  *   yel/blk normal/none solid     170/con none
+25 4  175  /   yel/blk normal/none solid     175/con none
+26 4  175  /   yel/blk normal/none solid     175/con none
+27 4  167  '   yel/blk normal/none solid     167/con none
+28 4  170  *   yel/blk normal/none solid     170/con none
+29 4  175  /   yel/blk normal/none solid     175/con none
+30 4  175  /   yel/blk normal/none solid     175/con none
+31 4  165  %   yel/blk normal/none solid     165/con none
+32 4  171  +   yel/blk normal/none solid     171/con none
+33 4  175  /   yel/blk normal/none solid     175/con none
+34 4  167  '   yel/blk normal/none solid     167/con none
+35 4  170  *   yel/blk normal/none solid     170/con none
+36 4  165  %   yel/blk normal/none solid     165/con none
+37 4  162  "   yel/blk normal/none solid     162/con none
+38 4  175  /   yel/blk normal/none solid     175/con none
+39 4  160      yel/blk normal/none solid     160/con none
+0  5  160      wht/blk normal/none text      32/con  none
+1  5  160      wht/blk normal/none text      32/con  none
+2  5  154      wht/blk normal/none text      32/con  none
+3  5  151      wht/blk normal/none text(sep) 32/con  none
+4  5  160      wht/blk normal/none sep       160/sep none
+5  5  160      wht/blk normal/none sep       160/sep none
+6  5  160      wht/blk normal/none sep       160/sep none
+7  5  160      wht/blk normal/none sep       160/sep none
+8  5  160      wht/blk normal/none sep       160/sep none
+9  5  160      wht/blk normal/none sep       160/sep none
+10 5  160      wht/blk normal/none sep       160/sep none
+11 5  160      wht/blk normal/none sep       160/sep none
+12 5  160      wht/blk normal/none sep       160/sep none
+13 5  160      wht/blk normal/none sep       160/sep none
+14 5  160      wht/blk normal/none sep       160/sep none
+15 5  160      wht/blk normal/none sep       160/sep none
+16 5  160      wht/blk normal/none sep       160/sep none
+17 5  160      wht/blk normal/none sep       160/sep none
+18 5  224  `   wht/blk normal/none sep       224/sep none
+19 5  248  x   wht/blk normal/none sep       248/sep none
+20 5  254  ~   wht/blk normal/none sep       254/sep none
+21 5  255      wht/blk normal/none sep       255/sep none
+22 5  255      wht/blk normal/none sep       255/sep none
+23 5  252  |   wht/blk normal/none sep       252/sep none
+24 5  176  0   wht/blk normal/none sep       176/sep none
+25 5  32       wht/blk normal/none sep       32/sep  none
+26 5  32       wht/blk normal/none sep       32/sep  none
+27 5  32       wht/blk normal/none sep       32/sep  none
+28 5  32       wht/blk normal/none sep       32/sep  none
+29 5  32       wht/blk normal/none sep       32/sep  none
+30 5  32       wht/blk normal/none sep       32/sep  none
+31 5  32       wht/blk normal/none sep       32/sep  none
+32 5  32       wht/blk normal/none sep       32/sep  none
+33 5  32       wht/blk normal/none sep       32/sep  none
+34 5  32       wht/blk normal/none sep       32/sep  none
+35 5  32       wht/blk normal/none sep       32/sep  none
+36 5  32       wht/blk normal/none sep       32/sep  none
+37 5  32       wht/blk normal/none sep       32/sep  none
+38 5  32       wht/blk normal/none sep       32/sep  none
+39 5  32       wht/blk normal/none sep       32/sep  none
+0  6  160      wht/blk normal/none text      32/con  none
+1  6  160      wht/blk normal/none text      32/con  none
+2  6  154      wht/blk normal/none text      32/con  none
+3  6  160      wht/blk normal/none text(sep) 32/con  none
+4  6  151      wht/blk normal/none text(sep) 32/con  none
+5  6  148      wht/blk normal/none sep       32/con  none
+6  6  136      blu/blk normal/none sep       32/con  none
+7  6  160      blu/blk normal/none sep       160/sep none
+8  6  176  0   blu/blk normal/none sep       176/sep none
+9  6  137      blu/blk normal/none sep       176/sep none
+10 6  160      blu/blk normal/none sep       160/sep none
+11 6  160      blu/blk normal/none sep       160/sep none
+12 6  151      blu/blk normal/none sep       160/sep none
+13 6  160      wht/blk normal/none sep       160/sep none
+14 6  160      wht/blk normal/none sep       160/sep none
+15 6  160      wht/blk normal/none sep       160/sep none
+16 6  160      wht/blk normal/none sep       160/sep none
+17 6  160      wht/blk normal/none sep       160/sep none
+18 6  254  ~   wht/blk normal/none sep       254/sep none
+19 6  255      wht/blk normal/none sep       255/sep none
+20 6  158      wht/blk normal/none sep       255/sep held
+21 6  163  #   wht/blk normal/none sep       163/sep held
+22 6  255      wht/blk normal/none sep       255/sep held
+23 6  255      wht/blk normal/none sep       255/sep held
+24 6  253  }   wht/blk normal/none sep       253/sep held
+25 6  32       wht/blk normal/none sep       32/sep  held
+26 6  32       wht/blk normal/none sep       32/sep  held
+27 6  32       wht/blk normal/none sep       32/sep  held
+28 6  32       wht/blk normal/none sep       32/sep  held
+29 6  32       wht/blk normal/none sep       32/sep  held
+30 6  32       wht/blk normal/none sep       32/sep  held
+31 6  32       wht/blk normal/none sep       32/sep  held
+32 6  32       wht/blk normal/none sep       32/sep  held
+33 6  32       wht/blk normal/none sep       32/sep  held
+34 6  32       wht/blk normal/none sep       32/sep  held
+35 6  32       wht/blk normal/none sep       32/sep  held
+36 6  32       wht/blk normal/none sep       32/sep  held
+37 6  32       wht/blk normal/none sep       32/sep  held
+38 6  32       wht/blk normal/none sep       32/sep  held
+39 6  32       wht/blk normal/none sep       32/sep  held
+0  7  160      wht/blk normal/none text      32/con  none
+1  7  160      wht/blk normal/none text      32/con  none
+2  7  154      wht/blk normal/none text      32/con  none
+3  7  160      wht/blk normal/none text(sep) 32/con  none
+4  7  148      wht/blk normal/none text(sep) 32/con  none
+5  7  136      blu/blk normal/none sep       32/con  none
+6  7  160      blu/blk normal/none sep       160/sep none
+7  7  160      blu/blk normal/none sep       160/sep none
+8  7  160      blu/blk normal/none sep       160/sep none
+9  7  160      blu/blk normal/none sep       160/sep none
+10 7  164  $   blu/blk normal/none sep       164/sep none
+11 7  176  0   blu/blk normal/none sep       176/sep none
+12 7  151      blu/blk normal/none sep       176/sep none
+13 7  137      wht/blk normal/none sep       176/sep none
+14 7  160      wht/blk normal/none sep       160/sep none
+15 7  160      wht/blk normal/none sep       160/sep none
+16 7  160      wht/blk normal/none sep       160/sep none
+17 7  160      wht/blk normal/none sep       160/sep none
+18 7  255      wht/blk normal/none sep       255/sep none
+19 7  255      wht/blk normal/none sep       255/sep none
+20 7  255      wht/blk normal/none sep       255/sep none
+21 7  255      wht/blk normal/none sep       255/sep none
+22 7  158      wht/blk normal/none sep       255/sep held
+23 7  153      wht/blk normal/none sep       255/sep held
+24 7  147      wht/blk normal/none solid     255/sep held
+25 7  175  /   yel/blk normal/none solid     175/con held
+26 7  161  !   yel/blk normal/none solid     161/con held
+27 7  32       yel/blk normal/none solid     32/con  held
+28 7  32       yel/blk normal/none solid     32/con  held
+29 7  32       yel/blk normal/none solid     32/con  held
+30 7  32       yel/blk normal/none solid     32/con  held
+31 7  32       yel/blk normal/none solid     32/con  held
+32 7  32       yel/blk normal/none solid     32/con  held
+33 7  32       yel/blk normal/none solid     32/con  held
+34 7  32       yel/blk normal/none solid     32/con  held
+35 7  32       yel/blk normal/none solid     32/con  held
+36 7  32       yel/blk normal/none solid     32/con  held
+37 7  32       yel/blk normal/none solid     32/con  held
+38 7  32       yel/blk normal/none solid     32/con  held
+39 7  32       yel/blk normal/none solid     32/con  held
+0  8  160      wht/blk normal/none text      32/con  none
+1  8  148      wht/blk normal/none text      32/con  none
+2  8  154      blu/blk normal/none solid     32/con  none
+3  8  136      blu/blk normal/none sep       32/con  none
+4  8  160      blu/blk normal/none sep       160/sep none
+5  8  162  "   blu/blk normal/none sep       162/sep none
+6  8  151      blu/blk normal/none sep       162/sep none
+7  8  137      wht/blk normal/none sep       162/sep none
+8  8  254  ~   wht/blk normal/none sep       254/sep none
+9  8  244  t   wht/blk normal/none sep       244/sep none
+10 8  160      wht/blk normal/none sep       160/sep none
+11 8  160      wht/blk normal/none sep       160/sep none
+12 8  224  `   wht/blk normal/none sep       224/sep none
+13 8  240  p   wht/blk normal/none sep       240/sep none
+14 8  240  p   wht/blk normal/none sep       240/sep none
+15 8  240  p   wht/blk normal/none sep       240/sep none
+16 8  240  p   wht/blk normal/none sep       240/sep none
+17 8  240  p   wht/blk normal/none sep       240/sep none
+18 8  186  :   wht/blk normal/none sep       186/sep none
+19 8  239  o   wht/blk normal/none sep       239/sep none
+20 8  255      wht/blk normal/none sep       255/sep none
+21 8  255      wht/blk normal/none sep       255/sep none
+22 8  255      wht/blk normal/none sep       255/sep none
+23 8  191  ?   wht/blk normal/none sep       191/sep none
+24 8  161  !   wht/blk normal/none sep       161/sep none
+25 8  32       wht/blk normal/none sep       32/sep  none
+26 8  32       wht/blk normal/none sep       32/sep  none
+27 8  32       wht/blk normal/none sep       32/sep  none
+28 8  32       wht/blk normal/none sep       32/sep  none
+29 8  32       wht/blk normal/none sep       32/sep  none
+30 8  32       wht/blk normal/none sep       32/sep  none
+31 8  32       wht/blk normal/none sep       32/sep  none
+32 8  32       wht/blk normal/none sep       32/sep  none
+33 8  32       wht/blk normal/none sep       32/sep  none
+34 8  32       wht/blk normal/none sep       32/sep  none
+35 8  32       wht/blk normal/none sep       32/sep  none
+36 8  32       wht/blk normal/none sep       32/sep  none
+37 8  32       wht/blk normal/none sep       32/sep  none
+38 8  32       wht/blk normal/none sep       32/sep  none
+39 8  32       wht/blk normal/none sep       32/sep  none
+0  9  160      wht/blk normal/none text      32/con  none
+1  9  160      wht/blk normal/none text      32/con  none
+2  9  154      wht/blk normal/none text      32/con  none
+3  9  160      wht/blk normal/none text(sep) 32/con  none
+4  9  151      wht/blk normal/none text(sep) 32/con  none
+5  9  160      wht/blk normal/none sep       160/sep none
+6  9  160      wht/blk normal/none sep       160/sep none
+7  9  160      wht/blk normal/none sep       160/sep none
+8  9  255      wht/blk normal/none sep       255/sep none
+9  9  255      wht/blk normal/none sep       255/sep none
+10 9  255      wht/blk normal/none sep       255/sep none
+11 9  191  ?   wht/blk normal/none sep       191/sep none
+12 9  255      wht/blk normal/none sep       255/sep none
+13 9  255      wht/blk normal/none sep       255/sep none
+14 9  255      wht/blk normal/none sep       255/sep none
+15 9  255      wht/blk normal/none sep       255/sep none
+16 9  255      wht/blk normal/none sep       255/sep none
+17 9  255      wht/blk normal/none sep       255/sep none
+18 9  255      wht/blk normal/none sep       255/sep none
+19 9  255      wht/blk normal/none sep       255/sep none
+20 9  255      wht/blk normal/none sep       255/sep none
+21 9  255      wht/blk normal/none sep       255/sep none
+22 9  255      wht/blk normal/none sep       255/sep none
+23 9  255      wht/blk normal/none sep       255/sep none
+24 9  244  t   wht/blk normal/none sep       244/sep none
+25 9  32       wht/blk normal/none sep       32/sep  none
+26 9  32       wht/blk normal/none sep       32/sep  none
+27 9  32       wht/blk normal/none sep       32/sep  none
+28 9  32       wht/blk normal/none sep       32/sep  none
+29 9  32       wht/blk normal/none sep       32/sep  none
+30 9  32       wht/blk normal/none sep       32/sep  none
+31 9  32       wht/blk normal/none sep       32/sep  none
+32 9  32       wht/blk normal/none sep       32/sep  none
+33 9  32       wht/blk normal/none sep       32/sep  none
+34 9  32       wht/blk normal/none sep       32/sep  none
+35 9  32       wht/blk normal/none sep       32/sep  none
+36 9  32       wht/blk normal/none sep       32/sep  none
+37 9  32       wht/blk normal/none sep       32/sep  none
+38 9  32       wht/blk normal/none sep       32/sep  none
+39 9  32       wht/blk normal/none sep       32/sep  none
+0  10 160      wht/blk normal/none text      32/con  none
+1  10 160      wht/blk normal/none text      32/con  none
+2  10 154      wht/blk normal/none text      32/con  none
+3  10 160      wht/blk normal/none text(sep) 32/con  none
+4  10 151      wht/blk normal/none text(sep) 32/con  none
+5  10 160      wht/blk normal/none sep       160/sep none
+6  10 160      wht/blk normal/none sep       160/sep none
+7  10 160      wht/blk normal/none sep       160/sep none
+8  10 255      wht/blk normal/none sep       255/sep none
+9  10 255      wht/blk normal/none sep       255/sep none
+10 10 255      wht/blk normal/none sep       255/sep none
+11 10 255      wht/blk normal/none sep       255/sep none
+12 10 251  {   wht/blk normal/none sep       251/sep none
+13 10 255      wht/blk normal/none sep       255/sep none
+14 10 255      wht/blk normal/none sep       255/sep none
+15 10 255      wht/blk normal/none sep       255/sep none
+16 10 255      wht/blk normal/none sep       255/sep none
+17 10 255      wht/blk normal/none sep       255/sep none
+18 10 255      wht/blk normal/none sep       255/sep none
+19 10 255      wht/blk normal/none sep       255/sep none
+20 10 255      wht/blk normal/none sep       255/sep none
+21 10 255      wht/blk normal/none sep       255/sep none
+22 10 255      wht/blk normal/none sep       255/sep none
+23 10 255      wht/blk normal/none sep       255/sep none
+24 10 255      wht/blk normal/none sep       255/sep none
+25 10 32       wht/blk normal/none sep       32/sep  none
+26 10 32       wht/blk normal/none sep       32/sep  none
+27 10 32       wht/blk normal/none sep       32/sep  none
+28 10 32       wht/blk normal/none sep       32/sep  none
+29 10 32       wht/blk normal/none sep       32/sep  none
+30 10 32       wht/blk normal/none sep       32/sep  none
+31 10 32       wht/blk normal/none sep       32/sep  none
+32 10 32       wht/blk normal/none sep       32/sep  none
+33 10 32       wht/blk normal/none sep       32/sep  none
+34 10 32       wht/blk normal/none sep       32/sep  none
+35 10 32       wht/blk normal/none sep       32/sep  none
+36 10 32       wht/blk normal/none sep       32/sep  none
+37 10 32       wht/blk normal/none sep       32/sep  none
+38 10 32       wht/blk normal/none sep       32/sep  none
+39 10 32       wht/blk normal/none sep       32/sep  none
+0  11 160      wht/blk normal/none text      32/con  none
+1  11 160      wht/blk normal/none text      32/con  none
+2  11 154      wht/blk normal/none text      32/con  none
+3  11 160      wht/blk normal/none text(sep) 32/con  none
+4  11 151      wht/blk normal/none text(sep) 32/con  none
+5  11 140      wht/blk reset/none  sep       32/con  none
+6  11 160      wht/blk reset/none  sep       160/sep none
+7  11 160      wht/blk reset/none  sep       160/sep none
+8  11 255      wht/blk reset/none  sep       255/sep none
+9  11 255      wht/blk reset/none  sep       255/sep none
+10 11 255      wht/blk reset/none  sep       255/sep none
+11 11 255      wht/blk reset/none  sep       255/sep none
+12 11 255      wht/blk reset/none  sep       255/sep none
+13 11 254  ~   wht/blk reset/none  sep       254/sep none
+14 11 251  {   wht/blk reset/none  sep       251/sep none
+15 11 251  {   wht/blk reset/none  sep       251/sep none
+16 11 251  {   wht/blk reset/none  sep       251/sep none
+17 11 251  {   wht/blk reset/none  sep       251/sep none
+18 11 247  w   wht/blk reset/none  sep       247/sep none
+19 11 255      wht/blk reset/none  sep       255/sep none
+20 11 255      wht/blk reset/none  sep       255/sep none
+21 11 255      wht/blk reset/none  sep       255/sep none
+22 11 255      wht/blk reset/none  sep       255/sep none
+23 11 255      wht/blk reset/none  sep       255/sep none
+24 11 255      wht/blk reset/none  sep       255/sep none
+25 11 32       wht/blk reset/none  sep       32/sep  none
+26 11 32       wht/blk reset/none  sep       32/sep  none
+27 11 32       wht/blk reset/none  sep       32/sep  none
+28 11 32       wht/blk reset/none  sep       32/sep  none
+29 11 32       wht/blk reset/none  sep       32/sep  none
+30 11 32       wht/blk reset/none  sep       32/sep  none
+31 11 32       wht/blk reset/none  sep       32/sep  none
+32 11 32       wht/blk reset/none  sep       32/sep  none
+33 11 32       wht/blk reset/none  sep       32/sep  none
+34 11 32       wht/blk reset/none  sep       32/sep  none
+35 11 32       wht/blk reset/none  sep       32/sep  none
+36 11 32       wht/blk reset/none  sep       32/sep  none
+37 11 32       wht/blk reset/none  sep       32/sep  none
+38 11 32       wht/blk reset/none  sep       32/sep  none
+39 11 32       wht/blk reset/none  sep       32/sep  none
+0  12 160      wht/blk normal/none text      32/con  none
+1  12 160      wht/blk normal/none text      32/con  none
+2  12 154      wht/blk normal/none text      32/con  none
+3  12 160      wht/blk normal/none text(sep) 32/con  none
+4  12 151      wht/blk normal/none text(sep) 32/con  none
+5  12 160      wht/blk normal/none sep       160/sep none
+6  12 160      wht/blk normal/none sep       160/sep none
+7  12 160      wht/blk normal/none sep       160/sep none
+8  12 170  *   wht/blk normal/none sep       170/sep none
+9  12 255      wht/blk normal/none sep       255/sep none
+10 12 255      wht/blk normal/none sep       255/sep none
+11 12 255      wht/blk normal/none sep       255/sep none
+12 12 255      wht/blk normal/none sep       255/sep none
+13 12 255      wht/blk normal/none sep       255/sep none
+14 12 255      wht/blk normal/none sep       255/sep none
+15 12 255      wht/blk normal/none sep       255/sep none
+16 12 255      wht/blk normal/none sep       255/sep none
+17 12 255      wht/blk normal/none sep       255/sep none
+18 12 255      wht/blk normal/none sep       255/sep none
+19 12 255      wht/blk normal/none sep       255/sep none
+20 12 255      wht/blk normal/none sep       255/sep none
+21 12 255      wht/blk normal/none sep       255/sep none
+22 12 255      wht/blk normal/none sep       255/sep none
+23 12 255      wht/blk normal/none sep       255/sep none
+24 12 183  7   wht/blk normal/none sep       183/sep none
+25 12 32       wht/blk normal/none sep       32/sep  none
+26 12 32       wht/blk normal/none sep       32/sep  none
+27 12 32       wht/blk normal/none sep       32/sep  none
+28 12 32       wht/blk normal/none sep       32/sep  none
+29 12 32       wht/blk normal/none sep       32/sep  none
+30 12 32       wht/blk normal/none sep       32/sep  none
+31 12 32       wht/blk normal/none sep       32/sep  none
+32 12 32       wht/blk normal/none sep       32/sep  none
+33 12 32       wht/blk normal/none sep       32/sep  none
+34 12 32       wht/blk normal/none sep       32/sep  none
+35 12 32       wht/blk normal/none sep       32/sep  none
+36 12 32       wht/blk normal/none sep       32/sep  none
+37 12 32       wht/blk normal/none sep       32/sep  none
+38 12 32       wht/blk normal/none sep       32/sep  none
+39 12 32       wht/blk normal/none sep       32/sep  none
+0  13 160      wht/blk normal/none text      32/con  none
+1  13 160      wht/blk normal/none text      32/con  none
+2  13 154      wht/blk normal/none text      32/con  none
+3  13 160      wht/blk normal/none text(sep) 32/con  none
+4  13 151      wht/blk normal/none text(sep) 32/con  none
+5  13 160      wht/blk normal/none sep       160/sep none
+6  13 160      wht/blk normal/none sep       160/sep none
+7  13 160      wht/blk normal/none sep       160/sep none
+8  13 160      wht/blk normal/none sep       160/sep none
+9  13 170  *   wht/blk normal/none sep       170/sep none
+10 13 255      wht/blk normal/none sep       255/sep none
+11 13 255      wht/blk normal/none sep       255/sep none
+12 13 255      wht/blk normal/none sep       255/sep none
+13 13 255      wht/blk normal/none sep       255/sep none
+14 13 255      wht/blk normal/none sep       255/sep none
+15 13 255      wht/blk normal/none sep       255/sep none
+16 13 255      wht/blk normal/none sep       255/sep none
+17 13 255      wht/blk normal/none sep       255/sep none
+18 13 255      wht/blk normal/none sep       255/sep none
+19 13 255      wht/blk normal/none sep       255/sep none
+20 13 255      wht/blk normal/none sep       255/sep none
+21 13 255      wht/blk normal/none sep       255/sep none
+22 13 255      wht/blk normal/none sep       255/sep none
+23 13 167  '   wht/blk normal/none sep       167/sep none
+24 13 32       wht/blk normal/none sep       32/sep  none
+25 13 32       wht/blk normal/none sep       32/sep  none
+26 13 32       wht/blk normal/none sep       32/sep  none
+27 13 32       wht/blk normal/none sep       32/sep  none
+28 13 32       wht/blk normal/none sep       32/sep  none
+29 13 32       wht/blk normal/none sep       32/sep  none
+30 13 32       wht/blk normal/none sep       32/sep  none
+31 13 32       wht/blk normal/none sep       32/sep  none
+32 13 32       wht/blk normal/none sep       32/sep  none
+33 13 32       wht/blk normal/none sep       32/sep  none
+34 13 32       wht/blk normal/none sep       32/sep  none
+35 13 32       wht/blk normal/none sep       32/sep  none
+36 13 32       wht/blk normal/none sep       32/sep  none
+37 13 32       wht/blk normal/none sep       32/sep  none
+38 13 32       wht/blk normal/none sep       32/sep  none
+39 13 32       wht/blk normal/none sep       32/sep  none
+0  14 160      wht/blk normal/none text      32/con  none
+1  14 160      wht/blk normal/none text      32/con  none
+2  14 154      wht/blk normal/none text      32/con  none
+3  14 160      wht/blk normal/none text(sep) 32/con  none
+4  14 151      wht/blk normal/none text(sep) 32/con  none
+5  14 160      wht/blk normal/none sep       160/sep none
+6  14 160      wht/blk normal/none sep       160/sep none
+7  14 160      wht/blk normal/none sep       160/sep none
+8  14 160      wht/blk normal/none sep       160/sep none
+9  14 160      wht/blk normal/none sep       160/sep none
+10 14 162  "   wht/blk normal/none sep       162/sep none
+11 14 171  +   wht/blk normal/none sep       171/sep none
+12 14 175  /   wht/blk normal/none sep       175/sep none
+13 14 239  o   wht/blk normal/none sep       239/sep none
+14 14 255      wht/blk normal/none sep       255/sep none
+15 14 255      wht/blk normal/none sep       255/sep none
+16 14 255      wht/blk normal/none sep       255/sep none
+17 14 255      wht/blk normal/none sep       255/sep none
+18 14 255      wht/blk normal/none sep       255/sep none
+19 14 191  ?   wht/blk normal/none sep       191/sep none
+20 14 175  /   wht/blk normal/none sep       175/sep none
+21 14 163  #   wht/blk normal/none sep       163/sep none
+22 14 32       wht/blk normal/none sep       32/sep  none
+23 14 32       wht/blk normal/none sep       32/sep  none
+24 14 32       wht/blk normal/none sep       32/sep  none
+25 14 32       wht/blk normal/none sep       32/sep  none
+26 14 32       wht/blk normal/none sep       32/sep  none
+27 14 32       wht/blk normal/none sep       32/sep  none
+28 14 32       wht/blk normal/none sep       32/sep  none
+29 14 32       wht/blk normal/none sep       32/sep  none
+30 14 32       wht/blk normal/none sep       32/sep  none
+31 14 32       wht/blk normal/none sep       32/sep  none
+32 14 32       wht/blk normal/none sep       32/sep  none
+33 14 32       wht/blk normal/none sep       32/sep  none
+34 14 32       wht/blk normal/none sep       32/sep  none
+35 14 32       wht/blk normal/none sep       32/sep  none
+36 14 32       wht/blk normal/none sep       32/sep  none
+37 14 32       wht/blk normal/none sep       32/sep  none
+38 14 32       wht/blk normal/none sep       32/sep  none
+39 14 32       wht/blk normal/none sep       32/sep  none
+0  15 160      wht/blk normal/none text      32/con  none
+1  15 160      wht/blk normal/none text      32/con  none
+2  15 160      wht/blk normal/none text      32/con  none
+3  15 160      wht/blk normal/none text      32/con  none
+4  15 160      wht/blk normal/none text      32/con  none
+5  15 160      wht/blk normal/none text      32/con  none
+6  15 148      wht/blk normal/none text      32/con  none
+7  15 160      blu/blk normal/none solid     160/con none
+8  15 160      blu/blk normal/none solid     160/con none
+9  15 240  p   blu/blk normal/none solid     240/con none
+10 15 252  |   blu/blk normal/none solid     252/con none
+11 15 252  |   blu/blk normal/none solid     252/con none
+12 15 157      blu/blu normal/none solid     252/con none
+13 15 147      blu/blu normal/none solid     252/con none
+14 15 168  (   yel/blu normal/none solid     168/con none
+15 15 255      yel/blu normal/none solid     255/con none
+16 15 188  <   yel/blu normal/none solid     188/con none
+17 15 168  (   yel/blu normal/none solid     168/con none
+18 15 255      yel/blu normal/none solid     255/con none
+19 15 188  <   yel/blu normal/none solid     188/con none
+20 15 160      yel/blu normal/none solid     160/con none
+21 15 158      yel/blu normal/none solid     160/con held
+22 15 148      yel/blu normal/none solid     160/con held
+23 15 255      blu/blu normal/none solid     255/con held
+24 15 156      blu/blk normal/none solid     255/con held
+25 15 252  |   blu/blk normal/none solid     252/con held
+26 15 244  t   blu/blk normal/none solid     244/con held
+27 15 176  0   blu/blk normal/none solid     176/con held
+28 15 32       blu/blk normal/none solid     32/con  held
+29 15 32       blu/blk normal/none solid     32/con  held
+30 15 32       blu/blk normal/none solid     32/con  held
+31 15 32       blu/blk normal/none solid     32/con  held
+32 15 32       blu/blk normal/none solid     32/con  held
+33 15 32       blu/blk normal/none solid     32/con  held
+34 15 32       blu/blk normal/none solid     32/con  held
+35 15 32       blu/blk normal/none solid     32/con  held
+36 15 32       blu/blk normal/none solid     32/con  held
+37 15 32       blu/blk normal/none solid     32/con  held
+38 15 32       blu/blk normal/none solid     32/con  held
+39 15 32       blu/blk normal/none solid     32/con  held
+0  16 148      wht/blk normal/none text      32/con  none
+1  16 160      blu/blk normal/none solid     160/con none
+2  16 160      blu/blk normal/none solid     160/con none
+3  16 160      blu/blk normal/none solid     160/con none
+4  16 160      blu/blk normal/none solid     160/con none
+5  16 160      blu/blk normal/none solid     160/con none
+6  16 160      blu/blk normal/none solid     160/con none
+7  16 168  (   blu/blk normal/none solid     168/con none
+8  16 255      blu/blk normal/none solid     255/con none
+9  16 157      blu/blu normal/none solid     255/con none
+10 16 160      blu/blu normal/none solid     160/con none
+11 16 160      blu/blu normal/none solid     160/con none
+12 16 160      blu/blu normal/none solid     160/con none
+13 16 160      blu/blu normal/none solid     160/con none
+14 16 147      blu/blu normal/none solid     160/con none
+15 16 162  "   yel/blu normal/none solid     162/con none
+16 16 160      yel/blu normal/none solid     160/con none
+17 16 160      yel/blu normal/none solid     160/con none
+18 16 162  "   yel/blu normal/none solid     162/con none
+19 16 160      yel/blu normal/none solid     160/con none
+20 16 160      yel/blu normal/none solid     160/con none
+21 16 160      yel/blu normal/none solid     160/con none
+22 16 160      yel/blu normal/none solid     160/con none
+23 16 158      yel/blu normal/none solid     160/con held
+24 16 158      yel/blu normal/none solid     160/con held
+25 16 148      yel/blu normal/none solid     160/con held
+26 16 255      blu/blu normal/none solid     255/con held
+27 16 156      blu/blk normal/none solid     255/con held
+28 16 244  t   blu/blk normal/none solid     244/con held
+29 16 32       blu/blk normal/none solid     32/con  held
+30 16 32       blu/blk normal/none solid     32/con  held
+31 16 32       blu/blk normal/none solid     32/con  held
+32 16 32       blu/blk normal/none solid     32/con  held
+33 16 32       blu/blk normal/none solid     32/con  held
+34 16 32       blu/blk normal/none solid     32/con  held
+35 16 32       blu/blk normal/none solid     32/con  held
+36 16 32       blu/blk normal/none solid     32/con  held
+37 16 32       blu/blk normal/none solid     32/con  held
+38 16 32       blu/blk normal/none solid     32/con  held
+39 16 32       blu/blk normal/none solid     32/con  held
+0  17 160      wht/blk normal/none text      32/con  none
+1  17 160      wht/blk normal/none text      32/con  none
+2  17 160      wht/blk normal/none text      32/con  none
+3  17 160      wht/blk normal/none text      32/con  none
+4  17 148      wht/blk normal/none text      32/con  none
+5  17 160      blu/blk normal/none solid     160/con none
+6  17 160      blu/blk normal/none solid     160/con none
+7  17 160      blu/blk normal/none solid     160/con none
+8  17 163  #   blu/blk normal/none solid     163/con none
+9  17 163  #   blu/blk normal/none solid     163/con none
+10 17 175  /   blu/blk normal/none solid     175/con none
+11 17 175  /   blu/blk normal/none solid     175/con none
+12 17 255      blu/blk normal/none solid     255/con none
+13 17 255      blu/blk normal/none solid     255/con none
+14 17 255      blu/blk normal/none solid     255/con none
+15 17 255      blu/blk normal/none solid     255/con none
+16 17 255      blu/blk normal/none solid     255/con none
+17 17 255      blu/blk normal/none solid     255/con none
+18 17 255      blu/blk normal/none solid     255/con none
+19 17 255      blu/blk normal/none solid     255/con none
+20 17 255      blu/blk normal/none solid     255/con none
+21 17 255      blu/blk normal/none solid     255/con none
+22 17 255      blu/blk normal/none solid     255/con none
+23 17 255      blu/blk normal/none solid     255/con none
+24 17 255      blu/blk normal/none solid     255/con none
+25 17 255      blu/blk normal/none solid     255/con none
+26 17 255      blu/blk normal/none solid     255/con none
+27 17 175  /   blu/blk normal/none solid     175/con none
+28 17 167  '   blu/blk normal/none solid     167/con none
+29 17 32       blu/blk normal/none solid     32/con  none
+30 17 32       blu/blk normal/none solid     32/con  none
+31 17 32       blu/blk normal/none solid     32/con  none
+32 17 32       blu/blk normal/none solid     32/con  none
+33 17 32       blu/blk normal/none solid     32/con  none
+34 17 32       blu/blk normal/none solid     32/con  none
+35 17 32       blu/blk normal/none solid     32/con  none
+36 17 32       blu/blk normal/none solid     32/con  none
+37 17 32       blu/blk normal/none solid     32/con  none
+38 17 32       blu/blk normal/none solid     32/con  none
+39 17 32       blu/blk normal/none solid     32/con  none
+0  18 148      wht/blk normal/none text      32/con  none
+1  18 240  p   blu/blk normal/none solid     240/con none
+2  18 240  p   blu/blk normal/none solid     240/con none
+3  18 240  p   blu/blk normal/none solid     240/con none
+4  18 240  p   blu/blk normal/none solid     240/con none
+5  18 240  p   blu/blk normal/none solid     240/con none
+6  18 240  p   blu/blk normal/none solid     240/con none
+7  18 240  p   blu/blk normal/none solid     240/con none
+8  18 240  p   blu/blk normal/none solid     240/con none
+9  18 240  p   blu/blk normal/none solid     240/con none
+10 18 240  p   blu/blk normal/none solid     240/con none
+11 18 240  p   blu/blk normal/none solid     240/con none
+12 18 240  p   blu/blk normal/none solid     240/con none
+13 18 243  s   blu/blk normal/none solid     243/con none
+14 18 243  s   blu/blk normal/none solid     243/con none
+15 18 243  s   blu/blk normal/none solid     243/con none
+16 18 243  s   blu/blk normal/none solid     243/con none
+17 18 243  s   blu/blk normal/none solid     243/con none
+18 18 243  s   blu/blk normal/none solid     243/con none
+19 18 243  s   blu/blk normal/none solid     243/con none
+20 18 243  s   blu/blk normal/none solid     243/con none
+21 18 243  s   blu/blk normal/none solid     243/con none
+22 18 243  s   blu/blk normal/none solid     243/con none
+23 18 243  s   blu/blk normal/none solid     243/con none
+24 18 243  s   blu/blk normal/none solid     243/con none
+25 18 240  p   blu/blk normal/none solid     240/con none
+26 18 240  p   blu/blk normal/none solid     240/con none
+27 18 240  p   blu/blk normal/none solid     240/con none
+28 18 240  p   blu/blk normal/none solid     240/con none
+29 18 240  p   blu/blk normal/none solid     240/con none
+30 18 240  p   blu/blk normal/none solid     240/con none
+31 18 240  p   blu/blk normal/none solid     240/con none
+32 18 240  p   blu/blk normal/none solid     240/con none
+33 18 240  p   blu/blk normal/none solid     240/con none
+34 18 240  p   blu/blk normal/none solid     240/con none
+35 18 240  p   blu/blk normal/none solid     240/con none
+36 18 240  p   blu/blk normal/none solid     240/con none
+37 18 240  p   blu/blk normal/none solid     240/con none
+38 18 240  p   blu/blk normal/none solid     240/con none
+39 18 240  p   blu/blk normal/none solid     240/con none
+0  19 132      wht/blk normal/none text      32/con  none
+1  19 157      blu/blu normal/none text      32/con  none
+2  19 135      blu/blu normal/none text      32/con  none
+3  19 200  H   wht/blu normal/none text      32/con  none
+4  19 229  e   wht/blu normal/none text      32/con  none
+5  19 245  u   wht/blu normal/none text      32/con  none
+6  19 231  g   wht/blu normal/none text      32/con  none
+7  19 225  a   wht/blu normal/none text      32/con  none
+8  19 160      wht/blu normal/none text      32/con  none
+9  19 236  l   wht/blu normal/none text      32/con  none
+10 19 225  a   wht/blu normal/none text      32/con  none
+11 19 245  u   wht/blu normal/none text      32/con  none
+12 19 238  n   wht/blu normal/none text      32/con  none
+13 19 227  c   wht/blu normal/none text      32/con  none
+14 19 232  h   wht/blu normal/none text      32/con  none
+15 19 160      wht/blu normal/none text      32/con  none
+16 19 198  F   wht/blu normal/none text      32/con  none
+17 19 204  L   wht/blu normal/none text      32/con  none
+18 19 213  U   wht/blu normal/none text      32/con  none
+19 19 198  F   wht/blu normal/none text      32/con  none
+20 19 198  F   wht/blu normal/none text      32/con  none
+21 19 217  Y   wht/blu normal/none text      32/con  none
+22 19 160      wht/blu normal/none text      32/con  none
+23 19 196  D   wht/blu normal/none text      32/con  none
+24 19 213  U   wht/blu normal/none text      32/con  none
+25 19 195  C   wht/blu normal/none text      32/con  none
+26 19 203  K   wht/blu normal/none text      32/con  none
+27 19 172  ,   wht/blu normal/none text      32/con  none
+28 19 160      wht/blu normal/none text      32/con  none
+29 19 225  a   wht/blu normal/none text      32/con  none
+30 19 160      wht/blu normal/none text      32/con  none
+31 19 227  c   wht/blu normal/none text      32/con  none
+32 19 239  o   wht/blu normal/none text      32/con  none
+33 19 236  l   wht/blu normal/none text      32/con  none
+34 19 239  o   wht/blu normal/none text      32/con  none
+35 19 245  u   wht/blu normal/none text      32/con  none
+36 19 242  r   wht/blu normal/none text      32/con  none
+37 19 32       wht/blu normal/none text      32/con  none
+38 19 32       wht/blu normal/none text      32/con  none
+39 19 32       wht/blu normal/none text      32/con  none
+0  20 132      wht/blk normal/none text      32/con  none
+1  20 157      blu/blu normal/none text      32/con  none
+2  20 135      blu/blu normal/none text      32/con  none
+3  20 227  c   wht/blu normal/none text      32/con  none
+4  20 239  o   wht/blu normal/none text      32/con  none
+5  20 173  -   wht/blu normal/none text      32/con  none
+6  20 239  o   wht/blu normal/none text      32/con  none
+7  20 242  r   wht/blu normal/none text      32/con  none
+8  20 228  d   wht/blu normal/none text      32/con  none
+9  20 233  i   wht/blu normal/none text      32/con  none
+10 20 238  n   wht/blu normal/none text      32/con  none
+11 20 225  a   wht/blu normal/none text      32/con  none
+12 20 244  t   wht/blu normal/none text      32/con  none
+13 20 229  e   wht/blu normal/none text      32/con  none
+14 20 228  d   wht/blu normal/none text      32/con  none
+15 20 160      wht/blu normal/none text      32/con  none
+16 20 243  s   wht/blu normal/none text      32/con  none
+17 20 239  o   wht/blu normal/none text      32/con  none
+18 20 230  f   wht/blu normal/none text      32/con  none
+19 20 244  t   wht/blu normal/none text      32/con  none
+20 20 160      wht/blu normal/none text      32/con  none
+21 20 225  a   wht/blu normal/none text      32/con  none
+22 20 238  n   wht/blu normal/none text      32/con  none
+23 20 228  d   wht/blu normal/none text      32/con  none
+24 20 160      wht/blu normal/none text      32/con  none
+25 20 236  l   wht/blu normal/none text      32/con  none
+26 20 245  u   wht/blu normal/none text      32/con  none
+27 20 248  x   wht/blu normal/none text      32/con  none
+28 20 245  u   wht/blu normal/none text      32/con  none
+29 20 242  r   wht/blu normal/none text      32/con  none
+30 20 233  i   wht/blu normal/none text      32/con  none
+31 20 239  o   wht/blu normal/none text      32/con  none
+32 20 245  u   wht/blu normal/none text      32/con  none
+33 20 243  s   wht/blu normal/none text      32/con  none
+34 20 32       wht/blu normal/none text      32/con  none
+35 20 32       wht/blu normal/none text      32/con  none
+36 20 32       wht/blu normal/none text      32/con  none
+37 20 32       wht/blu normal/none text      32/con  none
+38 20 32       wht/blu normal/none text      32/con  none
+39 20 32       wht/blu normal/none text      32/con  none
+0  21 132      wht/blk normal/none text      32/con  none
+1  21 157      blu/blu normal/none text      32/con  none
+2  21 135      blu/blu normal/none text      32/con  none
+3  21 226  b   wht/blu normal/none text      32/con  none
+4  21 225  a   wht/blu normal/none text      32/con  none
+5  21 244  t   wht/blu normal/none text      32/con  none
+6  21 232  h   wht/blu normal/none text      32/con  none
+7  21 242  r   wht/blu normal/none text      32/con  none
+8  21 239  o   wht/blu normal/none text      32/con  none
+9  21 239  o   wht/blu normal/none text      32/con  none
+10 21 237  m   wht/blu normal/none text      32/con  none
+11 21 160      wht/blu normal/none text      32/con  none
+12 21 227  c   wht/blu normal/none text      32/con  none
+13 21 225  a   wht/blu normal/none text      32/con  none
+14 21 242  r   wht/blu normal/none text      32/con  none
+15 21 240  p   wht/blu normal/none text      32/con  none
+16 21 229  e   wht/blu normal/none text      32/con  none
+17 21 244  t   wht/blu normal/none text      32/con  none
+18 21 160      wht/blu normal/none text      32/con  none
+19 21 244  t   wht/blu normal/none text      32/con  none
+20 21 233  i   wht/blu normal/none text      32/con  none
+21 21 236  l   wht/blu normal/none text      32/con  none
+22 21 229  e   wht/blu normal/none text      32/con  none
+23 21 32       wht/blu normal/none text      32/con  none
+24 21 32       wht/blu normal/none text      32/con  none
+25 21 32       wht/blu normal/none text      32/con  none
+26 21 32       wht/blu normal/none text      32/con  none
+27 21 32       wht/blu normal/none text      32/con  none
+28 21 32       wht/blu normal/none text      32/con  none
+29 21 32       wht/blu normal/none text      32/con  none
+30 21 32       wht/blu normal/none text      32/con  none
+31 21 32       wht/blu normal/none text      32/con  none
+32 21 32       wht/blu normal/none text      32/con  none
+33 21 32       wht/blu normal/none text      32/con  none
+34 21 32       wht/blu normal/none text      32/con  none
+35 21 32       wht/blu normal/none text      32/con  none
+36 21 32       wht/blu normal/none text      32/con  none
+37 21 32       wht/blu normal/none text      32/con  none
+38 21 32       wht/blu normal/none text      32/con  none
+39 21 32       wht/blu normal/none text      32/con  none
+0  22 160      wht/blk normal/none text      32/con  none
+1  22 203  K   wht/blk normal/none text      32/con  none
+2  22 229  e   wht/blk normal/none text      32/con  none
+3  22 249  y   wht/blk normal/none text      32/con  none
+4  22 160      wht/blk normal/none text      32/con  none
+5  22 177  1   wht/blk normal/none text      32/con  none
+6  22 160      wht/blk normal/none text      32/con  none
+7  22 230  f   wht/blk normal/none text      32/con  none
+8  22 239  o   wht/blk normal/none text      32/con  none
+9  22 242  r   wht/blk normal/none text      32/con  none
+10 22 160      wht/blk normal/none text      32/con  none
+11 22 243  s   wht/blk normal/none text      32/con  none
+12 22 244  t   wht/blk normal/none text      32/con  none
+13 22 239  o   wht/blk normal/none text      32/con  none
+14 22 227  c   wht/blk normal/none text      32/con  none
+15 22 235  k   wht/blk normal/none text      32/con  none
+16 22 172  ,   wht/blk normal/none text      32/con  none
+17 22 160      wht/blk normal/none text      32/con  none
+18 22 176  0   wht/blk normal/none text      32/con  none
+19 22 160      wht/blk normal/none text      32/con  none
+20 22 230  f   wht/blk normal/none text      32/con  none
+21 22 239  o   wht/blk normal/none text      32/con  none
+22 22 242  r   wht/blk normal/none text      32/con  none
+23 22 160      wht/blk normal/none text      32/con  none
+24 22 233  i   wht/blk normal/none text      32/con  none
+25 22 238  n   wht/blk normal/none text      32/con  none
+26 22 228  d   wht/blk normal/none text      32/con  none
+27 22 229  e   wht/blk normal/none text      32/con  none
+28 22 248  x   wht/blk normal/none text      32/con  none
+29 22 32       wht/blk normal/none text      32/con  none
+30 22 32       wht/blk normal/none text      32/con  none
+31 22 32       wht/blk normal/none text      32/con  none
+32 22 32       wht/blk normal/none text      32/con  none
+33 22 32       wht/blk normal/none text      32/con  none
+34 22 32       wht/blk normal/none text      32/con  none
+35 22 32       wht/blk normal/none text      32/con  none
+36 22 32       wht/blk normal/none text      32/con  none
+37 22 32       wht/blk normal/none text      32/con  none
+38 22 32       wht/blk normal/none text      32/con  none
+39 22 32       wht/blk normal/none text      32/con  none
+0  23 32       wht/blk normal/none text      32/con  none
+1  23 32       wht/blk normal/none text      32/con  none
+2  23 32       wht/blk normal/none text      32/con  none
+3  23 32       wht/blk normal/none text      32/con  none
+4  23 32       wht/blk normal/none text      32/con  none
+5  23 32       wht/blk normal/none text      32/con  none
+6  23 32       wht/blk normal/none text      32/con  none
+7  23 32       wht/blk normal/none text      32/con  none
+8  23 32       wht/blk normal/none text      32/con  none
+9  23 32       wht/blk normal/none text      32/con  none
+10 23 32       wht/blk normal/none text      32/con  none
+11 23 32       wht/blk normal/none text      32/con  none
+12 23 32       wht/blk normal/none text      32/con  none
+13 23 32       wht/blk normal/none text      32/con  none
+14 23 32       wht/blk normal/none text      32/con  none
+15 23 32       wht/blk normal/none text      32/con  none
+16 23 32       wht/blk normal/none text      32/con  none
+17 23 32       wht/blk normal/none text      32/con  none
+18 23 32       wht/blk normal/none text      32/con  none
+19 23 32       wht/blk normal/none text      32/con  none
+20 23 32       wht/blk normal/none text      32/con  none
+21 23 32       wht/blk normal/none text      32/con  none
+22 23 32       wht/blk normal/none text      32/con  none
+23 23 32       wht/blk normal/none text      32/con  none
+24 23 32       wht/blk normal/none text      32/con  none
+25 23 32       wht/blk normal/none text      32/con  none
+26 23 32       wht/blk normal/none text      32/con  none
+27 23 32       wht/blk normal/none text      32/con  none
+28 23 32       wht/blk normal/none text      32/con  none
+29 23 32       wht/blk normal/none text      32/con  none
+30 23 32       wht/blk normal/none text      32/con  none
+31 23 32       wht/blk normal/none text      32/con  none
+32 23 32       wht/blk normal/none text      32/con  none
+33 23 32       wht/blk normal/none text      32/con  none
+34 23 32       wht/blk normal/none text      32/con  none
+35 23 32       wht/blk normal/none text      32/con  none
+36 23 32       wht/blk normal/none text      32/con  none
+37 23 32       wht/blk normal/none text      32/con  none
+38 23 32       wht/blk normal/none text      32/con  none
+39 23 32       wht/blk normal/none text      32/con  none
+0  24 32       wht/blk normal/none text      32/con  none
+1  24 32       wht/blk normal/none text      32/con  none
+2  24 32       wht/blk normal/none text      32/con  none
+3  24 32       wht/blk normal/none text      32/con  none
+4  24 32       wht/blk normal/none text      32/con  none
+5  24 32       wht/blk normal/none text      32/con  none
+6  24 32       wht/blk normal/none text      32/con  none
+7  24 32       wht/blk normal/none text      32/con  none
+8  24 32       wht/blk normal/none text      32/con  none
+9  24 32       wht/blk normal/none text      32/con  none
+10 24 32       wht/blk normal/none text      32/con  none
+11 24 32       wht/blk normal/none text      32/con  none
+12 24 32       wht/blk normal/none text      32/con  none
+13 24 32       wht/blk normal/none text      32/con  none
+14 24 32       wht/blk normal/none text      32/con  none
+15 24 32       wht/blk normal/none text      32/con  none
+16 24 32       wht/blk normal/none text      32/con  none
+17 24 32       wht/blk normal/none text      32/con  none
+18 24 32       wht/blk normal/none text      32/con  none
+19 24 32       wht/blk normal/none text      32/con  none
+20 24 32       wht/blk normal/none text      32/con  none
+21 24 32       wht/blk normal/none text      32/con  none
+22 24 32       wht/blk normal/none text      32/con  none
+23 24 32       wht/blk normal/none text      32/con  none
+24 24 32       wht/blk normal/none text      32/con  none
+25 24 32       wht/blk normal/none text      32/con  none
+26 24 32       wht/blk normal/none text      32/con  none
+27 24 32       wht/blk normal/none text      32/con  none
+28 24 32       wht/blk normal/none text      32/con  none
+29 24 32       wht/blk normal/none text      32/con  none
+30 24 32       wht/blk normal/none text      32/con  none
+31 24 32       wht/blk normal/none text      32/con  none
+32 24 32       wht/blk normal/none text      32/con  none
+33 24 32       wht/blk normal/none text      32/con  none
+34 24 32       wht/blk normal/none text      32/con  none
+35 24 32       wht/blk normal/none text      32/con  none
+36 24 32       wht/blk normal/none text      32/con  none
+37 24 32       wht/blk normal/none text      32/con  none
+38 24 32       wht/blk normal/none text      32/con  none
+39 24 32       wht/blk normal/none text      32/con  none

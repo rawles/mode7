@@ -31,5 +31,11 @@ foreach my $demofile ( <demo/input/*.m7> ) {
 	output_large($screen, "demo/output/large/$stem.png");
 	output_small($screen, "demo/output/small/$stem.png");
 
+	if ( -e "demo/trace" && -d "demo/trace") { 
+		open(T, ">demo/trace/$stem.txt");
+		print T screen_trace($screen);
+		close(T);
+		}
+
 	print "done\n";
 	}

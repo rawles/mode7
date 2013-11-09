@@ -1,9 +1,92 @@
 package mode7::screen;
 our $VERSION = '1.00';
 use base 'Exporter';
-our @EXPORT = qw(new_screen screen_advance_cursor screen_set_cursor screen_home_cursor screen_writechar screen_clear);
+our @EXPORT = qw(new_screen screen_advance_cursor screen_set_cursor screen_home_cursor screen_writechar screen_clear screen_trace);
 use warnings;
 use strict;
+
+sub screen_trace { 
+	# Constructs a string fully describing the attributes on every character cell.
+	# For debugging.
+	my $screen = shift;
+
+	my @colours = ("blk", "red", "grn", "yel", "blu", "mag", "cyn", "wht");
+	my @dbtrib_v = ("normal", "double", "reset");
+	my @dblpart_v = ("none", "top", "bot");
+	my @gftrib_v = ("text", "solid", "text(sep)", "sep");
+	my @hgcharsep_v = ("con", "sep");	
+	my @hgtrib_v = ("none", "held");	
+
+	my @table = ();
+	for ( my $y = 0; $y < 25; $y++ ) { # for each row,
+		for ( my $x = 0; $x < 40; $x++ ) { # for each column,
+			my $charcode = ord($screen->{frame}[$x][$y]);
+			my $echarcode = $charcode; # effective char code
+			my $char = "";
+			if ( $echarcode > 128 ) { $echarcode -= 128; } 
+			if ( $echarcode >= 32 && $echarcode < 127 ) { 
+				$char = chr($echarcode);
+				}
+
+			my $fgtrib = $colours[$screen->{fgtrib}[$x][$y]];
+			my $bgtrib = $colours[$screen->{bgtrib}[$x][$y]];
+			my $dbtrib = $dbtrib_v[$screen->{dbtrib}[$x][$y]];
+			my $dblpart = $dblpart_v[$screen->{dblpart}[$y]];
+			my $gftrib = $gftrib_v[$screen->{gftrib}[$x][$y]];
+			my $hgchar = $screen->{hgchar}[$x][$y];
+			if ( $hgchar != 0 ) { $hgchar = $hgchar."/"; } else { $hgchar = ""; } 
+			my $hgcharsep = $hgcharsep_v[$screen->{hgcharsep}[$x][$y]];
+			my $hgtrib = $hgtrib_v[$screen->{hgtrib}[$x][$y]];
+
+			my @line = ();
+
+			push @line, $x;
+			push @line, $y;
+			push @line, $charcode;
+			push @line, $char;
+			push @line, ($fgtrib."/".$bgtrib);
+			push @line, ($dbtrib."/".$dblpart);
+			push @line, $gftrib;
+			push @line, ($hgchar.$hgcharsep);
+			push @line, $hgtrib;
+
+			push @table, \@line;
+			}
+		}
+
+	# Format into a table.
+	my @headers = ("x", "y", "code", "chr", "colour", "double", "gfx", "hgchar", "hg");
+	my @fieldwidth = ();
+	foreach my $header ( @headers ) { push @fieldwidth, length($header); } 
+	foreach my $lineref ( @table ) { 
+		my @line = @{$lineref};
+		for ( my $fieldindex = 0; $fieldindex <= $#line; $fieldindex++ ) { 
+			if ( length($line[$fieldindex]) > $fieldwidth[$fieldindex] ) { 
+				$fieldwidth[$fieldindex] = length($line[$fieldindex]);
+				}
+			}
+		}
+	my $trace = "";
+	for ( my $fieldindex = 0; $fieldindex <= $#fieldwidth; $fieldindex++ ) { 
+		$trace .= substr(
+			$headers[$fieldindex].("_"x$fieldwidth[$fieldindex]),
+			0, $fieldwidth[$fieldindex]);
+		if ( $fieldindex < $#fieldwidth ) { $trace .= " "; } 
+		}
+	$trace .= "\n";
+	foreach my $lineref ( @table ) { 
+		my @line = @{$lineref};
+		for ( my $fieldindex = 0; $fieldindex <= $#line; $fieldindex++ ) { 
+			$trace .= substr(
+				$line[$fieldindex].(" "x$fieldwidth[$fieldindex]),
+				0, $fieldwidth[$fieldindex]);
+			if ( $fieldindex < $#line ) { $trace .= " "; } 
+			}
+		$trace .= "\n";
+		}
+
+	return $trace;
+	}
 
 sub new_screen {
 	my %screenhash = ();
