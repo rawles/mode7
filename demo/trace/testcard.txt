@@ -1,1001 +1,312 @@
-x_ y_ code chr colour_ double_____ gfx______ hgchar_ hg__
-0  0  129      wht/blk normal/none text      32/con  none
-1  0  128      red/blk normal/none text      32/con  none
-2  0  129      red/blk normal/none text      32/con  none
-3  0  128      red/blk normal/none text      32/con  none
-4  0  129      red/blk normal/none text      32/con  none
-5  0  128      red/blk normal/none text      32/con  none
-6  0  129      red/blk normal/none text      32/con  none
-7  0  128      red/blk normal/none text      32/con  none
-8  0  129      red/blk normal/none text      32/con  none
-9  0  128      red/blk normal/none text      32/con  none
-10 0  129      red/blk normal/none text      32/con  none
-11 0  128      red/blk normal/none text      32/con  none
-12 0  129      red/blk normal/none text      32/con  none
-13 0  128      red/blk normal/none text      32/con  none
-14 0  129      red/blk normal/none text      32/con  none
-15 0  128      red/blk normal/none text      32/con  none
-16 0  129      red/blk normal/none text      32/con  none
-17 0  128      red/blk normal/none text      32/con  none
-18 0  129      red/blk normal/none text      32/con  none
-19 0  128      red/blk normal/none text      32/con  none
-20 0  129      red/blk normal/none text      32/con  none
-21 0  128      red/blk normal/none text      32/con  none
-22 0  129      red/blk normal/none text      32/con  none
-23 0  128      red/blk normal/none text      32/con  none
-24 0  129      red/blk normal/none text      32/con  none
-25 0  128      red/blk normal/none text      32/con  none
-26 0  129      red/blk normal/none text      32/con  none
-27 0  128      red/blk normal/none text      32/con  none
-28 0  129      red/blk normal/none text      32/con  none
-29 0  128      red/blk normal/none text      32/con  none
-30 0  129      red/blk normal/none text      32/con  none
-31 0  128      red/blk normal/none text      32/con  none
-32 0  129      red/blk normal/none text      32/con  none
-33 0  128      red/blk normal/none text      32/con  none
-34 0  129      red/blk normal/none text      32/con  none
-35 0  128      red/blk normal/none text      32/con  none
-36 0  129      red/blk normal/none text      32/con  none
-37 0  128      red/blk normal/none text      32/con  none
-38 0  176  0   red/blk normal/none text      32/con  none
-39 0  177  1   red/blk normal/none text      32/con  none
-0  1  151      wht/blk normal/top  text      32/con  none
-1  1  158      wht/blk normal/top  solid     32/con  held
-2  1  143      wht/blk normal/top  solid     32/con  held
-3  1  243  s   wht/blk normal/top  solid     243/con held
-4  1  147      wht/blk normal/top  solid     243/con held
-5  1  154      yel/blk normal/top  solid     243/con held
-6  1  150      yel/blk normal/top  sep       243/con held
-7  1  158      cyn/blk normal/top  sep       243/con held
-8  1  159      cyn/blk normal/top  sep       243/con held
-9  1  152      cyn/blk normal/top  sep       243/con none
-10 1  132      cyn/blk normal/top  sep       243/con none
-11 1  141      blu/blk double/top  text(sep) 32/con  none
-12 1  157      blu/blu double/top  text(sep) 32/con  none
-13 1  131      blu/blu double/top  text(sep) 32/con  none
-14 1  197  E   yel/blu double/top  text(sep) 32/con  none
-15 1  206  N   yel/blu double/top  text(sep) 32/con  none
-16 1  199  G   yel/blu double/top  text(sep) 32/con  none
-17 1  201  I   yel/blu double/top  text(sep) 32/con  none
-18 1  206  N   yel/blu double/top  text(sep) 32/con  none
-19 1  197  E   yel/blu double/top  text(sep) 32/con  none
-20 1  197  E   yel/blu double/top  text(sep) 32/con  none
-21 1  210  R   yel/blu double/top  text(sep) 32/con  none
-22 1  201  I   yel/blu double/top  text(sep) 32/con  none
-23 1  206  N   yel/blu double/top  text(sep) 32/con  none
-24 1  199  G   yel/blu double/top  text(sep) 32/con  none
-25 1  160      yel/blu double/top  text(sep) 32/con  none
-26 1  146      yel/blu double/top  text(sep) 32/con  none
-27 1  156      grn/blk double/top  sep       32/con  none
-28 1  140      grn/blk reset/top   sep       32/con  none
-29 1  158      grn/blk reset/top   sep       32/con  held
-30 1  243  s   grn/blk reset/top   sep       243/sep held
-31 1  149      grn/blk reset/top   sep       243/sep held
-32 1  142      mag/blk reset/top   sep       243/sep held
-33 1  145      mag/blk reset/top   sep       243/sep held
-34 1  143      red/blk reset/top   sep       243/sep held
-35 1  148      red/blk reset/top   sep       243/sep held
-36 1  143      blu/blk reset/top   sep       243/sep held
-37 1  135      blu/blk reset/top   sep       243/sep held
-38 1  176  0   wht/blk reset/top   text(sep) 243/sep held
-39 1  178  2   wht/blk reset/top   text(sep) 243/sep held
-0  2  151      wht/blk normal/bot  text      32/con  none
-1  2  158      wht/blk normal/bot  solid     32/con  held
-2  2  143      wht/blk normal/bot  solid     32/con  held
-3  2  243  s   wht/blk normal/bot  solid     243/con held
-4  2  147      wht/blk normal/bot  solid     243/con held
-5  2  154      yel/blk normal/bot  solid     243/con held
-6  2  150      yel/blk normal/bot  sep       243/con held
-7  2  158      cyn/blk normal/bot  sep       243/con held
-8  2  159      cyn/blk normal/bot  sep       243/con held
-9  2  152      cyn/blk normal/bot  sep       243/con none
-10 2  132      cyn/blk normal/bot  sep       243/con none
-11 2  141      blu/blk double/bot  text(sep) 32/con  none
-12 2  157      blu/blu double/bot  text(sep) 32/con  none
-13 2  131      blu/blu double/bot  text(sep) 32/con  none
-14 2  197  E   yel/blu double/bot  text(sep) 32/con  none
-15 2  206  N   yel/blu double/bot  text(sep) 32/con  none
-16 2  199  G   yel/blu double/bot  text(sep) 32/con  none
-17 2  201  I   yel/blu double/bot  text(sep) 32/con  none
-18 2  206  N   yel/blu double/bot  text(sep) 32/con  none
-19 2  197  E   yel/blu double/bot  text(sep) 32/con  none
-20 2  197  E   yel/blu double/bot  text(sep) 32/con  none
-21 2  210  R   yel/blu double/bot  text(sep) 32/con  none
-22 2  201  I   yel/blu double/bot  text(sep) 32/con  none
-23 2  206  N   yel/blu double/bot  text(sep) 32/con  none
-24 2  199  G   yel/blu double/bot  text(sep) 32/con  none
-25 2  160      yel/blu double/bot  text(sep) 32/con  none
-26 2  146      yel/blu double/bot  text(sep) 32/con  none
-27 2  156      grn/blk double/bot  sep       32/con  none
-28 2  140      grn/blk reset/bot   sep       32/con  none
-29 2  158      grn/blk reset/bot   sep       32/con  held
-30 2  243  s   grn/blk reset/bot   sep       243/sep held
-31 2  149      grn/blk reset/bot   sep       243/sep held
-32 2  142      mag/blk reset/bot   sep       243/sep held
-33 2  145      mag/blk reset/bot   sep       243/sep held
-34 2  143      red/blk reset/bot   sep       243/sep held
-35 2  148      red/blk reset/bot   sep       243/sep held
-36 2  143      blu/blk reset/bot   sep       243/sep held
-37 2  135      blu/blk reset/bot   sep       243/sep held
-38 2  176  0   wht/blk reset/bot   text(sep) 243/sep held
-39 2  178  2   wht/blk reset/bot   text(sep) 243/sep held
-0  3  254  ~   wht/blk normal/none text      32/con  none
-1  3  255      wht/blk normal/none text      32/con  none
-2  3  254  ~   wht/blk normal/none text      32/con  none
-3  3  255      wht/blk normal/none text      32/con  none
-4  3  254  ~   wht/blk normal/none text      32/con  none
-5  3  255      wht/blk normal/none text      32/con  none
-6  3  254  ~   wht/blk normal/none text      32/con  none
-7  3  255      wht/blk normal/none text      32/con  none
-8  3  254  ~   wht/blk normal/none text      32/con  none
-9  3  255      wht/blk normal/none text      32/con  none
-10 3  254  ~   wht/blk normal/none text      32/con  none
-11 3  255      wht/blk normal/none text      32/con  none
-12 3  254  ~   wht/blk normal/none text      32/con  none
-13 3  255      wht/blk normal/none text      32/con  none
-14 3  254  ~   wht/blk normal/none text      32/con  none
-15 3  255      wht/blk normal/none text      32/con  none
-16 3  254  ~   wht/blk normal/none text      32/con  none
-17 3  255      wht/blk normal/none text      32/con  none
-18 3  254  ~   wht/blk normal/none text      32/con  none
-19 3  255      wht/blk normal/none text      32/con  none
-20 3  254  ~   wht/blk normal/none text      32/con  none
-21 3  255      wht/blk normal/none text      32/con  none
-22 3  254  ~   wht/blk normal/none text      32/con  none
-23 3  255      wht/blk normal/none text      32/con  none
-24 3  254  ~   wht/blk normal/none text      32/con  none
-25 3  255      wht/blk normal/none text      32/con  none
-26 3  254  ~   wht/blk normal/none text      32/con  none
-27 3  255      wht/blk normal/none text      32/con  none
-28 3  254  ~   wht/blk normal/none text      32/con  none
-29 3  255      wht/blk normal/none text      32/con  none
-30 3  254  ~   wht/blk normal/none text      32/con  none
-31 3  255      wht/blk normal/none text      32/con  none
-32 3  254  ~   wht/blk normal/none text      32/con  none
-33 3  255      wht/blk normal/none text      32/con  none
-34 3  254  ~   wht/blk normal/none text      32/con  none
-35 3  255      wht/blk normal/none text      32/con  none
-36 3  254  ~   wht/blk normal/none text      32/con  none
-37 3  255      wht/blk normal/none text      32/con  none
-38 3  176  0   wht/blk normal/none text      32/con  none
-39 3  180  4   wht/blk normal/none text      32/con  none
-0  4  148      wht/blk normal/top  text      32/con  none
-1  4  154      blu/blk normal/top  solid     32/con  none
-2  4  158      blu/blk normal/top  sep       32/con  held
-3  4  243  s   blu/blk normal/top  sep       243/sep held
-4  4  145      blu/blk normal/top  sep       243/sep held
-5  4  153      red/blk normal/top  sep       243/sep held
-6  4  149      red/blk normal/top  solid     243/sep held
-7  4  128      mag/blk normal/top  solid     243/sep held
-8  4  149      mag/blk normal/top  solid     243/sep held
-9  4  129      mag/blk normal/top  solid     243/sep held
-10 4  141      red/blk double/top  text      32/con  none
-11 4  160      red/blk double/top  text      32/con  none
-12 4  133      red/blk double/top  text      32/con  none
-13 4  157      mag/mag double/top  text      32/con  none
-14 4  130      mag/mag double/top  text      32/con  none
-15 4  212  T   grn/mag double/top  text      32/con  none
-16 4  229  e   grn/mag double/top  text      32/con  none
-17 4  243  s   grn/mag double/top  text      32/con  none
-18 4  244  t   grn/mag double/top  text      32/con  none
-19 4  160      grn/mag double/top  text      32/con  none
-20 4  208  P   grn/mag double/top  text      32/con  none
-21 4  225  a   grn/mag double/top  text      32/con  none
-22 4  231  g   grn/mag double/top  text      32/con  none
-23 4  229  e   grn/mag double/top  text      32/con  none
-24 4  160      grn/mag double/top  text      32/con  none
-25 4  160      grn/mag double/top  text      32/con  none
-26 4  156      grn/blk double/top  text      32/con  none
-27 4  140      grn/blk reset/top   text      32/con  none
-28 4  158      grn/blk reset/top   text      32/con  held
-29 4  146      grn/blk reset/top   text      32/con  held
-30 4  243  s   grn/blk reset/top   solid     243/con held
-31 4  150      grn/blk reset/top   solid     243/con held
-32 4  152      cyn/blk reset/top   solid     243/con held
-33 4  147      cyn/blk reset/top   solid     243/con held
-34 4  128      yel/blk reset/top   solid     243/con held
-35 4  151      yel/blk reset/top   solid     243/con held
-36 4  152      wht/blk reset/top   solid     243/con held
-37 4  129      wht/blk reset/top   solid     243/con held
-38 4  176  0   red/blk reset/top   text      243/con held
-39 4  181  5   red/blk reset/top   text      243/con held
-0  5  148      wht/blk normal/bot  text      32/con  none
-1  5  154      blu/blk normal/bot  solid     32/con  none
-2  5  158      blu/blk normal/bot  sep       32/con  held
-3  5  243  s   blu/blk normal/bot  sep       243/sep held
-4  5  145      blu/blk normal/bot  sep       243/sep held
-5  5  153      red/blk normal/bot  sep       243/sep held
-6  5  149      red/blk normal/bot  solid     243/sep held
-7  5  128      mag/blk normal/bot  solid     243/sep held
-8  5  149      mag/blk normal/bot  solid     243/sep held
-9  5  129      mag/blk normal/bot  solid     243/sep held
-10 5  141      red/blk double/bot  text      32/con  none
-11 5  160      red/blk double/bot  text      32/con  none
-12 5  133      red/blk double/bot  text      32/con  none
-13 5  157      mag/mag double/bot  text      32/con  none
-14 5  130      mag/mag double/bot  text      32/con  none
-15 5  212  T   grn/mag double/bot  text      32/con  none
-16 5  229  e   grn/mag double/bot  text      32/con  none
-17 5  243  s   grn/mag double/bot  text      32/con  none
-18 5  244  t   grn/mag double/bot  text      32/con  none
-19 5  160      grn/mag double/bot  text      32/con  none
-20 5  208  P   grn/mag double/bot  text      32/con  none
-21 5  225  a   grn/mag double/bot  text      32/con  none
-22 5  231  g   grn/mag double/bot  text      32/con  none
-23 5  229  e   grn/mag double/bot  text      32/con  none
-24 5  160      grn/mag double/bot  text      32/con  none
-25 5  160      grn/mag double/bot  text      32/con  none
-26 5  156      grn/blk double/bot  text      32/con  none
-27 5  140      grn/blk reset/bot   text      32/con  none
-28 5  158      grn/blk reset/bot   text      32/con  held
-29 5  146      grn/blk reset/bot   text      32/con  held
-30 5  243  s   grn/blk reset/bot   solid     243/con held
-31 5  150      grn/blk reset/bot   solid     243/con held
-32 5  152      cyn/blk reset/bot   solid     243/con held
-33 5  147      cyn/blk reset/bot   solid     243/con held
-34 5  128      yel/blk reset/bot   solid     243/con held
-35 5  151      yel/blk reset/bot   solid     243/con held
-36 5  152      wht/blk reset/bot   solid     243/con held
-37 5  129      wht/blk reset/bot   solid     243/con held
-38 5  176  0   red/blk reset/bot   text      243/con held
-39 5  181  5   red/blk reset/bot   text      243/con held
-0  6  129      wht/blk normal/none text      32/con  none
-1  6  128      red/blk normal/none text      32/con  none
-2  6  129      red/blk normal/none text      32/con  none
-3  6  160      red/blk normal/none text      32/con  none
-4  6  128      red/blk normal/none text      32/con  none
-5  6  160      red/blk normal/none text      32/con  none
-6  6  129      red/blk normal/none text      32/con  none
-7  6  158      red/blk normal/none text      32/con  held
-8  6  160      red/blk normal/none text      32/con  held
-9  6  158      red/blk normal/none text      32/con  held
-10 6  160      red/blk normal/none text      32/con  held
-11 6  151      red/blk normal/none text      32/con  held
-12 6  172  ,   wht/blk normal/none solid     172/con held
-13 6  147      wht/blk normal/none solid     172/con held
-14 6  147      yel/blk normal/none solid     172/con held
-15 6  150      yel/blk normal/none solid     172/con held
-16 6  150      cyn/blk normal/none solid     172/con held
-17 6  146      cyn/blk normal/none solid     172/con held
-18 6  146      grn/blk normal/none solid     172/con held
-19 6  146      grn/blk normal/none solid     172/con held
-20 6  149      grn/blk normal/none solid     172/con held
-21 6  149      mag/blk normal/none solid     172/con held
-22 6  145      mag/blk normal/none solid     172/con held
-23 6  145      red/blk normal/none solid     172/con held
-24 6  148      red/blk normal/none solid     172/con held
-25 6  148      blu/blk normal/none solid     172/con held
-26 6  148      blu/blk normal/none solid     172/con held
-27 6  160      blu/blk normal/none solid     160/con held
-28 6  160      blu/blk normal/none solid     160/con held
-29 6  148      blu/blk normal/none solid     160/con held
-30 6  128      blu/blk normal/none solid     160/con held
-31 6  129      blu/blk normal/none solid     160/con held
-32 6  128      red/blk normal/none text      160/con held
-33 6  129      red/blk normal/none text      160/con held
-34 6  128      red/blk normal/none text      160/con held
-35 6  129      red/blk normal/none text      160/con held
-36 6  128      red/blk normal/none text      160/con held
-37 6  129      red/blk normal/none text      160/con held
-38 6  176  0   red/blk normal/none text      160/con held
-39 6  183  7   red/blk normal/none text      160/con held
-0  7  254  ~   wht/blk normal/none text      32/con  none
-1  7  255      wht/blk normal/none text      32/con  none
-2  7  254  ~   wht/blk normal/none text      32/con  none
-3  7  255      wht/blk normal/none text      32/con  none
-4  7  254  ~   wht/blk normal/none text      32/con  none
-5  7  255      wht/blk normal/none text      32/con  none
-6  7  254  ~   wht/blk normal/none text      32/con  none
-7  7  255      wht/blk normal/none text      32/con  none
-8  7  254  ~   wht/blk normal/none text      32/con  none
-9  7  255      wht/blk normal/none text      32/con  none
-10 7  254  ~   wht/blk normal/none text      32/con  none
-11 7  255      wht/blk normal/none text      32/con  none
-12 7  254  ~   wht/blk normal/none text      32/con  none
-13 7  255      wht/blk normal/none text      32/con  none
-14 7  254  ~   wht/blk normal/none text      32/con  none
-15 7  255      wht/blk normal/none text      32/con  none
-16 7  254  ~   wht/blk normal/none text      32/con  none
-17 7  255      wht/blk normal/none text      32/con  none
-18 7  254  ~   wht/blk normal/none text      32/con  none
-19 7  255      wht/blk normal/none text      32/con  none
-20 7  254  ~   wht/blk normal/none text      32/con  none
-21 7  255      wht/blk normal/none text      32/con  none
-22 7  254  ~   wht/blk normal/none text      32/con  none
-23 7  255      wht/blk normal/none text      32/con  none
-24 7  254  ~   wht/blk normal/none text      32/con  none
-25 7  255      wht/blk normal/none text      32/con  none
-26 7  254  ~   wht/blk normal/none text      32/con  none
-27 7  255      wht/blk normal/none text      32/con  none
-28 7  254  ~   wht/blk normal/none text      32/con  none
-29 7  255      wht/blk normal/none text      32/con  none
-30 7  254  ~   wht/blk normal/none text      32/con  none
-31 7  255      wht/blk normal/none text      32/con  none
-32 7  254  ~   wht/blk normal/none text      32/con  none
-33 7  255      wht/blk normal/none text      32/con  none
-34 7  254  ~   wht/blk normal/none text      32/con  none
-35 7  255      wht/blk normal/none text      32/con  none
-36 7  254  ~   wht/blk normal/none text      32/con  none
-37 7  255      wht/blk normal/none text      32/con  none
-38 7  176  0   wht/blk normal/none text      32/con  none
-39 7  184  8   wht/blk normal/none text      32/con  none
-0  8  129      wht/blk normal/none text      32/con  none
-1  8  128      red/blk normal/none text      32/con  none
-2  8  129      red/blk normal/none text      32/con  none
-3  8  128      red/blk normal/none text      32/con  none
-4  8  129      red/blk normal/none text      32/con  none
-5  8  128      red/blk normal/none text      32/con  none
-6  8  129      red/blk normal/none text      32/con  none
-7  8  128      red/blk normal/none text      32/con  none
-8  8  129      red/blk normal/none text      32/con  none
-9  8  128      red/blk normal/none text      32/con  none
-10 8  129      red/blk normal/none text      32/con  none
-11 8  128      red/blk normal/none text      32/con  none
-12 8  129      red/blk normal/none text      32/con  none
-13 8  128      red/blk normal/none text      32/con  none
-14 8  129      red/blk normal/none text      32/con  none
-15 8  128      red/blk normal/none text      32/con  none
-16 8  129      red/blk normal/none text      32/con  none
-17 8  128      red/blk normal/none text      32/con  none
-18 8  129      red/blk normal/none text      32/con  none
-19 8  128      red/blk normal/none text      32/con  none
-20 8  129      red/blk normal/none text      32/con  none
-21 8  128      red/blk normal/none text      32/con  none
-22 8  129      red/blk normal/none text      32/con  none
-23 8  128      red/blk normal/none text      32/con  none
-24 8  129      red/blk normal/none text      32/con  none
-25 8  128      red/blk normal/none text      32/con  none
-26 8  129      red/blk normal/none text      32/con  none
-27 8  128      red/blk normal/none text      32/con  none
-28 8  129      red/blk normal/none text      32/con  none
-29 8  128      red/blk normal/none text      32/con  none
-30 8  129      red/blk normal/none text      32/con  none
-31 8  128      red/blk normal/none text      32/con  none
-32 8  129      red/blk normal/none text      32/con  none
-33 8  128      red/blk normal/none text      32/con  none
-34 8  129      red/blk normal/none text      32/con  none
-35 8  128      red/blk normal/none text      32/con  none
-36 8  129      red/blk normal/none text      32/con  none
-37 8  128      red/blk normal/none text      32/con  none
-38 8  176  0   red/blk normal/none text      32/con  none
-39 8  185  9   red/blk normal/none text      32/con  none
-0  9  254  ~   wht/blk normal/none text      32/con  none
-1  9  255      wht/blk normal/none text      32/con  none
-2  9  254  ~   wht/blk normal/none text      32/con  none
-3  9  255      wht/blk normal/none text      32/con  none
-4  9  254  ~   wht/blk normal/none text      32/con  none
-5  9  255      wht/blk normal/none text      32/con  none
-6  9  254  ~   wht/blk normal/none text      32/con  none
-7  9  255      wht/blk normal/none text      32/con  none
-8  9  254  ~   wht/blk normal/none text      32/con  none
-9  9  255      wht/blk normal/none text      32/con  none
-10 9  254  ~   wht/blk normal/none text      32/con  none
-11 9  255      wht/blk normal/none text      32/con  none
-12 9  254  ~   wht/blk normal/none text      32/con  none
-13 9  255      wht/blk normal/none text      32/con  none
-14 9  254  ~   wht/blk normal/none text      32/con  none
-15 9  255      wht/blk normal/none text      32/con  none
-16 9  254  ~   wht/blk normal/none text      32/con  none
-17 9  255      wht/blk normal/none text      32/con  none
-18 9  254  ~   wht/blk normal/none text      32/con  none
-19 9  255      wht/blk normal/none text      32/con  none
-20 9  254  ~   wht/blk normal/none text      32/con  none
-21 9  255      wht/blk normal/none text      32/con  none
-22 9  254  ~   wht/blk normal/none text      32/con  none
-23 9  255      wht/blk normal/none text      32/con  none
-24 9  254  ~   wht/blk normal/none text      32/con  none
-25 9  255      wht/blk normal/none text      32/con  none
-26 9  254  ~   wht/blk normal/none text      32/con  none
-27 9  255      wht/blk normal/none text      32/con  none
-28 9  254  ~   wht/blk normal/none text      32/con  none
-29 9  255      wht/blk normal/none text      32/con  none
-30 9  254  ~   wht/blk normal/none text      32/con  none
-31 9  255      wht/blk normal/none text      32/con  none
-32 9  254  ~   wht/blk normal/none text      32/con  none
-33 9  255      wht/blk normal/none text      32/con  none
-34 9  254  ~   wht/blk normal/none text      32/con  none
-35 9  255      wht/blk normal/none text      32/con  none
-36 9  254  ~   wht/blk normal/none text      32/con  none
-37 9  255      wht/blk normal/none text      32/con  none
-38 9  177  1   wht/blk normal/none text      32/con  none
-39 9  176  0   wht/blk normal/none text      32/con  none
-0  10 129      wht/blk normal/none text      32/con  none
-1  10 128      red/blk normal/none text      32/con  none
-2  10 129      red/blk normal/none text      32/con  none
-3  10 128      red/blk normal/none text      32/con  none
-4  10 129      red/blk normal/none text      32/con  none
-5  10 128      red/blk normal/none text      32/con  none
-6  10 129      red/blk normal/none text      32/con  none
-7  10 128      red/blk normal/none text      32/con  none
-8  10 129      red/blk normal/none text      32/con  none
-9  10 128      red/blk normal/none text      32/con  none
-10 10 129      red/blk normal/none text      32/con  none
-11 10 128      red/blk normal/none text      32/con  none
-12 10 129      red/blk normal/none text      32/con  none
-13 10 128      red/blk normal/none text      32/con  none
-14 10 129      red/blk normal/none text      32/con  none
-15 10 128      red/blk normal/none text      32/con  none
-16 10 129      red/blk normal/none text      32/con  none
-17 10 128      red/blk normal/none text      32/con  none
-18 10 129      red/blk normal/none text      32/con  none
-19 10 128      red/blk normal/none text      32/con  none
-20 10 129      red/blk normal/none text      32/con  none
-21 10 128      red/blk normal/none text      32/con  none
-22 10 129      red/blk normal/none text      32/con  none
-23 10 128      red/blk normal/none text      32/con  none
-24 10 129      red/blk normal/none text      32/con  none
-25 10 128      red/blk normal/none text      32/con  none
-26 10 129      red/blk normal/none text      32/con  none
-27 10 128      red/blk normal/none text      32/con  none
-28 10 129      red/blk normal/none text      32/con  none
-29 10 128      red/blk normal/none text      32/con  none
-30 10 129      red/blk normal/none text      32/con  none
-31 10 128      red/blk normal/none text      32/con  none
-32 10 129      red/blk normal/none text      32/con  none
-33 10 128      red/blk normal/none text      32/con  none
-34 10 129      red/blk normal/none text      32/con  none
-35 10 128      red/blk normal/none text      32/con  none
-36 10 129      red/blk normal/none text      32/con  none
-37 10 128      red/blk normal/none text      32/con  none
-38 10 177  1   red/blk normal/none text      32/con  none
-39 10 177  1   red/blk normal/none text      32/con  none
-0  11 254  ~   wht/blk normal/none text      32/con  none
-1  11 255      wht/blk normal/none text      32/con  none
-2  11 254  ~   wht/blk normal/none text      32/con  none
-3  11 255      wht/blk normal/none text      32/con  none
-4  11 254  ~   wht/blk normal/none text      32/con  none
-5  11 255      wht/blk normal/none text      32/con  none
-6  11 254  ~   wht/blk normal/none text      32/con  none
-7  11 255      wht/blk normal/none text      32/con  none
-8  11 254  ~   wht/blk normal/none text      32/con  none
-9  11 255      wht/blk normal/none text      32/con  none
-10 11 254  ~   wht/blk normal/none text      32/con  none
-11 11 255      wht/blk normal/none text      32/con  none
-12 11 254  ~   wht/blk normal/none text      32/con  none
-13 11 255      wht/blk normal/none text      32/con  none
-14 11 254  ~   wht/blk normal/none text      32/con  none
-15 11 255      wht/blk normal/none text      32/con  none
-16 11 254  ~   wht/blk normal/none text      32/con  none
-17 11 255      wht/blk normal/none text      32/con  none
-18 11 254  ~   wht/blk normal/none text      32/con  none
-19 11 255      wht/blk normal/none text      32/con  none
-20 11 254  ~   wht/blk normal/none text      32/con  none
-21 11 255      wht/blk normal/none text      32/con  none
-22 11 254  ~   wht/blk normal/none text      32/con  none
-23 11 255      wht/blk normal/none text      32/con  none
-24 11 254  ~   wht/blk normal/none text      32/con  none
-25 11 255      wht/blk normal/none text      32/con  none
-26 11 254  ~   wht/blk normal/none text      32/con  none
-27 11 255      wht/blk normal/none text      32/con  none
-28 11 254  ~   wht/blk normal/none text      32/con  none
-29 11 255      wht/blk normal/none text      32/con  none
-30 11 254  ~   wht/blk normal/none text      32/con  none
-31 11 255      wht/blk normal/none text      32/con  none
-32 11 254  ~   wht/blk normal/none text      32/con  none
-33 11 255      wht/blk normal/none text      32/con  none
-34 11 254  ~   wht/blk normal/none text      32/con  none
-35 11 255      wht/blk normal/none text      32/con  none
-36 11 254  ~   wht/blk normal/none text      32/con  none
-37 11 255      wht/blk normal/none text      32/con  none
-38 11 177  1   wht/blk normal/none text      32/con  none
-39 11 178  2   wht/blk normal/none text      32/con  none
-0  12 129      wht/blk normal/none text      32/con  none
-1  12 128      red/blk normal/none text      32/con  none
-2  12 129      red/blk normal/none text      32/con  none
-3  12 128      red/blk normal/none text      32/con  none
-4  12 129      red/blk normal/none text      32/con  none
-5  12 128      red/blk normal/none text      32/con  none
-6  12 129      red/blk normal/none text      32/con  none
-7  12 128      red/blk normal/none text      32/con  none
-8  12 129      red/blk normal/none text      32/con  none
-9  12 128      red/blk normal/none text      32/con  none
-10 12 129      red/blk normal/none text      32/con  none
-11 12 128      red/blk normal/none text      32/con  none
-12 12 129      red/blk normal/none text      32/con  none
-13 12 128      red/blk normal/none text      32/con  none
-14 12 129      red/blk normal/none text      32/con  none
-15 12 128      red/blk normal/none text      32/con  none
-16 12 129      red/blk normal/none text      32/con  none
-17 12 128      red/blk normal/none text      32/con  none
-18 12 129      red/blk normal/none text      32/con  none
-19 12 128      red/blk normal/none text      32/con  none
-20 12 129      red/blk normal/none text      32/con  none
-21 12 128      red/blk normal/none text      32/con  none
-22 12 129      red/blk normal/none text      32/con  none
-23 12 128      red/blk normal/none text      32/con  none
-24 12 129      red/blk normal/none text      32/con  none
-25 12 128      red/blk normal/none text      32/con  none
-26 12 129      red/blk normal/none text      32/con  none
-27 12 128      red/blk normal/none text      32/con  none
-28 12 129      red/blk normal/none text      32/con  none
-29 12 128      red/blk normal/none text      32/con  none
-30 12 129      red/blk normal/none text      32/con  none
-31 12 128      red/blk normal/none text      32/con  none
-32 12 129      red/blk normal/none text      32/con  none
-33 12 128      red/blk normal/none text      32/con  none
-34 12 129      red/blk normal/none text      32/con  none
-35 12 128      red/blk normal/none text      32/con  none
-36 12 129      red/blk normal/none text      32/con  none
-37 12 128      red/blk normal/none text      32/con  none
-38 12 177  1   red/blk normal/none text      32/con  none
-39 12 179  3   red/blk normal/none text      32/con  none
-0  13 254  ~   wht/blk normal/none text      32/con  none
-1  13 255      wht/blk normal/none text      32/con  none
-2  13 254  ~   wht/blk normal/none text      32/con  none
-3  13 255      wht/blk normal/none text      32/con  none
-4  13 254  ~   wht/blk normal/none text      32/con  none
-5  13 255      wht/blk normal/none text      32/con  none
-6  13 254  ~   wht/blk normal/none text      32/con  none
-7  13 255      wht/blk normal/none text      32/con  none
-8  13 254  ~   wht/blk normal/none text      32/con  none
-9  13 255      wht/blk normal/none text      32/con  none
-10 13 254  ~   wht/blk normal/none text      32/con  none
-11 13 255      wht/blk normal/none text      32/con  none
-12 13 254  ~   wht/blk normal/none text      32/con  none
-13 13 255      wht/blk normal/none text      32/con  none
-14 13 254  ~   wht/blk normal/none text      32/con  none
-15 13 255      wht/blk normal/none text      32/con  none
-16 13 254  ~   wht/blk normal/none text      32/con  none
-17 13 255      wht/blk normal/none text      32/con  none
-18 13 254  ~   wht/blk normal/none text      32/con  none
-19 13 255      wht/blk normal/none text      32/con  none
-20 13 254  ~   wht/blk normal/none text      32/con  none
-21 13 255      wht/blk normal/none text      32/con  none
-22 13 254  ~   wht/blk normal/none text      32/con  none
-23 13 255      wht/blk normal/none text      32/con  none
-24 13 254  ~   wht/blk normal/none text      32/con  none
-25 13 255      wht/blk normal/none text      32/con  none
-26 13 254  ~   wht/blk normal/none text      32/con  none
-27 13 255      wht/blk normal/none text      32/con  none
-28 13 254  ~   wht/blk normal/none text      32/con  none
-29 13 255      wht/blk normal/none text      32/con  none
-30 13 254  ~   wht/blk normal/none text      32/con  none
-31 13 255      wht/blk normal/none text      32/con  none
-32 13 254  ~   wht/blk normal/none text      32/con  none
-33 13 255      wht/blk normal/none text      32/con  none
-34 13 254  ~   wht/blk normal/none text      32/con  none
-35 13 255      wht/blk normal/none text      32/con  none
-36 13 254  ~   wht/blk normal/none text      32/con  none
-37 13 255      wht/blk normal/none text      32/con  none
-38 13 177  1   wht/blk normal/none text      32/con  none
-39 13 180  4   wht/blk normal/none text      32/con  none
-0  14 129      wht/blk normal/none text      32/con  none
-1  14 128      red/blk normal/none text      32/con  none
-2  14 129      red/blk normal/none text      32/con  none
-3  14 128      red/blk normal/none text      32/con  none
-4  14 129      red/blk normal/none text      32/con  none
-5  14 128      red/blk normal/none text      32/con  none
-6  14 129      red/blk normal/none text      32/con  none
-7  14 128      red/blk normal/none text      32/con  none
-8  14 129      red/blk normal/none text      32/con  none
-9  14 128      red/blk normal/none text      32/con  none
-10 14 129      red/blk normal/none text      32/con  none
-11 14 128      red/blk normal/none text      32/con  none
-12 14 129      red/blk normal/none text      32/con  none
-13 14 128      red/blk normal/none text      32/con  none
-14 14 129      red/blk normal/none text      32/con  none
-15 14 128      red/blk normal/none text      32/con  none
-16 14 129      red/blk normal/none text      32/con  none
-17 14 128      red/blk normal/none text      32/con  none
-18 14 129      red/blk normal/none text      32/con  none
-19 14 128      red/blk normal/none text      32/con  none
-20 14 129      red/blk normal/none text      32/con  none
-21 14 128      red/blk normal/none text      32/con  none
-22 14 129      red/blk normal/none text      32/con  none
-23 14 128      red/blk normal/none text      32/con  none
-24 14 129      red/blk normal/none text      32/con  none
-25 14 128      red/blk normal/none text      32/con  none
-26 14 129      red/blk normal/none text      32/con  none
-27 14 128      red/blk normal/none text      32/con  none
-28 14 129      red/blk normal/none text      32/con  none
-29 14 128      red/blk normal/none text      32/con  none
-30 14 129      red/blk normal/none text      32/con  none
-31 14 128      red/blk normal/none text      32/con  none
-32 14 129      red/blk normal/none text      32/con  none
-33 14 128      red/blk normal/none text      32/con  none
-34 14 129      red/blk normal/none text      32/con  none
-35 14 128      red/blk normal/none text      32/con  none
-36 14 129      red/blk normal/none text      32/con  none
-37 14 128      red/blk normal/none text      32/con  none
-38 14 177  1   red/blk normal/none text      32/con  none
-39 14 181  5   red/blk normal/none text      32/con  none
-0  15 254  ~   wht/blk normal/none text      32/con  none
-1  15 255      wht/blk normal/none text      32/con  none
-2  15 254  ~   wht/blk normal/none text      32/con  none
-3  15 255      wht/blk normal/none text      32/con  none
-4  15 254  ~   wht/blk normal/none text      32/con  none
-5  15 255      wht/blk normal/none text      32/con  none
-6  15 254  ~   wht/blk normal/none text      32/con  none
-7  15 255      wht/blk normal/none text      32/con  none
-8  15 254  ~   wht/blk normal/none text      32/con  none
-9  15 255      wht/blk normal/none text      32/con  none
-10 15 254  ~   wht/blk normal/none text      32/con  none
-11 15 255      wht/blk normal/none text      32/con  none
-12 15 254  ~   wht/blk normal/none text      32/con  none
-13 15 255      wht/blk normal/none text      32/con  none
-14 15 254  ~   wht/blk normal/none text      32/con  none
-15 15 255      wht/blk normal/none text      32/con  none
-16 15 254  ~   wht/blk normal/none text      32/con  none
-17 15 255      wht/blk normal/none text      32/con  none
-18 15 254  ~   wht/blk normal/none text      32/con  none
-19 15 255      wht/blk normal/none text      32/con  none
-20 15 254  ~   wht/blk normal/none text      32/con  none
-21 15 255      wht/blk normal/none text      32/con  none
-22 15 254  ~   wht/blk normal/none text      32/con  none
-23 15 255      wht/blk normal/none text      32/con  none
-24 15 254  ~   wht/blk normal/none text      32/con  none
-25 15 255      wht/blk normal/none text      32/con  none
-26 15 254  ~   wht/blk normal/none text      32/con  none
-27 15 255      wht/blk normal/none text      32/con  none
-28 15 254  ~   wht/blk normal/none text      32/con  none
-29 15 255      wht/blk normal/none text      32/con  none
-30 15 254  ~   wht/blk normal/none text      32/con  none
-31 15 255      wht/blk normal/none text      32/con  none
-32 15 254  ~   wht/blk normal/none text      32/con  none
-33 15 255      wht/blk normal/none text      32/con  none
-34 15 254  ~   wht/blk normal/none text      32/con  none
-35 15 255      wht/blk normal/none text      32/con  none
-36 15 254  ~   wht/blk normal/none text      32/con  none
-37 15 255      wht/blk normal/none text      32/con  none
-38 15 177  1   wht/blk normal/none text      32/con  none
-39 15 182  6   wht/blk normal/none text      32/con  none
-0  16 215  W   wht/blk normal/none text      32/con  none
-1  16 232  h   wht/blk normal/none text      32/con  none
-2  16 233  i   wht/blk normal/none text      32/con  none
-3  16 244  t   wht/blk normal/none text      32/con  none
-4  16 229  e   wht/blk normal/none text      32/con  none
-5  16 131      wht/blk normal/none text      32/con  none
-6  16 217  Y   yel/blk normal/none text      32/con  none
-7  16 229  e   yel/blk normal/none text      32/con  none
-8  16 236  l   yel/blk normal/none text      32/con  none
-9  16 236  l   yel/blk normal/none text      32/con  none
-10 16 239  o   yel/blk normal/none text      32/con  none
-11 16 247  w   yel/blk normal/none text      32/con  none
-12 16 134      yel/blk normal/none text      32/con  none
-13 16 195  C   cyn/blk normal/none text      32/con  none
-14 16 249  y   cyn/blk normal/none text      32/con  none
-15 16 225  a   cyn/blk normal/none text      32/con  none
-16 16 238  n   cyn/blk normal/none text      32/con  none
-17 16 130      cyn/blk normal/none text      32/con  none
-18 16 199  G   grn/blk normal/none text      32/con  none
-19 16 242  r   grn/blk normal/none text      32/con  none
-20 16 229  e   grn/blk normal/none text      32/con  none
-21 16 229  e   grn/blk normal/none text      32/con  none
-22 16 238  n   grn/blk normal/none text      32/con  none
-23 16 133      grn/blk normal/none text      32/con  none
-24 16 205  M   mag/blk normal/none text      32/con  none
-25 16 225  a   mag/blk normal/none text      32/con  none
-26 16 231  g   mag/blk normal/none text      32/con  none
-27 16 229  e   mag/blk normal/none text      32/con  none
-28 16 238  n   mag/blk normal/none text      32/con  none
-29 16 244  t   mag/blk normal/none text      32/con  none
-30 16 225  a   mag/blk normal/none text      32/con  none
-31 16 129      mag/blk normal/none text      32/con  none
-32 16 210  R   red/blk normal/none text      32/con  none
-33 16 229  e   red/blk normal/none text      32/con  none
-34 16 228  d   red/blk normal/none text      32/con  none
-35 16 132      red/blk normal/none text      32/con  none
-36 16 194  B   blu/blk normal/none text      32/con  none
-37 16 236  l   blu/blk normal/none text      32/con  none
-38 16 245  u   blu/blk normal/none text      32/con  none
-39 16 229  e   blu/blk normal/none text      32/con  none
-0  17 151      wht/blk normal/none text      32/con  none
-1  17 154      wht/blk normal/none solid     32/con  none
-2  17 161  !   wht/blk normal/none sep       161/sep none
-3  17 162  "   wht/blk normal/none sep       162/sep none
-4  17 163  #   wht/blk normal/none sep       163/sep none
-5  17 147      wht/blk normal/none sep       163/sep none
-6  17 164  $   yel/blk normal/none sep       164/sep none
-7  17 165  %   yel/blk normal/none sep       165/sep none
-8  17 166  &   yel/blk normal/none sep       166/sep none
-9  17 167  '   yel/blk normal/none sep       167/sep none
-10 17 150      yel/blk normal/none sep       167/sep none
-11 17 168  (   cyn/blk normal/none sep       168/sep none
-12 17 169  )   cyn/blk normal/none sep       169/sep none
-13 17 170  *   cyn/blk normal/none sep       170/sep none
-14 17 171  +   cyn/blk normal/none sep       171/sep none
-15 17 146      cyn/blk normal/none sep       171/sep none
-16 17 172  ,   grn/blk normal/none sep       172/sep none
-17 17 173  -   grn/blk normal/none sep       173/sep none
-18 17 174  .   grn/blk normal/none sep       174/sep none
-19 17 175  /   grn/blk normal/none sep       175/sep none
-20 17 153      grn/blk normal/none sep       175/sep none
-21 17 176  0   grn/blk normal/none solid     176/con none
-22 17 177  1   grn/blk normal/none solid     177/con none
-23 17 178  2   grn/blk normal/none solid     178/con none
-24 17 179  3   grn/blk normal/none solid     179/con none
-25 17 149      grn/blk normal/none solid     179/con none
-26 17 180  4   mag/blk normal/none solid     180/con none
-27 17 181  5   mag/blk normal/none solid     181/con none
-28 17 182  6   mag/blk normal/none solid     182/con none
-29 17 183  7   mag/blk normal/none solid     183/con none
-30 17 145      mag/blk normal/none solid     183/con none
-31 17 184  8   red/blk normal/none solid     184/con none
-32 17 185  9   red/blk normal/none solid     185/con none
-33 17 186  :   red/blk normal/none solid     186/con none
-34 17 187  ;   red/blk normal/none solid     187/con none
-35 17 148      red/blk normal/none solid     187/con none
-36 17 188  <   blu/blk normal/none solid     188/con none
-37 17 189  =   blu/blk normal/none solid     189/con none
-38 17 190  >   blu/blk normal/none solid     190/con none
-39 17 191  ?   blu/blk normal/none solid     191/con none
-0  18 160      wht/blk normal/none text      32/con  none
-1  18 160      wht/blk normal/none text      32/con  none
-2  18 161  !   wht/blk normal/none text      32/con  none
-3  18 162  "   wht/blk normal/none text      32/con  none
-4  18 163  #   wht/blk normal/none text      32/con  none
-5  18 160      wht/blk normal/none text      32/con  none
-6  18 164  $   wht/blk normal/none text      32/con  none
-7  18 165  %   wht/blk normal/none text      32/con  none
-8  18 166  &   wht/blk normal/none text      32/con  none
-9  18 167  '   wht/blk normal/none text      32/con  none
-10 18 160      wht/blk normal/none text      32/con  none
-11 18 168  (   wht/blk normal/none text      32/con  none
-12 18 169  )   wht/blk normal/none text      32/con  none
-13 18 170  *   wht/blk normal/none text      32/con  none
-14 18 171  +   wht/blk normal/none text      32/con  none
-15 18 160      wht/blk normal/none text      32/con  none
-16 18 172  ,   wht/blk normal/none text      32/con  none
-17 18 173  -   wht/blk normal/none text      32/con  none
-18 18 174  .   wht/blk normal/none text      32/con  none
-19 18 175  /   wht/blk normal/none text      32/con  none
-20 18 160      wht/blk normal/none text      32/con  none
-21 18 176  0   wht/blk normal/none text      32/con  none
-22 18 177  1   wht/blk normal/none text      32/con  none
-23 18 178  2   wht/blk normal/none text      32/con  none
-24 18 179  3   wht/blk normal/none text      32/con  none
-25 18 160      wht/blk normal/none text      32/con  none
-26 18 180  4   wht/blk normal/none text      32/con  none
-27 18 181  5   wht/blk normal/none text      32/con  none
-28 18 182  6   wht/blk normal/none text      32/con  none
-29 18 183  7   wht/blk normal/none text      32/con  none
-30 18 160      wht/blk normal/none text      32/con  none
-31 18 184  8   wht/blk normal/none text      32/con  none
-32 18 185  9   wht/blk normal/none text      32/con  none
-33 18 186  :   wht/blk normal/none text      32/con  none
-34 18 187  ;   wht/blk normal/none text      32/con  none
-35 18 160      wht/blk normal/none text      32/con  none
-36 18 188  <   wht/blk normal/none text      32/con  none
-37 18 189  =   wht/blk normal/none text      32/con  none
-38 18 190  >   wht/blk normal/none text      32/con  none
-39 18 191  ?   wht/blk normal/none text      32/con  none
-0  19 160      wht/blk normal/none text      32/con  none
-1  19 192  @   wht/blk normal/none text      32/con  none
-2  19 193  A   wht/blk normal/none text      32/con  none
-3  19 194  B   wht/blk normal/none text      32/con  none
-4  19 195  C   wht/blk normal/none text      32/con  none
-5  19 160      wht/blk normal/none text      32/con  none
-6  19 196  D   wht/blk normal/none text      32/con  none
-7  19 197  E   wht/blk normal/none text      32/con  none
-8  19 198  F   wht/blk normal/none text      32/con  none
-9  19 199  G   wht/blk normal/none text      32/con  none
-10 19 160      wht/blk normal/none text      32/con  none
-11 19 200  H   wht/blk normal/none text      32/con  none
-12 19 201  I   wht/blk normal/none text      32/con  none
-13 19 202  J   wht/blk normal/none text      32/con  none
-14 19 203  K   wht/blk normal/none text      32/con  none
-15 19 160      wht/blk normal/none text      32/con  none
-16 19 204  L   wht/blk normal/none text      32/con  none
-17 19 205  M   wht/blk normal/none text      32/con  none
-18 19 206  N   wht/blk normal/none text      32/con  none
-19 19 207  O   wht/blk normal/none text      32/con  none
-20 19 160      wht/blk normal/none text      32/con  none
-21 19 208  P   wht/blk normal/none text      32/con  none
-22 19 209  Q   wht/blk normal/none text      32/con  none
-23 19 210  R   wht/blk normal/none text      32/con  none
-24 19 211  S   wht/blk normal/none text      32/con  none
-25 19 160      wht/blk normal/none text      32/con  none
-26 19 212  T   wht/blk normal/none text      32/con  none
-27 19 213  U   wht/blk normal/none text      32/con  none
-28 19 214  V   wht/blk normal/none text      32/con  none
-29 19 215  W   wht/blk normal/none text      32/con  none
-30 19 160      wht/blk normal/none text      32/con  none
-31 19 216  X   wht/blk normal/none text      32/con  none
-32 19 217  Y   wht/blk normal/none text      32/con  none
-33 19 218  Z   wht/blk normal/none text      32/con  none
-34 19 219  [   wht/blk normal/none text      32/con  none
-35 19 160      wht/blk normal/none text      32/con  none
-36 19 220  \   wht/blk normal/none text      32/con  none
-37 19 221  ]   wht/blk normal/none text      32/con  none
-38 19 222  ^   wht/blk normal/none text      32/con  none
-39 19 223  _   wht/blk normal/none text      32/con  none
-0  20 160      wht/blk normal/none text      32/con  none
-1  20 224  `   wht/blk normal/none text      32/con  none
-2  20 225  a   wht/blk normal/none text      32/con  none
-3  20 226  b   wht/blk normal/none text      32/con  none
-4  20 227  c   wht/blk normal/none text      32/con  none
-5  20 160      wht/blk normal/none text      32/con  none
-6  20 228  d   wht/blk normal/none text      32/con  none
-7  20 229  e   wht/blk normal/none text      32/con  none
-8  20 230  f   wht/blk normal/none text      32/con  none
-9  20 231  g   wht/blk normal/none text      32/con  none
-10 20 160      wht/blk normal/none text      32/con  none
-11 20 232  h   wht/blk normal/none text      32/con  none
-12 20 233  i   wht/blk normal/none text      32/con  none
-13 20 234  j   wht/blk normal/none text      32/con  none
-14 20 235  k   wht/blk normal/none text      32/con  none
-15 20 160      wht/blk normal/none text      32/con  none
-16 20 236  l   wht/blk normal/none text      32/con  none
-17 20 237  m   wht/blk normal/none text      32/con  none
-18 20 238  n   wht/blk normal/none text      32/con  none
-19 20 239  o   wht/blk normal/none text      32/con  none
-20 20 160      wht/blk normal/none text      32/con  none
-21 20 240  p   wht/blk normal/none text      32/con  none
-22 20 241  q   wht/blk normal/none text      32/con  none
-23 20 242  r   wht/blk normal/none text      32/con  none
-24 20 243  s   wht/blk normal/none text      32/con  none
-25 20 160      wht/blk normal/none text      32/con  none
-26 20 244  t   wht/blk normal/none text      32/con  none
-27 20 245  u   wht/blk normal/none text      32/con  none
-28 20 246  v   wht/blk normal/none text      32/con  none
-29 20 247  w   wht/blk normal/none text      32/con  none
-30 20 160      wht/blk normal/none text      32/con  none
-31 20 248  x   wht/blk normal/none text      32/con  none
-32 20 249  y   wht/blk normal/none text      32/con  none
-33 20 250  z   wht/blk normal/none text      32/con  none
-34 20 251  {   wht/blk normal/none text      32/con  none
-35 20 160      wht/blk normal/none text      32/con  none
-36 20 252  |   wht/blk normal/none text      32/con  none
-37 20 253  }   wht/blk normal/none text      32/con  none
-38 20 254  ~   wht/blk normal/none text      32/con  none
-39 20 255      wht/blk normal/none text      32/con  none
-0  21 148      wht/blk normal/none text      32/con  none
-1  21 224  `   blu/blk normal/none solid     224/con none
-2  21 225  a   blu/blk normal/none solid     225/con none
-3  21 226  b   blu/blk normal/none solid     226/con none
-4  21 227  c   blu/blk normal/none solid     227/con none
-5  21 145      blu/blk normal/none solid     227/con none
-6  21 228  d   red/blk normal/none solid     228/con none
-7  21 229  e   red/blk normal/none solid     229/con none
-8  21 230  f   red/blk normal/none solid     230/con none
-9  21 231  g   red/blk normal/none solid     231/con none
-10 21 149      red/blk normal/none solid     231/con none
-11 21 232  h   mag/blk normal/none solid     232/con none
-12 21 233  i   mag/blk normal/none solid     233/con none
-13 21 234  j   mag/blk normal/none solid     234/con none
-14 21 235  k   mag/blk normal/none solid     235/con none
-15 21 146      mag/blk normal/none solid     235/con none
-16 21 236  l   grn/blk normal/none solid     236/con none
-17 21 237  m   grn/blk normal/none solid     237/con none
-18 21 238  n   grn/blk normal/none solid     238/con none
-19 21 239  o   grn/blk normal/none solid     239/con none
-20 21 154      grn/blk normal/none solid     239/con none
-21 21 240  p   grn/blk normal/none sep       240/sep none
-22 21 241  q   grn/blk normal/none sep       241/sep none
-23 21 242  r   grn/blk normal/none sep       242/sep none
-24 21 243  s   grn/blk normal/none sep       243/sep none
-25 21 150      grn/blk normal/none sep       243/sep none
-26 21 244  t   cyn/blk normal/none sep       244/sep none
-27 21 245  u   cyn/blk normal/none sep       245/sep none
-28 21 246  v   cyn/blk normal/none sep       246/sep none
-29 21 247  w   cyn/blk normal/none sep       247/sep none
-30 21 147      cyn/blk normal/none sep       247/sep none
-31 21 248  x   yel/blk normal/none sep       248/sep none
-32 21 249  y   yel/blk normal/none sep       249/sep none
-33 21 250  z   yel/blk normal/none sep       250/sep none
-34 21 251  {   yel/blk normal/none sep       251/sep none
-35 21 151      yel/blk normal/none sep       251/sep none
-36 21 252  |   wht/blk normal/none sep       252/sep none
-37 21 253  }   wht/blk normal/none sep       253/sep none
-38 21 254  ~   wht/blk normal/none sep       254/sep none
-39 21 255      wht/blk normal/none sep       255/sep none
-0  22 131      wht/blk normal/none text      32/con  none
-1  22 152      yel/blk normal/none text      32/con  none
-2  22 195  C   yel/blk normal/none text      32/con  none
-3  22 239  o   yel/blk normal/none text      32/con  none
-4  22 238  n   yel/blk normal/none text      32/con  none
-5  22 227  c   yel/blk normal/none text      32/con  none
-6  22 229  e   yel/blk normal/none text      32/con  none
-7  22 225  a   yel/blk normal/none text      32/con  none
-8  22 236  l   yel/blk normal/none text      32/con  none
-9  22 136      yel/blk normal/none text      32/con  none
-10 22 198  F   yel/blk normal/none text      32/con  none
-11 22 236  l   yel/blk normal/none text      32/con  none
-12 22 225  a   yel/blk normal/none text      32/con  none
-13 22 243  s   yel/blk normal/none text      32/con  none
-14 22 232  h   yel/blk normal/none text      32/con  none
-15 22 131      yel/blk normal/none text      32/con  none
-16 22 170  *   yel/blk normal/none text      32/con  none
-17 22 139      yel/blk normal/none text      32/con  none
-18 22 139      yel/blk normal/none text      32/con  none
-19 22 194  B   yel/blk normal/none text      32/con  none
-20 22 239  o   yel/blk normal/none text      32/con  none
-21 22 248  x   yel/blk normal/none text      32/con  none
-22 22 137      yel/blk normal/none text      32/con  none
-23 22 211  S   yel/blk normal/none text      32/con  none
-24 22 244  t   yel/blk normal/none text      32/con  none
-25 22 229  e   yel/blk normal/none text      32/con  none
-26 22 225  a   yel/blk normal/none text      32/con  none
-27 22 228  d   yel/blk normal/none text      32/con  none
-28 22 249  y   yel/blk normal/none text      32/con  none
-29 22 152      yel/blk normal/none text      32/con  none
-30 22 199  G   yel/blk normal/none text      32/con  none
-31 22 239  o   yel/blk normal/none text      32/con  none
-32 22 238  n   yel/blk normal/none text      32/con  none
-33 22 229  e   yel/blk normal/none text      32/con  none
-34 22 138      yel/blk normal/none text      32/con  none
-35 22 138      yel/blk normal/none text      32/con  none
-36 22 191  ?   yel/blk normal/none text      32/con  none
-37 22 150      yel/blk normal/none text      32/con  none
-38 22 222  ^   cyn/blk normal/none solid     32/con  none
-39 22 255      cyn/blk normal/none solid     255/con none
-0  23 130      wht/blk normal/none text      32/con  none
-1  23 69   E   grn/blk normal/none text      32/con  none
-2  23 110  n   grn/blk normal/none text      32/con  none
-3  23 103  g   grn/blk normal/none text      32/con  none
-4  23 105  i   grn/blk normal/none text      32/con  none
-5  23 110  n   grn/blk normal/none text      32/con  none
-6  23 101  e   grn/blk normal/none text      32/con  none
-7  23 101  e   grn/blk normal/none text      32/con  none
-8  23 114  r   grn/blk normal/none text      32/con  none
-9  23 105  i   grn/blk normal/none text      32/con  none
-10 23 110  n   grn/blk normal/none text      32/con  none
-11 23 103  g   grn/blk normal/none text      32/con  none
-12 23 32       grn/blk normal/none text      32/con  none
-13 23 0        grn/blk normal/none text      32/con  none
-14 23 0        grn/blk normal/none text      32/con  none
-15 23 0        grn/blk normal/none text      32/con  none
-16 23 0        grn/blk normal/none text      32/con  none
-17 23 0        grn/blk normal/none text      32/con  none
-18 23 0        grn/blk normal/none text      32/con  none
-19 23 0        grn/blk normal/none text      32/con  none
-20 23 0        grn/blk normal/none text      32/con  none
-21 23 0        grn/blk normal/none text      32/con  none
-22 23 0        grn/blk normal/none text      32/con  none
-23 23 0        grn/blk normal/none text      32/con  none
-24 23 0        grn/blk normal/none text      32/con  none
-25 23 0        grn/blk normal/none text      32/con  none
-26 23 0        grn/blk normal/none text      32/con  none
-27 23 0        grn/blk normal/none text      32/con  none
-28 23 0        grn/blk normal/none text      32/con  none
-29 23 0        grn/blk normal/none text      32/con  none
-30 23 0        grn/blk normal/none text      32/con  none
-31 23 0        grn/blk normal/none text      32/con  none
-32 23 0        grn/blk normal/none text      32/con  none
-33 23 0        grn/blk normal/none text      32/con  none
-34 23 0        grn/blk normal/none text      32/con  none
-35 23 0        grn/blk normal/none text      32/con  none
-36 23 0        grn/blk normal/none text      32/con  none
-37 23 0        grn/blk normal/none text      32/con  none
-38 23 0        grn/blk normal/none text      32/con  none
-39 23 0        grn/blk normal/none text      32/con  none
-0  24 0        wht/blk normal/none text      32/con  none
-1  24 0        wht/blk normal/none text      32/con  none
-2  24 0        wht/blk normal/none text      32/con  none
-3  24 0        wht/blk normal/none text      32/con  none
-4  24 0        wht/blk normal/none text      32/con  none
-5  24 0        wht/blk normal/none text      32/con  none
-6  24 0        wht/blk normal/none text      32/con  none
-7  24 0        wht/blk normal/none text      32/con  none
-8  24 0        wht/blk normal/none text      32/con  none
-9  24 0        wht/blk normal/none text      32/con  none
-10 24 0        wht/blk normal/none text      32/con  none
-11 24 0        wht/blk normal/none text      32/con  none
-12 24 0        wht/blk normal/none text      32/con  none
-13 24 0        wht/blk normal/none text      32/con  none
-14 24 0        wht/blk normal/none text      32/con  none
-15 24 0        wht/blk normal/none text      32/con  none
-16 24 0        wht/blk normal/none text      32/con  none
-17 24 0        wht/blk normal/none text      32/con  none
-18 24 0        wht/blk normal/none text      32/con  none
-19 24 0        wht/blk normal/none text      32/con  none
-20 24 0        wht/blk normal/none text      32/con  none
-21 24 0        wht/blk normal/none text      32/con  none
-22 24 0        wht/blk normal/none text      32/con  none
-23 24 0        wht/blk normal/none text      32/con  none
-24 24 0        wht/blk normal/none text      32/con  none
-25 24 0        wht/blk normal/none text      32/con  none
-26 24 0        wht/blk normal/none text      32/con  none
-27 24 0        wht/blk normal/none text      32/con  none
-28 24 0        wht/blk normal/none text      32/con  none
-29 24 0        wht/blk normal/none text      32/con  none
-30 24 0        wht/blk normal/none text      32/con  none
-31 24 0        wht/blk normal/none text      32/con  none
-32 24 0        wht/blk normal/none text      32/con  none
-33 24 0        wht/blk normal/none text      32/con  none
-34 24 0        wht/blk normal/none text      32/con  none
-35 24 0        wht/blk normal/none text      32/con  none
-36 24 0        wht/blk normal/none text      32/con  none
-37 24 0        wht/blk normal/none text      32/con  none
-38 24 0        wht/blk normal/none text      32/con  none
-39 24 0        wht/blk normal/none text      32/con  none
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..1.1. ..11..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..1.1. ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ..111.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+   0,0    1,0    2,0    3,0    4,0    5,0    6,0    7,0    8,0    9,0   10,0   11,0   12,0   13,0   14,0   15,0   16,0   17,0   18,0   19,0   20,0   21,0   22,0   23,0   24,0   25,0   26,0   27,0   28,0   29,0   30,0   31,0   32,0   33,0   34,0   35,0   36,0   37,0   38,0   39,0
+  0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80 0 0xB0 1 0xB1
+W/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx
+
+...... ...... ...... 777777 777777 333333 333333 666666 666666 ...... ...... ...... 444444 444444 433333 434443 443334 443334 434443 433333 433333 433334 443334 434443 443334 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...7.. ..777.
+...... ...... ...... 777777 777777 333333 333333 666666 666666 ...... ...... ...... 444444 444444 433333 434443 443334 443334 434443 433333 433333 433334 443334 434443 443334 444444 444444 ...... ...... ...... .22.22 .22.22 .55.55 .55.55 .11.11 .11.11 .44.44 .44.44 ..7.7. .7...7
+...... ...... ...... 777777 777777 333333 333333 666666 666666 ...... ...... ...... 444444 444444 434444 434443 434443 444344 434443 434444 434444 434443 444344 434443 434443 444444 444444 ...... ...... ...... .22.22 .22.22 .55.55 .55.55 .11.11 .11.11 .44.44 .44.44 .7...7 .....7
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 434444 434443 434443 444344 434443 434444 434444 434443 444344 434443 434443 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .7...7 ...77.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 434444 433443 434444 444344 433443 434444 434444 434443 444344 433443 434444 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .7...7 ..7...
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 434444 433443 434444 444344 433443 434444 434444 434443 444344 433443 434444 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..7.7. .7....
+...... ...... ...... 777777 777777 333333 333333 666666 666666 ...... ...... ...... 444444 444444 433334 434343 434444 444344 434343 433334 433334 433334 444344 434343 434444 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...7.. .77777
+...... ...... ...... 777777 777777 333333 333333 666666 666666 ...... ...... ...... 444444 444444 433334 434343 434444 444344 434343 433334 433334 433334 444344 434343 434444 444444 444444 ...... ...... ...... .22.22 .22.22 .55.55 .55.55 .11.11 .11.11 .44.44 .44.44 ...... ......
+...... ...... ...... 777777 777777 333333 333333 666666 666666 ...... ...... ...... 444444 444444 434444 434433 434433 444344 434433 434444 434444 434344 444344 434433 434433 444444 444444 ...... ...... ...... .22.22 .22.22 .55.55 .55.55 .11.11 .11.11 .44.44 .44.44 ...... ......
+   0,1    1,1    2,1    3,1    4,1    5,1    6,1    7,1    8,1    9,1   10,1   11,1   12,1   13,1   14,1   15,1   16,1   17,1   18,1   19,1   20,1   21,1   22,1   23,1   24,1   25,1   26,1   27,1   28,1   29,1   30,1   31,1   32,1   33,1   34,1   35,1   36,1   37,1   38,1   39,1
+  0x97   0x9E   0x8F s 0xF3   0x93   0x9A   0x96   0x9E   0x9F   0x98   0x84   0x8D   0x9D   0x83 E 0xC5 N 0xCE G 0xC7 I 0xC9 N 0xCE E 0xC5 E 0xC5 R 0xD2 I 0xC9 N 0xCE G 0xC7   0xA0   0x92   0x9C   0x8C   0x9E s 0xF3   0x95   0x8E   0x91   0x8F   0x94   0x8F   0x87 0 0xB0 2 0xB2
+W/k Tx W/k So W/k So W/k So W/k So Y/k So Y/k Sp C/k Sp C/k Sp C/k Sp C/k Sp B/k Ts B/b Ts B/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts G/k Sp G/k Sp G/k Sp G/k Sp G/k Sp M/k Sp M/k Sp R/k Sp R/k Sp B/k Sp B/k Sp W/k Ts W/k Ts
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 434444 434433 434433 444344 434433 434444 434444 434344 444344 434433 434433 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 434444 434443 434443 444344 434443 434444 434444 434434 444344 434443 434443 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 434444 434443 434443 444344 434443 434444 434444 434434 444344 434443 434443 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 433333 434443 443333 443334 434443 433333 433333 434443 443334 434443 443333 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 433333 434443 443333 443334 434443 433333 433333 434443 443334 434443 443333 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+   0,2    1,2    2,2    3,2    4,2    5,2    6,2    7,2    8,2    9,2   10,2   11,2   12,2   13,2   14,2   15,2   16,2   17,2   18,2   19,2   20,2   21,2   22,2   23,2   24,2   25,2   26,2   27,2   28,2   29,2   30,2   31,2   32,2   33,2   34,2   35,2   36,2   37,2   38,2   39,2
+  0x97   0x9E   0x8F s 0xF3   0x93   0x9A   0x96   0x9E   0x9F   0x98   0x84   0x8D   0x9D   0x83 E 0xC5 N 0xCE G 0xC7 I 0xC9 N 0xCE E 0xC5 E 0xC5 R 0xD2 I 0xC9 N 0xCE G 0xC7   0xA0   0x92   0x9C   0x8C   0x9E s 0xF3   0x95   0x8E   0x91   0x8F   0x94   0x8F   0x87 0 0xB0 2 0xB2
+W/k Tx W/k So W/k So W/k So W/k So Y/k So Y/k Sp C/k Sp C/k Sp C/k Sp C/k Sp B/k Ts B/b Ts B/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts Y/b Ts G/k Sp G/k Sp G/k Sp G/k Sp G/k Sp M/k Sp M/k Sp R/k Sp R/k Sp B/k Sp B/k Sp W/k Ts W/k Ts
+
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ....7.
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ..7.7. ...77.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 .7...7 ..7.7.
+.77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .7...7 .7..7.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 .7...7 .77777
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ..7.7. ....7.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ....7.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+   0,3    1,3    2,3    3,3    4,3    5,3    6,3    7,3    8,3    9,3   10,3   11,3   12,3   13,3   14,3   15,3   16,3   17,3   18,3   19,3   20,3   21,3   22,3   23,3   24,3   25,3   26,3   27,3   28,3   29,3   30,3   31,3   32,3   33,3   34,3   35,3   36,3   37,3   38,3   39,3
+~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF 0 0xB0 4 0xB4
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 522222 555555 555555 555255 555555 522225 555555 555555 555555 555555 555555 ...... ...... ...... ...... 222222 222222 666666 666666 333333 333333 777777 777777 ...1.. .11111
+...... ...... ...... .44.44 .44.44 .11.11 .11.11 .55.55 .55.55 .55.55 ...... ...... ...... 555555 555555 522222 555555 555555 555255 555555 522225 555555 555555 555555 555555 555555 ...... ...... ...... ...... 222222 222222 666666 666666 333333 333333 777777 777777 ..1.1. .1....
+...... ...... ...... .44.44 .44.44 .11.11 .11.11 .55.55 .55.55 .55.55 ...... ...... ...... 555555 555555 555255 555555 555555 555255 555555 525552 555555 555555 555555 555555 555555 ...... ...... ...... ...... 222222 222222 666666 666666 333333 333333 777777 777777 .1...1 .1111.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 555555 555555 555255 555555 525552 555555 555555 555555 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 .....1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 552225 552222 552225 555555 525552 552225 552222 552225 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 .....1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 552225 552222 552225 555555 525552 552225 552222 552225 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..1.1. .1...1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 525552 525555 555255 555555 522225 555552 525552 525552 555555 555555 ...... ...... ...... ...... 222222 222222 666666 666666 333333 333333 777777 777777 ...1.. ..111.
+...... ...... ...... .44.44 .44.44 .11.11 .11.11 .55.55 .55.55 .55.55 ...... ...... ...... 555555 555555 555255 525552 525555 555255 555555 522225 555552 525552 525552 555555 555555 ...... ...... ...... ...... 222222 222222 666666 666666 333333 333333 777777 777777 ...... ......
+...... ...... ...... .44.44 .44.44 .11.11 .11.11 .55.55 .55.55 .55.55 ...... ...... ...... 555555 555555 555255 522222 552225 555255 555555 525555 552222 525552 522222 555555 555555 ...... ...... ...... ...... 222222 222222 666666 666666 333333 333333 777777 777777 ...... ......
+   0,4    1,4    2,4    3,4    4,4    5,4    6,4    7,4    8,4    9,4   10,4   11,4   12,4   13,4   14,4   15,4   16,4   17,4   18,4   19,4   20,4   21,4   22,4   23,4   24,4   25,4   26,4   27,4   28,4   29,4   30,4   31,4   32,4   33,4   34,4   35,4   36,4   37,4   38,4   39,4
+  0x94   0x9A   0x9E s 0xF3   0x91   0x99   0x95   0x80   0x95   0x81   0x8D   0xA0   0x85   0x9D   0x82 T 0xD4 e 0xE5 s 0xF3 t 0xF4   0xA0 P 0xD0 a 0xE1 g 0xE7 e 0xE5   0xA0   0xA0   0x9C   0x8C   0x9E   0x92 s 0xF3   0x96   0x98   0x93   0x80   0x97   0x98   0x81 0 0xB0 5 0xB5
+W/k Tx B/k So B/k Sp B/k Sp B/k Sp R/k Sp R/k So M/k So M/k So M/k So R/k Tx R/k Tx R/k Tx M/m Tx M/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k So G/k So C/k So C/k So Y/k So Y/k So W/k So W/k So R/k Tx R/k Tx
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 522222 552225 555255 555555 525555 552222 525552 522222 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 525555 555552 555255 555555 525555 525552 525552 525555 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 525555 555552 555255 555555 525555 525552 525552 525555 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 552225 522225 555525 555555 525555 552222 552222 552225 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555255 552225 522225 555525 555555 525555 552222 552222 552225 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555555 555555 555555 555555 555555 555555 555555 555552 555555 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555555 555555 555555 555555 555555 555555 555555 555552 555555 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555555 555555 555555 555555 555555 555555 555555 552225 555555 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555555 555555 555555 555555 555555 555555 555555 555555 555555 552225 555555 555555 555555 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+   0,5    1,5    2,5    3,5    4,5    5,5    6,5    7,5    8,5    9,5   10,5   11,5   12,5   13,5   14,5   15,5   16,5   17,5   18,5   19,5   20,5   21,5   22,5   23,5   24,5   25,5   26,5   27,5   28,5   29,5   30,5   31,5   32,5   33,5   34,5   35,5   36,5   37,5   38,5   39,5
+  0x94   0x9A   0x9E s 0xF3   0x91   0x99   0x95   0x80   0x95   0x81   0x8D   0xA0   0x85   0x9D   0x82 T 0xD4 e 0xE5 s 0xF3 t 0xF4   0xA0 P 0xD0 a 0xE1 g 0xE7 e 0xE5   0xA0   0xA0   0x9C   0x8C   0x9E   0x92 s 0xF3   0x96   0x98   0x93   0x80   0x97   0x98   0x81 0 0xB0 5 0xB5
+W/k Tx B/k So B/k Sp B/k Sp B/k Sp R/k Sp R/k So M/k So M/k So M/k So R/k Tx R/k Tx R/k Tx M/m Tx M/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/m Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k So G/k So C/k So C/k So Y/k So Y/k So W/k So W/k So R/k Tx R/k Tx
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .11111
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..1.1. .....1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 ....1.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 777777 777777 333333 333333 666666 666666 222222 222222 222222 555555 555555 111111 111111 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 777777 777777 333333 333333 666666 666666 222222 222222 222222 555555 555555 111111 111111 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 ..1...
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 777777 777777 333333 333333 666666 666666 222222 222222 222222 555555 555555 111111 111111 444444 444444 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..1.1. ..1...
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ..1...
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+   0,6    1,6    2,6    3,6    4,6    5,6    6,6    7,6    8,6    9,6   10,6   11,6   12,6   13,6   14,6   15,6   16,6   17,6   18,6   19,6   20,6   21,6   22,6   23,6   24,6   25,6   26,6   27,6   28,6   29,6   30,6   31,6   32,6   33,6   34,6   35,6   36,6   37,6   38,6   39,6
+  0x81   0x80   0x81   0xA0   0x80   0xA0   0x81   0x9E   0xA0   0x9E   0xA0   0x97 , 0xAC   0x93   0x93   0x96   0x96   0x92   0x92   0x92   0x95   0x95   0x91   0x91   0x94   0x94   0x94   0xA0   0xA0   0x94   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81 0 0xB0 7 0xB7
+W/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx W/k So W/k So Y/k So Y/k So C/k So C/k So G/k So G/k So G/k So M/k So M/k So R/k So R/k So B/k So B/k So B/k So B/k So B/k So B/k So B/k So R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx
+
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ..777.
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ..7.7. .7...7
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 .7...7 .7...7
+.77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .7...7 ..777.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 .7...7 .7...7
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ..7.7. .7...7
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ..777.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+   0,7    1,7    2,7    3,7    4,7    5,7    6,7    7,7    8,7    9,7   10,7   11,7   12,7   13,7   14,7   15,7   16,7   17,7   18,7   19,7   20,7   21,7   22,7   23,7   24,7   25,7   26,7   27,7   28,7   29,7   30,7   31,7   32,7   33,7   34,7   35,7   36,7   37,7   38,7   39,7
+~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF 0 0xB0 8 0xB8
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ..111.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..1.1. .1...1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 .1...1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 ..1111
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .1...1 .....1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..1.1. ....1.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ..11..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+   0,8    1,8    2,8    3,8    4,8    5,8    6,8    7,8    8,8    9,8   10,8   11,8   12,8   13,8   14,8   15,8   16,8   17,8   18,8   19,8   20,8   21,8   22,8   23,8   24,8   25,8   26,8   27,8   28,8   29,8   30,8   31,8   32,8   33,8   34,8   35,8   36,8   37,8   38,8   39,8
+  0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80 0 0xB0 9 0xB9
+W/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx
+
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ...7..
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ..77.. ..7.7.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. .7...7
+.77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 ...7.. .7...7
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. .7...7
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. ..7.7.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ..777. ...7..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+   0,9    1,9    2,9    3,9    4,9    5,9    6,9    7,9    8,9    9,9   10,9   11,9   12,9   13,9   14,9   15,9   16,9   17,9   18,9   19,9   20,9   21,9   22,9   23,9   24,9   25,9   26,9   27,9   28,9   29,9   30,9   31,9   32,9   33,9   34,9   35,9   36,9   37,9   38,9   39,9
+~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF 1 0xB1 0 0xB0
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..11.. ..11..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ...1..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..111. ..111.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,10   1,10   2,10   3,10   4,10   5,10   6,10   7,10   8,10   9,10  10,10  11,10  12,10  13,10  14,10  15,10  16,10  17,10  18,10  19,10  20,10  21,10  22,10  23,10  24,10  25,10  26,10  27,10  28,10  29,10  30,10  31,10  32,10  33,10  34,10  35,10  36,10  37,10  38,10  39,10
+  0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80 1 0xB1 1 0xB1
+W/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx
+
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ..777.
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ..77.. .7...7
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. .....7
+.77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 ...7.. ...77.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ..7...
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .7....
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ..777. .77777
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,11   1,11   2,11   3,11   4,11   5,11   6,11   7,11   8,11   9,11  10,11  11,11  12,11  13,11  14,11  15,11  16,11  17,11  18,11  19,11  20,11  21,11  22,11  23,11  24,11  25,11  26,11  27,11  28,11  29,11  30,11  31,11  32,11  33,11  34,11  35,11  36,11  37,11  38,11  39,11
+~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF 1 0xB1 2 0xB2
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .11111
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..11.. .....1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ....1.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. ...11.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .....1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .1...1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..111. ..111.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,12   1,12   2,12   3,12   4,12   5,12   6,12   7,12   8,12   9,12  10,12  11,12  12,12  13,12  14,12  15,12  16,12  17,12  18,12  19,12  20,12  21,12  22,12  23,12  24,12  25,12  26,12  27,12  28,12  29,12  30,12  31,12  32,12  33,12  34,12  35,12  36,12  37,12  38,12  39,12
+  0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80 1 0xB1 3 0xB3
+W/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx
+
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ....7.
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ..77.. ...77.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ..7.7.
+.77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 ...7.. .7..7.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. .77777
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. ....7.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ..777. ....7.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,13   1,13   2,13   3,13   4,13   5,13   6,13   7,13   8,13   9,13  10,13  11,13  12,13  13,13  14,13  15,13  16,13  17,13  18,13  19,13  20,13  21,13  22,13  23,13  24,13  25,13  26,13  27,13  28,13  29,13  30,13  31,13  32,13  33,13  34,13  35,13  36,13  37,13  38,13  39,13
+~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF 1 0xB1 4 0xB4
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .11111
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..11.. .1....
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .1111.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .....1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .....1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...1.. .1...1
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..111. ..111.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,14   1,14   2,14   3,14   4,14   5,14   6,14   7,14   8,14   9,14  10,14  11,14  12,14  13,14  14,14  15,14  16,14  17,14  18,14  19,14  20,14  21,14  22,14  23,14  24,14  25,14  26,14  27,14  28,14  29,14  30,14  31,14  32,14  33,14  34,14  35,14  36,14  37,14  38,14  39,14
+  0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80   0x81   0x80 1 0xB1 5 0xB5
+W/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx R/k Tx
+
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. ...77.
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ..77.. ..7...
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. .7....
+.77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 .77777 ...7.. .7777.
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...7.. .7...7
+...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .77777 ...7.. .7...7
+...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ...... .77777 ..777. ..777.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,15   1,15   2,15   3,15   4,15   5,15   6,15   7,15   8,15   9,15  10,15  11,15  12,15  13,15  14,15  15,15  16,15  17,15  18,15  19,15  20,15  21,15  22,15  23,15  24,15  25,15  26,15  27,15  28,15  29,15  30,15  31,15  32,15  33,15  34,15  35,15  36,15  37,15  38,15  39,15
+~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF ~ 0xFE   0xFF 1 0xB1 6 0xB6
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+.7...7 .7.... ...7.. ...7.. ...... ...... .3...3 ...... ..33.. ..33.. ...... ...... ...... ..666. ...... ...... ...... ...... ..222. ...... ...... ...... ...... ...... .5...5 ...... ...... ...... ...... ...5.. ...... ...... .1111. ...... .....1 ...... .4444. ..44.. ...... ......
+.7...7 .7.... ...... ...7.. ...... ...... .3...3 ...... ...3.. ...3.. ...... ...... ...... .6...6 ...... ...... ...... ...... .2...2 ...... ...... ...... ...... ...... .55.55 ...... ...... ...... ...... ...5.. ...... ...... .1...1 ...... .....1 ...... .4...4 ...4.. ...... ......
+.7...7 .7777. ..77.. ..777. ..777. ...... ..3.3. ..333. ...3.. ...3.. ..333. .3...3 ...... .6.... .6...6 ..666. .6666. ...... .2.... ..2.22 ..222. ..222. .2222. ...... .5.5.5 ..555. ..5555 ..555. .5555. ..555. ..555. ...... .1...1 ..111. ..1111 ...... .4...4 ...4.. .4...4 ..444.
+.7.7.7 .7...7 ...7.. ...7.. .7...7 ...... ...3.. .3...3 ...3.. ...3.. .3...3 .3...3 ...... .6.... .6...6 .....6 .6...6 ...... .2.... ..22.. .2...2 .2...2 .2...2 ...... .5.5.5 .....5 .5...5 .5...5 .5...5 ...5.. .....5 ...... .1111. .1...1 .1...1 ...... .4444. ...4.. .4...4 .4...4
+.7.7.7 .7...7 ...7.. ...7.. .77777 ...... ...3.. .33333 ...3.. ...3.. .3...3 .3.3.3 ...... .6.... .6...6 ..6666 .6...6 ...... .2..22 ..2... .22222 .22222 .2...2 ...... .5...5 ..5555 .5...5 .55555 .5...5 ...5.. ..5555 ...... .1.1.. .11111 .1...1 ...... .4...4 ...4.. .4...4 .44444
+.7.7.7 .7...7 ...7.. ...7.. .7.... ...... ...3.. .3.... ...3.. ...3.. .3...3 .3.3.3 ...... .6...6 .6...6 .6...6 .6...6 ...... .2...2 ..2... .2.... .2.... .2...2 ...... .5...5 .5...5 .5...5 .5.... .5...5 ...5.. .5...5 ...... .1..1. .1.... .1...1 ...... .4...4 ...4.. .4...4 .4....
+..7.7. .7...7 ..777. ....7. ..777. ...... ...3.. ..333. ..333. ..333. ..333. ..3.3. ...... ..666. ..6666 ..6666 .6...6 ...... ..2222 ..2... ..222. ..222. .2...2 ...... .5...5 ..5555 ..5555 ..555. .5...5 ....5. ..5555 ...... .1...1 ..111. ..1111 ...... .4444. ..444. ..4444 ..444.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .....6 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .....5 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..666. ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..555. ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,16   1,16   2,16   3,16   4,16   5,16   6,16   7,16   8,16   9,16  10,16  11,16  12,16  13,16  14,16  15,16  16,16  17,16  18,16  19,16  20,16  21,16  22,16  23,16  24,16  25,16  26,16  27,16  28,16  29,16  30,16  31,16  32,16  33,16  34,16  35,16  36,16  37,16  38,16  39,16
+W 0xD7 h 0xE8 i 0xE9 t 0xF4 e 0xE5   0x83 Y 0xD9 e 0xE5 l 0xEC l 0xEC o 0xEF w 0xF7   0x86 C 0xC3 y 0xF9 a 0xE1 n 0xEE   0x82 G 0xC7 r 0xF2 e 0xE5 e 0xE5 n 0xEE   0x85 M 0xCD a 0xE1 g 0xE7 e 0xE5 n 0xEE t 0xF4 a 0xE1   0x81 R 0xD2 e 0xE5 d 0xE4   0x84 B 0xC2 l 0xEC u 0xF5 e 0xE5
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx C/k Tx C/k Tx C/k Tx C/k Tx C/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx M/k Tx M/k Tx M/k Tx M/k Tx M/k Tx M/k Tx M/k Tx M/k Tx R/k Tx R/k Tx R/k Tx R/k Tx B/k Tx B/k Tx B/k Tx B/k Tx
+
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 222... ...222 222222 ...... ...... 555... ...555 555555 ...... ...... 111... ...111 111111 ...... ...... 444... ...444 444444
+...... ...... .77... ....77 .77.77 ...... ...... .33... ....33 .33.33 ...... ...... .66... ....66 .66.66 ...... ...... .22... ....22 .22.22 ...... ...... 222... ...222 222222 ...... ...... 555... ...555 555555 ...... ...... 111... ...111 111111 ...... ...... 444... ...444 444444
+...... ...... .77... ....77 .77.77 ...... ...... .33... ....33 .33.33 ...... ...... .66... ....66 .66.66 ...... ...... .22... ....22 .22.22 ...... ...... 222... ...222 222222 ...... ...... 555... ...555 555555 ...... ...... 111... ...111 111111 ...... ...... 444... ...444 444444
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 555... 555... 555... 555... ...... ...111 ...111 ...111 ...111 ...... 444444 444444 444444 444444
+...... ...... ...... ...... ...... ...... .33... .33... .33... .33... ...... ....66 ....66 ....66 ....66 ...... .22.22 .22.22 .22.22 .22.22 ...... ...... ...... ...... ...... ...... 555... 555... 555... 555... ...... ...111 ...111 ...111 ...111 ...... 444444 444444 444444 444444
+...... ...... ...... ...... ...... ...... .33... .33... .33... .33... ...... ....66 ....66 ....66 ....66 ...... .22.22 .22.22 .22.22 .22.22 ...... ...... ...... ...... ...... ...... 555... 555... 555... 555... ...... ...111 ...111 ...111 ...111 ...... 444444 444444 444444 444444
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 222... 222... 222... 222... ...... 555... 555... 555... 555... ...... 111... 111... 111... 111... ...... 444... 444... 444... 444...
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 222... 222... 222... 222... ...... 555... 555... 555... 555... ...... 111... 111... 111... 111... ...... 444... 444... 444... 444...
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 222... 222... 222... 222... ...... 555... 555... 555... 555... ...... 111... 111... 111... 111... ...... 444... 444... 444... 444...
+  0,17   1,17   2,17   3,17   4,17   5,17   6,17   7,17   8,17   9,17  10,17  11,17  12,17  13,17  14,17  15,17  16,17  17,17  18,17  19,17  20,17  21,17  22,17  23,17  24,17  25,17  26,17  27,17  28,17  29,17  30,17  31,17  32,17  33,17  34,17  35,17  36,17  37,17  38,17  39,17
+  0x97   0x9A ! 0xA1 " 0xA2 # 0xA3   0x93 $ 0xA4 % 0xA5 & 0xA6 ' 0xA7   0x96 ( 0xA8 ) 0xA9 * 0xAA + 0xAB   0x92 , 0xAC - 0xAD . 0xAE / 0xAF   0x99 0 0xB0 1 0xB1 2 0xB2 3 0xB3   0x95 4 0xB4 5 0xB5 6 0xB6 7 0xB7   0x91 8 0xB8 9 0xB9 : 0xBA ; 0xBB   0x94 < 0xBC = 0xBD > 0xBE ? 0xBF
+W/k Tx W/k So W/k Sp W/k Sp W/k Sp W/k Sp Y/k Sp Y/k Sp Y/k Sp Y/k Sp Y/k Sp C/k Sp C/k Sp C/k Sp C/k Sp C/k Sp G/k Sp G/k Sp G/k Sp G/k Sp G/k Sp G/k So G/k So G/k So G/k So G/k So M/k So M/k So M/k So M/k So M/k So R/k So R/k So R/k So R/k So R/k So B/k So B/k So B/k So B/k So
+
+...... ...... ...7.. ..7.7. ...77. ...... ..777. .77... ..7... ...7.. ...... ....7. ..7... ...7.. ...... ...... ...... ...... ...... ...... ...... ...7.. ...7.. ..777. .77777 ...... ....7. .77777 ...77. .77777 ...... ..777. ..777. ...... ...... ...... ....7. ...... ..7... ..777.
+...... ...... ...7.. ..7.7. ..7..7 ...... .7.7.7 .77..7 .7.7.. ...7.. ...... ...7.. ...7.. .7.7.7 ...7.. ...... ...... ...... ...... .....7 ...... ..7.7. ..77.. .7...7 .....7 ...... ...77. .7.... ..7... .....7 ...... .7...7 .7...7 ...... ...... ...... ...7.. ...... ...7.. .7...7
+...... ...... ...7.. ..7.7. ..7... ...... .7.7.. ....7. .7.7.. ...7.. ...... ..7... ....7. ..777. ...7.. ...... ...... ...... ...... ....7. ...... .7...7 ...7.. .....7 ....7. ...... ..7.7. .7777. .7.... ....7. ...... .7...7 .7...7 ...7.. ...7.. ...... ..7... .77777 ....7. ....7.
+...... ...... ...7.. ...... .777.. ...... ..777. ...7.. ..7... ...... ...... ..7... ....7. ...7.. .77777 ...... ...... ..777. ...... ...7.. ...... .7...7 ...7.. ...77. ...77. ...... .7..7. .....7 .7777. ...7.. ...... ..777. ..7777 ...... ...... ...... .7.... ...... .....7 ...7..
+...... ...... ...7.. ...... ..7... ...... ...7.7 ..7... .7.7.7 ...... ...... ..7... ....7. ..777. ...7.. ...... ...... ...... ...... ..7... ...... .7...7 ...7.. ..7... .....7 ...... .77777 .....7 .7...7 ..7... ...... .7...7 .....7 ...... ...... ...... ..7... .77777 ....7. ...7..
+...... ...... ...... ...... ..7... ...... .7.7.7 .7..77 .7..7. ...... ...... ...7.. ...7.. .7.7.7 ...7.. ...... ...7.. ...... ...... .7.... ...... ..7.7. ...7.. .7.... .7...7 ...... ....7. .7...7 .7...7 ..7... ...... .7...7 ....7. ...... ...7.. ...... ...7.. ...... ...7.. ......
+...... ...... ...7.. ...... .77777 ...... ..777. ....77 ..77.7 ...... ...... ....7. ..7... ...7.. ...... ...... ...7.. ...... ...7.. ...... ...... ...7.. ..777. .77777 ..777. ...... ....7. ..777. ..777. ..7... ...... ..777. ..77.. ...7.. ...7.. ...... ....7. ...... ..7... ...7..
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..7... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..7... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,18   1,18   2,18   3,18   4,18   5,18   6,18   7,18   8,18   9,18  10,18  11,18  12,18  13,18  14,18  15,18  16,18  17,18  18,18  19,18  20,18  21,18  22,18  23,18  24,18  25,18  26,18  27,18  28,18  29,18  30,18  31,18  32,18  33,18  34,18  35,18  36,18  37,18  38,18  39,18
+  0xA0   0xA0 ! 0xA1 " 0xA2 # 0xA3   0xA0 $ 0xA4 % 0xA5 & 0xA6 ' 0xA7   0xA0 ( 0xA8 ) 0xA9 * 0xAA + 0xAB   0xA0 , 0xAC - 0xAD . 0xAE / 0xAF   0xA0 0 0xB0 1 0xB1 2 0xB2 3 0xB3   0xA0 4 0xB4 5 0xB5 6 0xB6 7 0xB7   0xA0 8 0xB8 9 0xB9 : 0xBA ; 0xBB   0xA0 < 0xBC = 0xBD > 0xBE ? 0xBF
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+...... ..777. ...7.. .7777. ..777. ...... .7777. .77777 .77777 ..777. ...... .7...7 ..777. .....7 .7...7 ...... .7.... .7...7 .7...7 ..777. ...... .7777. ..777. .7777. ..777. ...... .77777 .7...7 .7...7 .7...7 ...... .7...7 .7...7 .77777 ...... ...... .7.... ...... ...... ..7.7.
+...... .7...7 ..7.7. .7...7 .7...7 ...... .7...7 .7.... .7.... .7...7 ...... .7...7 ...7.. .....7 .7..7. ...... .7.... .77.77 .7...7 .7...7 ...... .7...7 .7...7 .7...7 .7...7 ...... ...7.. .7...7 .7...7 .7...7 ...... .7...7 .7...7 .....7 ...7.. ...... .7.... ...7.. ...7.. ..7.7.
+...... .7.777 .7...7 .7...7 .7.... ...... .7...7 .7.... .7.... .7.... ...... .7...7 ...7.. .....7 .7.7.. ...... .7.... .7.7.7 .77..7 .7...7 ...... .7...7 .7...7 .7...7 .7.... ...... ...7.. .7...7 .7...7 .7...7 ...... ..7.7. ..7.7. ....7. ..7... ...... .7.... ....7. ..777. .77777
+...... .7.7.7 .7...7 .7777. .7.... ...... .7...7 .7777. .7777. .7.... ...... .77777 ...7.. .....7 .77... ...... .7.... .7.7.7 .7.7.7 .7...7 ...... .7777. .7...7 .7777. ..777. ...... ...7.. .7...7 ..7.7. .7.7.7 ...... ...7.. ...7.. ...7.. .77777 ...... .7.... .77777 .7.7.7 ..7.7.
+...... .7.777 .77777 .7...7 .7.... ...... .7...7 .7.... .7.... .7..77 ...... .7...7 ...7.. .....7 .7.7.. ...... .7.... .7...7 .7..77 .7...7 ...... .7.... .7.7.7 .7.7.. .....7 ...... ...7.. .7...7 ..7.7. .7.7.7 ...... ..7.7. ...7.. ..7... ..7... ...... .7.77. ....7. ...7.. .77777
+...... .7.... .7...7 .7...7 .7...7 ...... .7...7 .7.... .7.... .7...7 ...... .7...7 ...7.. .7...7 .7..7. ...... .7.... .7...7 .7...7 .7...7 ...... .7.... .7..7. .7..7. .7...7 ...... ...7.. .7...7 ...7.. .7.7.7 ...... .7...7 ...7.. .7.... ...7.. ...... .....7 ...7.. ...7.. ..7.7.
+...... ..777. .7...7 .7777. ..777. ...... .7777. .77777 .7.... ..7777 ...... .7...7 ..777. ..777. .7...7 ...... .77777 .7...7 .7...7 ..777. ...... .7.... ..77.7 .7...7 ..777. ...... ...7.. ..777. ...7.. ..7.7. ...... .7...7 ...7.. .77777 ...... ...... ....7. ...... ...... ..7.7.
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...7.. ...... ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...777 ...... ...... ......
+  0,19   1,19   2,19   3,19   4,19   5,19   6,19   7,19   8,19   9,19  10,19  11,19  12,19  13,19  14,19  15,19  16,19  17,19  18,19  19,19  20,19  21,19  22,19  23,19  24,19  25,19  26,19  27,19  28,19  29,19  30,19  31,19  32,19  33,19  34,19  35,19  36,19  37,19  38,19  39,19
+  0xA0 @ 0xC0 A 0xC1 B 0xC2 C 0xC3   0xA0 D 0xC4 E 0xC5 F 0xC6 G 0xC7   0xA0 H 0xC8 I 0xC9 J 0xCA K 0xCB   0xA0 L 0xCC M 0xCD N 0xCE O 0xCF   0xA0 P 0xD0 Q 0xD1 R 0xD2 S 0xD3   0xA0 T 0xD4 U 0xD5 V 0xD6 W 0xD7   0xA0 X 0xD8 Y 0xD9 Z 0xDA [ 0xDB   0xA0 \ 0xDC ] 0xDD ^ 0xDE _ 0xDF
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+...... ...... ...... .7.... ...... ...... .....7 ...... ....7. ...... ...... .7.... ...7.. ...7.. ..7... ...... ..77.. ...... ...... ...... ...... ...... ...... ...... ...... ...... ...7.. ...... ...... ...... ...... ...... ...... ...... ..7... ...... ..7.7. .77... ...... .77777
+...... ...... ...... .7.... ...... ...... .....7 ...... ...7.. ...... ...... .7.... ...... ...... ..7... ...... ...7.. ...... ...... ...... ...... ...... ...... ...... ...... ...... ...7.. ...... ...... ...... ...... ...... ...... ...... ..7... ...... ..7.7. ...7.. ...7.. .77777
+...... ...... ..777. .7777. ..7777 ...... ..7777 ..777. ...7.. ..7777 ...... .7777. ..77.. ...7.. ..7..7 ...... ...7.. .77.7. .7777. ..777. ...... .7777. ..7777 ..7.77 ..7777 ...... ..777. .7...7 .7...7 .7...7 ...... .7...7 .7...7 .77777 ..7... ...... ..7.7. .77... ...... .77777
+...... .77777 .....7 .7...7 .7.... ...... .7...7 .7...7 ..777. .7...7 ...... .7...7 ...7.. ...7.. ..7.7. ...... ...7.. .7.7.7 .7...7 .7...7 ...... .7...7 .7...7 ..77.. .7.... ...... ...7.. .7...7 .7...7 .7...7 ...... ..7.7. .7...7 ....7. ..7... ...... ..7.7. ...7.. .77777 .77777
+...... ...... ..7777 .7...7 .7.... ...... .7...7 .77777 ...7.. .7...7 ...... .7...7 ...7.. ...7.. ..77.. ...... ...7.. .7.7.7 .7...7 .7...7 ...... .7...7 .7...7 ..7... ..777. ...... ...7.. .7...7 ..7.7. .7.7.7 ...... ...7.. .7...7 ...7.. ..7..7 ...... ..7.7. .77..7 ...... .77777
+...... ...... .7...7 .7...7 .7.... ...... .7...7 .7.... ...7.. .7...7 ...... .7...7 ...7.. ...7.. ..7.7. ...... ...7.. .7.7.7 .7...7 .7...7 ...... .7...7 .7...7 ..7... .....7 ...... ...7.. .7...7 ..7.7. .7.7.7 ...... ..7.7. .7...7 ..7... ....77 ...... ..7.7. ....77 ...7.. .77777
+...... ...... ..7777 .7777. ..7777 ...... ..7777 ..777. ...7.. ..7777 ...... .7...7 ..777. ...7.. ..7..7 ...... ..777. .7.7.7 .7...7 ..777. ...... .7777. ..7777 ..7... .7777. ...... ....7. ..7777 ...7.. ..7.7. ...... .7...7 ..7777 .77777 ...7.7 ...... ..7.7. ...7.7 ...... .77777
+...... ...... ...... ...... ...... ...... ...... ...... ...... .....7 ...... ...... ...... ...7.. ...... ...... ...... ...... ...... ...... ...... .7.... .....7 ...... ...... ...... ...... ...... ...... ...... ...... ...... .....7 ...... ...777 ...... ...... ...777 ...... ......
+...... ...... ...... ...... ...... ...... ...... ...... ...... ..777. ...... ...... ...... ..7... ...... ...... ...... ...... ...... ...... ...... .7.... .....7 ...... ...... ...... ...... ...... ...... ...... ...... ...... ..777. ...... .....7 ...... ...... .....7 ...... ......
+  0,20   1,20   2,20   3,20   4,20   5,20   6,20   7,20   8,20   9,20  10,20  11,20  12,20  13,20  14,20  15,20  16,20  17,20  18,20  19,20  20,20  21,20  22,20  23,20  24,20  25,20  26,20  27,20  28,20  29,20  30,20  31,20  32,20  33,20  34,20  35,20  36,20  37,20  38,20  39,20
+  0xA0 ` 0xE0 a 0xE1 b 0xE2 c 0xE3   0xA0 d 0xE4 e 0xE5 f 0xE6 g 0xE7   0xA0 h 0xE8 i 0xE9 j 0xEA k 0xEB   0xA0 l 0xEC m 0xED n 0xEE o 0xEF   0xA0 p 0xF0 q 0xF1 r 0xF2 s 0xF3   0xA0 t 0xF4 u 0xF5 v 0xF6 w 0xF7   0xA0 x 0xF8 y 0xF9 z 0xFA { 0xFB   0xA0 | 0xFC } 0xFD ~ 0xFE   0xFF
+W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx W/k Tx
+
+...... ...... 444... ...444 444444 ...... ...... 111... ...111 111111 ...... ...... 555... ...555 555555 ...... ...... 222... ...222 222222 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... 444... ...444 444444 ...... ...... 111... ...111 111111 ...... ...... 555... ...555 555555 ...... ...... 222... ...222 222222 ...... ...... .22... ....22 .22.22 ...... ...... .66... ....66 .66.66 ...... ...... .33... ....33 .33.33 ...... ...... .77... ....77 .77.77
+...... ...... 444... ...444 444444 ...... ...... 111... ...111 111111 ...... ...... 555... ...555 555555 ...... ...... 222... ...222 222222 ...... ...... .22... ....22 .22.22 ...... ...... .66... ....66 .66.66 ...... ...... .33... ....33 .33.33 ...... ...... .77... ....77 .77.77
+...... ...... ...... ...... ...... ...... 111... 111... 111... 111... ...... ...555 ...555 ...555 ...555 ...... 222222 222222 222222 222222 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ...... ...... ...... 111... 111... 111... 111... ...... ...555 ...555 ...555 ...555 ...... 222222 222222 222222 222222 ...... ...... ...... ...... ...... ...... .66... .66... .66... .66... ...... ....33 ....33 ....33 ....33 ...... .77.77 .77.77 .77.77 .77.77
+...... ...... ...... ...... ...... ...... 111... 111... 111... 111... ...... ...555 ...555 ...555 ...555 ...... 222222 222222 222222 222222 ...... ...... ...... ...... ...... ...... .66... .66... .66... .66... ...... ....33 ....33 ....33 ....33 ...... .77.77 .77.77 .77.77 .77.77
+...... ...444 ...444 ...444 ...444 ...... ...111 ...111 ...111 ...111 ...... ...555 ...555 ...555 ...555 ...... ...222 ...222 ...222 ...222 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...444 ...444 ...444 ...444 ...... ...111 ...111 ...111 ...111 ...... ...555 ...555 ...555 ...555 ...... ...222 ...222 ...222 ...222 ...... .22.22 .22.22 .22.22 .22.22 ...... .66.66 .66.66 .66.66 .66.66 ...... .33.33 .33.33 .33.33 .33.33 ...... .77.77 .77.77 .77.77 .77.77
+...... ...444 ...444 ...444 ...444 ...... ...111 ...111 ...111 ...111 ...... ...555 ...555 ...555 ...555 ...... ...222 ...222 ...222 ...222 ...... .22.22 .22.22 .22.22 .22.22 ...... .66.66 .66.66 .66.66 .66.66 ...... .33.33 .33.33 .33.33 .33.33 ...... .77.77 .77.77 .77.77 .77.77
+  0,21   1,21   2,21   3,21   4,21   5,21   6,21   7,21   8,21   9,21  10,21  11,21  12,21  13,21  14,21  15,21  16,21  17,21  18,21  19,21  20,21  21,21  22,21  23,21  24,21  25,21  26,21  27,21  28,21  29,21  30,21  31,21  32,21  33,21  34,21  35,21  36,21  37,21  38,21  39,21
+  0x94 ` 0xE0 a 0xE1 b 0xE2 c 0xE3   0x91 d 0xE4 e 0xE5 f 0xE6 g 0xE7   0x95 h 0xE8 i 0xE9 j 0xEA k 0xEB   0x92 l 0xEC m 0xED n 0xEE o 0xEF   0x9A p 0xF0 q 0xF1 r 0xF2 s 0xF3   0x96 t 0xF4 u 0xF5 v 0xF6 w 0xF7   0x93 x 0xF8 y 0xF9 z 0xFA { 0xFB   0x97 | 0xFC } 0xFD ~ 0xFE   0xFF
+W/k Tx B/k So B/k So B/k So B/k So B/k So R/k So R/k So R/k So R/k So R/k So M/k So M/k So M/k So M/k So M/k So G/k So G/k So G/k So G/k So G/k So G/k Sp G/k Sp G/k Sp G/k Sp G/k Sp C/k Sp C/k Sp C/k Sp C/k Sp C/k Sp Y/k Sp Y/k Sp Y/k Sp Y/k Sp Y/k Sp W/k Sp W/k Sp W/k Sp W/k Sp
+
+...... ...... ..333. ...... ...... ...... ...... ...... ..33.. ...... .33333 ..33.. ...... ...... .3.... ...... ...3.. ...... ...... .3333. ...... ...... ...... ..333. ...3.. ...... ...... .....3 ...... ...... ..333. ...... ...... ...... ...... ...... ..333. ...... ...... 666666
+...... ...... .3...3 ...... ...... ...... ...... ...... ...3.. ...... .3.... ...3.. ...... ...... .3.... ...... .3.3.3 ...... ...... .3...3 ...... ...... ...... .3...3 ...3.. ...... ...... .....3 ...... ...... .3...3 ...... ...... ...... ...... ...... .3...3 ...... ...6.. 666666
+...... ...... .3.... ..333. .3333. ..3333 ..333. ..333. ...3.. ...... .3.... ...3.. ..333. ..3333 .3333. ...... ..333. ...... ...... .3...3 ..333. .3...3 ...... .3.... ..333. ..333. ..333. ..3333 .3...3 ...... .3.... ..333. .3333. ..333. ...... ...... ....3. ...... ..666. 666666
+...... ...... .3.... .3...3 .3...3 .3.... .3...3 .....3 ...3.. ...... .3333. ...3.. .....3 .3.... .3...3 ...... ...3.. ...... ...... .3333. .3...3 ..3.3. ...... ..333. ...3.. .3...3 .....3 .3...3 .3...3 ...... .3.... .3...3 .3...3 .3...3 ...... ...... ...3.. ...... .6.6.6 666666
+...... ...... .3.... .3...3 .3...3 .3.... .33333 ..3333 ...3.. ...... .3.... ...3.. ..3333 ..333. .3...3 ...... ..333. ...... ...... .3...3 .3...3 ...3.. ...... .....3 ...3.. .33333 ..3333 .3...3 .3...3 ...... .3..33 .3...3 .3...3 .33333 ...... ...... ...3.. ...... ...6.. 666666
+...... ...... .3...3 .3...3 .3...3 .3.... .3.... .3...3 ...3.. ...... .3.... ...3.. .3...3 .....3 .3...3 ...... .3.3.3 ...... ...... .3...3 .3...3 ..3.3. ...... .3...3 ...3.. .3.... .3...3 .3...3 .3...3 ...... .3...3 .3...3 .3...3 .3.... ...... ...... ...... ...... ...6.. 666666
+...... ...... ..333. ..333. .3...3 ..3333 ..333. ..3333 ..333. ...... .3.... ..333. ..3333 .3333. .3...3 ...... ...3.. ...... ...... .3333. ..333. .3...3 ...... ..333. ....3. ..333. ..3333 ..3333 ..3333 ...... ..3333 ..333. .3...3 ..333. ...... ...... ...3.. ...... ...... 666666
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... .....3 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 666666
+...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ..333. ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... 666666
+  0,22   1,22   2,22   3,22   4,22   5,22   6,22   7,22   8,22   9,22  10,22  11,22  12,22  13,22  14,22  15,22  16,22  17,22  18,22  19,22  20,22  21,22  22,22  23,22  24,22  25,22  26,22  27,22  28,22  29,22  30,22  31,22  32,22  33,22  34,22  35,22  36,22  37,22  38,22  39,22
+  0x83   0x98 C 0xC3 o 0xEF n 0xEE c 0xE3 e 0xE5 a 0xE1 l 0xEC   0x88 F 0xC6 l 0xEC a 0xE1 s 0xF3 h 0xE8   0x83 * 0xAA   0x8B   0x8B B 0xC2 o 0xEF x 0xF8   0x89 S 0xD3 t 0xF4 e 0xE5 a 0xE1 d 0xE4 y 0xF9   0x98 G 0xC7 o 0xEF n 0xEE e 0xE5   0x8A   0x8A ? 0xBF   0x96 ^ 0xDE   0xFF
+W/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx Y/k Tx C/k So C/k So
+
+...... .22222 ...... ...... ...2.. ...... ...... ...... ...... ...2.. ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... .2.... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... .2.... .2222. ..2222 ..22.. .2222. ..222. ..222. ..2.22 ..22.. .2222. ..2222 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... .2222. .2...2 .2...2 ...2.. .2...2 .2...2 .2...2 ..22.. ...2.. .2...2 .2...2 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... .2.... .2...2 .2...2 ...2.. .2...2 .22222 .22222 ..2... ...2.. .2...2 .2...2 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... .2.... .2...2 .2...2 ...2.. .2...2 .2.... .2.... ..2... ...2.. .2...2 .2...2 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... .22222 .2...2 ..2222 ..222. .2...2 ..222. ..222. ..2... ..222. .2...2 ..2222 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... .....2 ...... ...... ...... ...... ...... ...... ...... .....2 ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+...... ...... ...... ..222. ...... ...... ...... ...... ...... ...... ...... ..222. ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ...... ......
+  0,23   1,23   2,23   3,23   4,23   5,23   6,23   7,23   8,23   9,23  10,23  11,23  12,23  13,23  14,23  15,23  16,23  17,23  18,23  19,23  20,23  21,23  22,23  23,23  24,23  25,23  26,23  27,23  28,23  29,23  30,23  31,23  32,23  33,23  34,23  35,23  36,23  37,23  38,23  39,23
+  0x82 E 0x45 n 0x6E g 0x67 i 0x69 n 0x6E e 0x65 e 0x65 r 0x72 i 0x69 n 0x6E g 0x67   0x20    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0    0x0
+W/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx G/k Tx
+

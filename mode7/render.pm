@@ -165,7 +165,8 @@ sub render {
 				if ( $cc >= 128+96 && $cc <= 128+127 ) { $gfxchar = 1; }
 				}
 
-			# if it is, we need to propagate it along the rest of the line.
+			# if it is, we need to propagate it along the rest of the line to
+			# be used for held graphics, if required.
 			if ( $gfxchar == 1 ) { 
 				my $newsep = int($screen->{gftrib}[$cx][$cy]/2);
 				# 0->0 1->0 2->1 3->1

@@ -15,7 +15,11 @@ sub output_large {
 	print F "P3\n# frame\n480 432\n1\n";
 	for ( my $y = 0; $y < 216; $y += 0.5 ) { 
 		for ( my $x = 0; $x < 240; $x += 0.5 ) { 
-			my $pc = $screen->{gfx}[int($x)][int($y)];
+
+			my $gx = int($x);
+			my $gy = int($y);
+
+			my $pc = $screen->{gfx}[$gx][$gy];
 			my $rc = $pc & 1;
 			my $gc = $pc & 2;
 			my $bc = $pc & 4;
@@ -27,12 +31,20 @@ sub output_large {
 			my $sbx = (2*$x) % 2;
 			my $sby = (2*$y) % 2;
 
-			# sub-block for double height
-			my $sbhy = (2*$y) % 4;
-
 			# character position in the grid
 			my $cx = int($x/6);
 			my $cy = int($y/9);
+
+			# sub-block for double height
+			# relative to the part of the double-height pair we're in.
+			my $sbhy = 0;
+			if ( $screen->{dbtrib}[$cx][$cy] == 1 ) { 
+				if ( $screen->{dblpart}[$cy] == 2 ) { 
+					$sbhy = ( 2 + ( ( $y%9 ) * 2 ) ) % 4;
+					} else { 
+					$sbhy = ( ( $y%9 ) * 2 ) % 4;
+					}
+				}
 
 			# pixel in char
 			my $px = ( int($x) % 6 );
@@ -53,13 +65,13 @@ sub output_large {
 			&&	$px > 0 
 			&&	$py > 0 
 
-			&&	( $screen->{gftrib}[$cx][$cy] == 0
-				|| $screen->{gftrib}[$cx][$cy] == 2
-				|| output_tigm($cc) == 1 ) 
-			&& 	$screen->{gfx}[$x][$y] == $screen->{bgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x-1][$y] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x][$y-1] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x-1][$y-1] == $screen->{bgtrib}[$cx][$cy]
+			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 ) 
+				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
+				|| ( output_tigm($cc) == 1 ) ) 
+			&& 	$screen->{gfx}[$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx-1][$gy] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx][$gy-1] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx-1][$gy-1] == $screen->{bgtrib}[$cx][$cy]
 				) {
 
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
@@ -78,14 +90,15 @@ sub output_large {
 
 			&&	$px < 5 
 			&&	$py > 0 
-			&&	(  $screen->{gftrib}[$cx][$cy] == 0
-				|| $screen->{gftrib}[$cx][$cy] == 2
-				|| output_tigm($cc) == 1 ) 
-			&& 	$screen->{gfx}[$x][$y] == $screen->{bgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x+1][$y] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x][$y-1] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x+1][$y-1] == $screen->{bgtrib}[$cx][$cy]
+			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
+				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
+				|| ( output_tigm($cc) == 1 ) ) 
+			&& 	$screen->{gfx}[$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx+1][$gy] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx][$gy-1] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx+1][$gy-1] == $screen->{bgtrib}[$cx][$cy]
 				) {
+
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
 				$gc = $screen->{fgtrib}[$cx][$cy] & 2; 
 				$bc = $screen->{fgtrib}[$cx][$cy] & 4; 
@@ -102,14 +115,15 @@ sub output_large {
 
 			&&	$px > 0 
 			&&	$py < 8 
-			&&	( $screen->{gftrib}[$cx][$cy] == 0
-				|| $screen->{gftrib}[$cx][$cy] == 2
-				|| output_tigm($cc) == 1 ) 
-			&& 	$screen->{gfx}[$x][$y] == $screen->{bgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x-1][$y] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x][$y+1] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x-1][$y+1] == $screen->{bgtrib}[$cx][$cy]
+			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
+				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
+				|| ( output_tigm($cc) == 1 ) )
+			&& 	$screen->{gfx}[$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx-1][$gy] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx][$gy+1] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx-1][$gy+1] == $screen->{bgtrib}[$cx][$cy]
 				) {
+
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
 				$gc = $screen->{fgtrib}[$cx][$cy] & 2; 
 				$bc = $screen->{fgtrib}[$cx][$cy] & 4; 
@@ -126,14 +140,15 @@ sub output_large {
 
 			&&	$px < 5 
 			&&	$py < 8 
-			&&	( $screen->{gftrib}[$cx][$cy] == 0
-				|| $screen->{gftrib}[$cx][$cy] == 2
-				|| output_tigm($cc) == 1 ) 
-			&& 	$screen->{gfx}[$x][$y] == $screen->{bgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x+1][$y] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x][$y+1] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$x+1][$y+1] == $screen->{bgtrib}[$cx][$cy]
+			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
+				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
+				|| ( output_tigm($cc) == 1 ) )
+			&& 	$screen->{gfx}[$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx+1][$gy] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx][$gy+1] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$gx+1][$gy+1] == $screen->{bgtrib}[$cx][$cy]
 				) {
+
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
 				$gc = $screen->{fgtrib}[$cx][$cy] & 2; 
 				$bc = $screen->{fgtrib}[$cx][$cy] & 4; 
