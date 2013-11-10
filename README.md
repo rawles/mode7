@@ -52,7 +52,8 @@ Demonstrations
 
 Have a look at the demo directory, which has some example frames, and 
 the output from them. There is also a reference directory which shows 
-how the testcard frame should look.
+how the testcard frame should look. There is a also a trace directory
+which shows each character cell's attributes in a text format.
 
 To re-render these frames, run the m7demo program, which also serves
 as a usage example.
@@ -119,10 +120,9 @@ Supported control characters
 To do
 -----
 
-* Double height smoothing doesn't occur in every instance - 
-  find out why and fix it!
-* Flashing
-* Reveal
+* Better representation of graphics layers and layer merging.
+* Proper documentation maybe.
+* Flashing and reveal
 * Write it in C or something.
 
 See also
