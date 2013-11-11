@@ -61,42 +61,47 @@ minute!
 
 More example frames (or character streams) are gratefully received.
 
-Supported control characters
-----------------------------
+Control characters
+------------------
+
+All of the characters which are meaningful in a PNG conversion like
+this are supported. The remaining are for things like combining with
+a television picture, or are just not supported by the BBC Micro
+teletext chip.
 
 <pre>
-,------------.----------.     .---------------------.
-|     hex    |  decimal |     | description         |
-+------------+----------+-----+---------------------+
-|    0x80    |    128   | yes | black text [1]      |
-| 0x81..0x87 | 129..135 | yes | text                |
-|            |          |     |                     |
-|    0x88    |    136   | yes | flash               |
-|    0x89    |    137   | yes | steady              |
-|            |          |     |                     |
-| 0x8a..0x8b | 138..139 |     | not implemented [2] |
-|            |          |     |                     |
-|    0x8c    |    140   | yes | normal height       |
-|    0x8d    |    141   | yes | double height       |
-|            |          |     |                     |
-| 0x8e..0x8f | 142..143 |     | not implemented [3] |
-|            |          |     |                     |
-|    0x90    |    144   | yes | black graphics [1]  |
-| 0x91..0x97 | 145..151 | yes | graphics            |
-|            |          |     |                     |
-|    0x98    |    152   | yes | conceal [4]         |
-|            |          |     |                     |
-|    0x99    |    153   | yes | solid graphics      |
-|    0x9a    |    154   | yes | separated graphics  |
-|            |          |     |                     |
-|    0x9b    |    155   |     | does nothing [5]    |
-|            |          |     |                     | 
-|    0x9c    |    156   | yes | black background    |
-|    0x9d    |    157   | yes | new background      |
-|            |          |     |                     |
-|    0x9e    |    158   | yes | hold graphics       |
-|    0x9f    |    159   | yes | release graphics    |
-`------------^----------^-----^---------------------'
+,------------.----------.---------------------.
+|     hex    |  decimal | description         |
++------------+----------+---------------------+
+|    0x80    |    128   | black text [1]      |
+| 0x81..0x87 | 129..135 | text                |
+|            |          |                     |
+|    0x88    |    136   | flash               |
+|    0x89    |    137   | steady              |
+|            |          |                     |
+| 0x8a..0x8b | 138..139 | not implemented [2] |
+|            |          |                     |
+|    0x8c    |    140   | normal height       |
+|    0x8d    |    141   | double height       |
+|            |          |                     |
+| 0x8e..0x8f | 142..143 | not implemented [3] |
+|            |          |                     |
+|    0x90    |    144   | black graphics [1]  |
+| 0x91..0x97 | 145..151 | graphics            |
+|            |          |                     |
+|    0x98    |    152   | conceal [4]         |
+|            |          |                     |
+|    0x99    |    153   | solid graphics      |
+|    0x9a    |    154   | separated graphics  |
+|            |          |                     |
+|    0x9b    |    155   | does nothing [5]    |
+|            |          |                     | 
+|    0x9c    |    156   | black background    |
+|    0x9d    |    157   | new background      |
+|            |          |                     |
+|    0x9e    |    158   | hold graphics       |
+|    0x9f    |    159   | release graphics    |
+`------------^----------^---------------------'
 
             [1] not supported in many adaptors
             [2] 'end box' and 'start box', which
