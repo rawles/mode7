@@ -64,7 +64,7 @@ sub output_large {
 
 				# If this is line 2 of a double we should allow it to look into 
 				# its other half.
-			&&	$px > 0 && ( $screen->{dblpart}[$cy] == 2 || $py > 0 )
+			&&	$px > 0 && ( ( $screen->{dblpart}[$cy] == 2 && $y > 0 ) || $py > 0 )
 
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 ) 
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
@@ -89,7 +89,7 @@ sub output_large {
 			&&	( ( $sby == 0 && $screen->{dbtrib}[$cx][$cy] != 1 )
 				|| ( ( $sbhy==0 || $sbhy==1 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
 
-			&&	$px < 5 && ( $screen->{dblpart}[$cy] == 2 || $py > 0 )
+			&&	$px < 5 && ( ( $screen->{dblpart}[$cy] == 2 && $y > 0 ) || $py > 0 )
 
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
@@ -114,7 +114,7 @@ sub output_large {
 			&&	( ( $sby == 1 && $screen->{dbtrib}[$cx][$cy] != 1 )
 				|| ( ( $sbhy==2 || $sbhy==3 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
 
-			&&	$px > 0 && ( $screen->{dblpart}[$cy] == 1 || $py < 8 )
+			&&	$px > 0 && ( ( $screen->{dblpart}[$cy] == 1 && $y < 215 ) || $py < 8 )
 
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
@@ -139,7 +139,7 @@ sub output_large {
 			&&	( ( $sby == 1 && $screen->{dbtrib}[$cx][$cy] != 1 )
 				|| ( ( $sbhy==2 || $sbhy==3 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
 
-			&&	$px < 5 && ( $screen->{dblpart}[$cy] == 1 || $py < 8 )
+			&&	$px < 5 && ( ( $screen->{dblpart}[$cy] == 1 && $y < 215 ) || $py < 8 )
 
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
