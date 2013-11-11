@@ -1,16 +1,10 @@
 BBC Micro Mode 7 frame renderer
 ===============================
 
-What is it?
------------
-
 The idea is to take raw frames intended for the "teletext mode", mode 7, 
 on BBC micros, and render them into a nice-looking PNG. The eventual 
 idea is to do this for many such frames, for example where they might be 
 animated.
-
-Pushing forward and never looking back
---------------------------------------
 
 The design decisions for this code were a little different to other 
 renderers. I was trying to make something that would do the job quickly 
@@ -133,3 +127,8 @@ See also
 
 * Rob's Teletext preservation project, the source of many of the test 
   frames (thanks Rob): http://www.teletext.org.uk/
+
+* Also by Rob, something that does pretty much what this does, and
+  more besides, in PHP:
+  http://www.irrelevant.com/vv/
+  http://code.google.com/p/viewdataviewer/
