@@ -26,7 +26,7 @@ foreach my $demofile ( <demo/input/*.m7> ) {
 	read_frame($screen, "demo/input/$stem.m7");
 
 	# Convert the characters in the frame to a graphics:
-	render($screen, \@font);
+	render($screen, \@font, 1, 1);
 
 	# ... and write it out to disk:
 	output_large($screen, "demo/output/large/$stem.png");

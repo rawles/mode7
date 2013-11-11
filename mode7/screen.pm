@@ -13,6 +13,11 @@ sub new_screen {
 	#   1 (red) + 2 (green) + 4 (blue)
 	my @bgtrib = (); $screen->{bgtrib} = \@bgtrib;
 
+	# cotrib[x][y] = whether the character at position (x,y) is concealed
+	#   0: not concealed
+	#   1: concealed
+	my @cotrib = (); $screen->{cotrib} = \@cotrib;
+
 	# dbtrib[x][y] = whether the character at position (x,y) is to be rendered
 	#   as double height.
 	#   0: normal height
@@ -29,6 +34,11 @@ sub new_screen {
 	# fgtrib[x][y] = the foreground colour for the character at position (x,y)
 	#   1 (red) + 2 (green) + 4 (blue)
 	my @fgtrib = (); $screen->{fgtrib} = \@fgtrib;
+
+	# fltrib[x][y] = whether the character at position (x,y) is flashing
+	#   0: steady (no flashing)
+	#   1: flashing
+	my @fltrib = (); $screen->{fltrib} = \@fltrib;
 
 	# frame[x][y] = the character at position (x,y) in the frame.
 	my @frame = (); $screen->{frame} = \@frame;
@@ -78,11 +88,17 @@ sub screen_clear {
 			# Characters have a black background by default.
 			$screen->{bgtrib}[$x][$y] = 0;
 
+			# Characters are not concealed by default.
+			$screen->{cotrib}[$x][$y] = 0;
+
 			# Characters are normal height by default.
 			$screen->{dbtrib}[$x][$y] = 0;
 
 			# Initialise the frame with spaces.
 			$screen->{frame}[$x][$y] = " ";
+
+			# Characters are steady by default.
+			$screen->{fltrib}[$x][$y] = 0;
 
 			# Characters are white by default.
 			$screen->{fgtrib}[$x][$y] = 7;

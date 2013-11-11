@@ -71,8 +71,8 @@ Supported control characters
 |    0x80    |    128   | yes | black text [1]      |
 | 0x81..0x87 | 129..135 | yes | text                |
 |            |          |     |                     |
-|    0x88    |    136   |  no | flash               |
-|    0x89    |    137   |  no | steady              |
+|    0x88    |    136   | yes | flash               |
+|    0x89    |    137   | yes | steady              |
 |            |          |     |                     |
 | 0x8a..0x8b | 138..139 |     | not implemented [2] |
 |            |          |     |                     |
@@ -84,7 +84,7 @@ Supported control characters
 |    0x90    |    144   | yes | black graphics [1]  |
 | 0x91..0x97 | 145..151 | yes | graphics            |
 |            |          |     |                     |
-|    0x98    |    152   |  no | conceal [4]         |
+|    0x98    |    152   | yes | conceal [4]         |
 |            |          |     |                     |
 |    0x99    |    153   | yes | solid graphics      |
 |    0x9a    |    154   | yes | separated graphics  |
@@ -114,9 +114,11 @@ Supported control characters
 To do
 -----
 
+* Characters inserted not in order shouldn't take effect always
+  to the end of the line, but to the character which overrides
+  them.
 * Better representation of graphics layers and layer merging.
 * Proper documentation maybe.
-* Flashing and reveal
 * Write it in C or something.
 
 See also
@@ -132,3 +134,5 @@ See also
   more besides, in PHP:
   http://www.irrelevant.com/vv/
   http://code.google.com/p/viewdataviewer/
+
+  There are also a lot of other viewers and converters out there.

@@ -9,6 +9,10 @@ use strict;
 sub cc { # Asserts that a control character is here
 	my $screen = shift;
 	my $fontref = shift;
+	my $phase = shift;   # the flash phase. 
+	                     # 0 flash chars off, 1 flash chars on.
+	my $reveal = shift;  # are we in a reveal state?
+	                     # 0 concealed text hidden, 1 concealed text shown
 	my $cx = shift;
 	my $cy = shift;
 	for ( my $y = 0; $y < 9; $y++ ) { 
@@ -25,13 +29,17 @@ sub cc { # Asserts that a control character is here
 	if ( $screen->{hgtrib}[$cx][$cy] == 1 ) { # hg would be shown here
 		my $passedhgchar = $screen->{hgchar}[$cx][$cy];
 		if ( $passedhgchar == 0 ) { $passedhgchar = 32; } 
-		drawchar($screen,$fontref,$cx,$cy,$passedhgchar,2+$screen->{hgcharsep}[$cx][$cy]);
+		drawchar($screen,$fontref,$phase,$reveal,$cx,$cy,$passedhgchar,2+$screen->{hgcharsep}[$cx][$cy]);
 		}
 	}
 
 sub drawchar {
 	my $screen = shift;
 	my $fontref = shift; my @font = @{$fontref};
+	my $phase = shift;   # the flash phase. 
+	                     # 0 flash chars off, 1 flash chars on.
+	my $reveal = shift;  # are we in a reveal state?
+	                     # 0 concealed text hidden, 1 concealed text shown
 	my $cx = shift;      # the x-position
 	my $cy = shift;      # the y-position
 	my $cc = shift;      # the character code at this position
@@ -39,8 +47,10 @@ sub drawchar {
 	                     # 2 (graphic mode forced to continuous)
                              # 3 (graphic mode forced to separated)
 	                     # We need this forced mode for held graphics.
+
 	my @gfxweights = (1,2,4,8,16,64);
 	                     # the weights of each graphic cell
+
 
 	my $blank_normal_l2 = 1; # line two when switching back isnt shown
 
@@ -99,13 +109,19 @@ sub drawchar {
 			# Dump the above if it's one of the blanked characters.
 			if ( $useblank == 1 ) { $pc = 0; }
 
+			# Dump the above if we're on flash phase 0 and this is in flash mode.
+			if ( ( $phase == 0 ) && ( $screen->{fltrib}[$cx][$cy] == 1 ) ) { $pc = 0; }
+
+			# Dump the above if we're not revealed and this is in reveal mode
+			if ( ( $reveal == 0 ) && ( $screen->{cotrib}[$cx][$cy] == 1 ) ) { $pc = 0; }
+
 			# Colour the character with the correct foreground attributes
 			if ( $screen->{fgtrib}[$cx][$cy] > 0 ) { 
 				$pc &= $screen->{fgtrib}[$cx][$cy];
 				}
 
 			# Remaining pixels are now background.
-			if ( $screen->{bgtrib}[$cx][$cy] > 0 && $pc == 0){ 
+			if ( $screen->{bgtrib}[$cx][$cy] > 0 && $pc == 0 ){ 
 				$pc = $screen->{bgtrib}[$cx][$cy];
 				}
 
