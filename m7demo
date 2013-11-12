@@ -8,11 +8,19 @@ use mode7::file;
 use mode7::render;
 use mode7::trace;
 
+use Time::HiRes qw( tv_interval gettimeofday );
+
 use strict;
 use warnings;
 
 # Read the font in
 my @font = read_font("fonts/teletext.uk.font");
+
+# It's important that this is fast, so we'll use Time::HiRes to keep track
+# of how long the important stages took.
+my $time_render_t = 0;
+my $time_output_t = 0;
+my $time_n = 0;
 
 foreach my $demofile ( <demo/input/*.m7> ) { 
 	print "$demofile...";
@@ -26,12 +34,16 @@ foreach my $demofile ( <demo/input/*.m7> ) {
 	read_frame($screen, "demo/input/$stem.m7");
 
 	# Convert the characters in the frame to a graphic:
+	my $started = [gettimeofday];
 	render($screen, \@font, 1, 1);
 	#                       ^  ^--- reveal: 1=on 0=off
 	#                       `------ flash phase: 1=on 0=off
+	$time_render_t += tv_interval($started);
 
 	# ... and write it out to disk:
+	$started = [gettimeofday];
 	output_large($screen, "demo/output/large/$stem.png");
+	$time_output_t += tv_interval($started);
 	output_small($screen, "demo/output/small/$stem.png");
 
 	if ( -e "demo/output/trace" && -d "demo/output/trace") { 
@@ -41,4 +53,11 @@ foreach my $demofile ( <demo/input/*.m7> ) {
 		}
 
 	print "done\n";
+	$time_n++;
+	}
+
+if ( $time_n > 0 ) { 
+	print "\nMean running times:\n";
+	print "render() ........ ".(sprintf("%.3f", $time_render_t/$time_n))."s\n";
+	print "output_large() .. ".(sprintf("%.3f", $time_output_t/$time_n))."s\n";
 	}
