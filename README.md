@@ -119,9 +119,6 @@ teletext chip.
 To do
 -----
 
-* Characters inserted not in order shouldn't take effect always
-  to the end of the line, but to the character which overrides
-  them.
 * Better representation of graphics layers and layer merging.
 * Proper documentation maybe.
 * Write it in C or something.
@@ -134,10 +131,9 @@ See also
 
 * Rob's Teletext preservation project, the source of many of the test 
   frames (thanks Rob): http://www.teletext.org.uk/
-
-* Also by Rob, something that does pretty much what this does, and
+  Also by Rob, something that does pretty much what this does, and
   more besides, in PHP:
   http://www.irrelevant.com/vv/
   http://code.google.com/p/viewdataviewer/
 
-  There are also a lot of other viewers and converters out there.
+There are also a lot of other viewers and converters out there.
