@@ -11,12 +11,6 @@ sub render {
 	my $screen = shift;
 	my $fontref = shift;
 
-        my $flashphase = shift;   # the flash phase.
-                                  # 0 flash chars off, 1 flash chars on.
-	if ( !defined $flashphase ) { $flashphase = 1; } 
-	$flashphase = int($flashphase);
-	if ( $flashphase < 0 || $flashphase > 1 ) { $flashphase = 1; } 
-
         my $reveal = shift;  # are we in a reveal state?
                              # 0 concealed text hidden, 1 concealed text shown
 	if ( !defined $reveal ) { $reveal = 1; } 
@@ -42,7 +36,7 @@ sub render {
 			my $cc = ord($framechar);
 
 			if ( $allow_80 != 1 && $cc == 128 ) { 
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( ( $allow_80 == 1 && $cc == 128 )
@@ -57,7 +51,7 @@ sub render {
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{cotrib}[$i][$cy] = 0;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next; 
 				}
 
@@ -65,7 +59,7 @@ sub render {
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{fltrib}[$i][$cy] = 1;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 
@@ -73,7 +67,7 @@ sub render {
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{fltrib}[$i][$cy] = 0;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 
@@ -84,7 +78,7 @@ sub render {
 					}
 				# we dont mess with which part it is in case
 				# user switches back 
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 
@@ -102,20 +96,20 @@ sub render {
 					$screen->{hgchar}[$i][$cy] = 32;
 					$screen->{hgcharsep}[$i][$cy] = 0;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( $cc == 142 ) { # "SO"
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( $cc == 143 ) { # "SI"
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 
 			if ( $allow_90 != 1 && $cc == 144 ) { 
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( ( $allow_90 && $cc == 144 ) 
@@ -137,14 +131,14 @@ sub render {
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{cotrib}[$i][$cy] = 0;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next; 
 				}
 			if ( $cc == 152 ) { # conceal
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{cotrib}[$i][$cy] = 1;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( $cc == 153 ) { # contiguous graphics
@@ -152,7 +146,7 @@ sub render {
 					$screen->{gftrib}[$i][$cy] = $screen->{gftrib}[$i][$cy] % 2; # drop MSB 
 					# 0->0 1->1 2->0 3->1
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( $cc == 154 ) { # separated graphics
@@ -160,14 +154,14 @@ sub render {
 					$screen->{gftrib}[$i][$cy] = ( $screen->{gftrib}[$i][$cy] % 2 ) + 2; 
 					# 0->2  1->3  2->2  3->3
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( $cc == 156 ) { # Black background
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{bgtrib}[$i][$cy] = 0;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( $cc == 157 ) { # New background
@@ -175,14 +169,14 @@ sub render {
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{bgtrib}[$i][$cy] = $newcolour;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( $cc == 158 ) { # held graphics on
 				for ( my $i = $cx; $i < 40; $i++ ) {
 					$screen->{hgtrib}[$i][$cy] = 1;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 			if ( $cc == 159 ) { # held graphics off
@@ -192,7 +186,7 @@ sub render {
 					#$screen->{hgchar}[$i][$cy] = 0;
 					#$screen->{hgcharsep}[$i][$cy] = 0;
 					}
-				cc($screen,$fontref,$flashphase,$reveal,$cx,$cy);
+				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
 
@@ -215,7 +209,7 @@ sub render {
 					}
 				}
 
-			drawchar($screen, $fontref, $flashphase, $reveal, $cx, $cy, $cc, $gfxchar);
+			drawchar($screen, $fontref, $reveal, $cx, $cy, $cc, $gfxchar);
 			}
 		}
 	}

@@ -9,8 +9,6 @@ use strict;
 sub cc { # Asserts that a control character is here
 	my $screen = shift;
 	my $fontref = shift;
-	my $phase = shift;   # the flash phase. 
-	                     # 0 flash chars off, 1 flash chars on.
 	my $reveal = shift;  # are we in a reveal state?
 	                     # 0 concealed text hidden, 1 concealed text shown
 	my $cx = shift;
@@ -23,17 +21,33 @@ sub cc { # Asserts that a control character is here
 			if ( $screen->{bgtrib}[$cx][$cy] > 0 && $pc == 0 ) { 
 				$pc = $screen->{bgtrib}[$cx][$cy];
 				}
-			$screen->{gfx}[$px][$py] = $pc;
+			$screen->{gfx}[0][$px][$py] = $pc;
+			$screen->{gfx}[1][$px][$py] = $pc;
 			}
 		}
 	if ( $screen->{hgtrib}[$cx][$cy] == 1 ) { # hg would be shown here
 		my $passedhgchar = $screen->{hgchar}[$cx][$cy];
 		if ( $passedhgchar == 0 ) { $passedhgchar = 32; } 
-		drawchar($screen,$fontref,$phase,$reveal,$cx,$cy,$passedhgchar,2+$screen->{hgcharsep}[$cx][$cy]);
+		drawchar($screen,$fontref,$reveal,$cx,$cy,$passedhgchar,
+			2+$screen->{hgcharsep}[$cx][$cy]);
 		}
 	}
 
-sub drawchar {
+sub drawchar { 
+	my $screen = shift;
+	my $fontref = shift;
+	my $reveal = shift;
+	my $cx = shift;
+	my $cy = shift;
+	my $cc = shift;
+	my $gfxchar = shift;
+
+	# Once for each phase.
+	drawchar_phase($screen, $fontref, 0, $reveal, $cx, $cy, $cc, $gfxchar);
+	drawchar_phase($screen, $fontref, 1, $reveal, $cx, $cy, $cc, $gfxchar);
+	}
+
+sub drawchar_phase {
 	my $screen = shift;
 	my $fontref = shift; my @font = @{$fontref};
 	my $phase = shift;   # the flash phase. 
@@ -126,7 +140,7 @@ sub drawchar {
 				}
 
 			# Write it into the graphical representation.
-			$screen->{gfx}[$px][$py] = $pc;
+			$screen->{gfx}[$phase][$px][$py] = $pc;
 			}
 		}
 
@@ -148,7 +162,7 @@ sub drawchar {
 					my $px = $cx * 6 + $x;
 					my $py = $cy * 9 + $y;
 					my $pyf = $cy * 9 + $copyfrom;
-					$screen->{gfx}[$px][$py] = $screen->{gfx}[$px][$pyf];
+					$screen->{gfx}[$phase][$px][$py] = $screen->{gfx}[$phase][$px][$pyf];
 					}
 				}
 			}
@@ -165,7 +179,7 @@ sub drawchar {
 					my $px = $cx * 6 + $x;
 					my $py = $cy * 9 + $y;
 					my $pyf = $cy * 9 + $copyfrom;
-					$screen->{gfx}[$px][$py] = $screen->{gfx}[$px][$pyf];
+					$screen->{gfx}[$phase][$px][$py] = $screen->{gfx}[$phase][$px][$pyf];
 					}
 				}
 			}

@@ -38,7 +38,7 @@ while ( length($stream) > 0 ) {
 	
 	# Write it out to the frame directory
 	my $fname = sprintf("%08d", $framenumber).".png";
-	output_large($screen, "/tmp/m7frames/$fname");
+	output_large_png($screen, 1, "/tmp/m7frames/$fname");
 	$framenumber++;
 	print "Frame $framenumber, ".(length($stream)-$newoffset)."b remain.\n";
 
@@ -47,7 +47,7 @@ while ( length($stream) > 0 ) {
 	}
 
 print "Converting video...";
-my $cmd = "avconv -i /tmp/m7frames/%08d.png -r 50 -y demo/animation/output/video.mp4";
+my $cmd = "avconv -i /tmp/m7frames/%08d.png -r 50 -y demo/animation/output/crtc-aphex.mp4";
 system($cmd);
 print "done\n";
 

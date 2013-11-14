@@ -1,12 +1,15 @@
 package mode7::output;
 our $VERSION = '1.00';
 use base 'Exporter';
-our @EXPORT = qw(output_large output_small);
+our @EXPORT = qw(output_large_png output_small_png output_large_gif output_small_gif);
 use warnings;
 use strict;
 
-sub output_large {
+use mode7::screen;
+
+sub output_large_png {
 	my $screen = shift;
+	my $phase = shift;
 	my $finalName = shift;
 	my $fileName = "$finalName.tmp";
 
@@ -19,7 +22,7 @@ sub output_large {
 			my $gx = int($x);
 			my $gy = int($y);
 
-			my $pc = $screen->{gfx}[$gx][$gy];
+			my $pc = $screen->{gfx}[$phase][$gx][$gy];
 			my $rc = $pc & 1;
 			my $gc = $pc & 2;
 			my $bc = $pc & 4;
@@ -69,10 +72,10 @@ sub output_large {
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 ) 
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
 				|| ( output_tigm($cc) == 1 ) ) 
-			&& 	$screen->{gfx}[$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx-1][$gy] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx][$gy-1] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx-1][$gy-1] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx-1][$gy] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx][$gy-1] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx-1][$gy-1] == $screen->{bgtrib}[$cx][$cy]
 				) {
 
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
@@ -94,10 +97,10 @@ sub output_large {
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
 				|| ( output_tigm($cc) == 1 ) ) 
-			&& 	$screen->{gfx}[$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx+1][$gy] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx][$gy-1] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx+1][$gy-1] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx+1][$gy] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx][$gy-1] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx+1][$gy-1] == $screen->{bgtrib}[$cx][$cy]
 				) {
 
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
@@ -119,10 +122,10 @@ sub output_large {
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
 				|| ( output_tigm($cc) == 1 ) )
-			&& 	$screen->{gfx}[$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx-1][$gy] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx][$gy+1] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx-1][$gy+1] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx-1][$gy] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx][$gy+1] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx-1][$gy+1] == $screen->{bgtrib}[$cx][$cy]
 				) {
 
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
@@ -144,10 +147,10 @@ sub output_large {
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
 				|| ( output_tigm($cc) == 1 ) )
-			&& 	$screen->{gfx}[$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx+1][$gy] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx][$gy+1] == $screen->{fgtrib}[$cx][$cy]
-			&& 	$screen->{gfx}[$gx+1][$gy+1] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx][$gy] == $screen->{bgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx+1][$gy] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx][$gy+1] == $screen->{fgtrib}[$cx][$cy]
+			&& 	$screen->{gfx}[$phase][$gx+1][$gy+1] == $screen->{bgtrib}[$cx][$cy]
 				) {
 
 				$rc = $screen->{fgtrib}[$cx][$cy] & 1; 
@@ -169,10 +172,11 @@ sub output_large {
 	unlink($fileName);
 	}
 
-sub output_small {
+sub output_small_png {
 	# No smoothing is needed, so we can make this a lot simpler.
 
 	my $screen = shift;
+	my $phase = shift;
 	my $finalName = shift;
 	my $fileName = "$finalName.tmp";
 
@@ -181,9 +185,9 @@ sub output_small {
 	print F "P3\n# frame\n240 216\n1\n";
 	for ( my $y = 0; $y < 216; $y++ ) { 
 		for ( my $x = 0; $x < 240; $x++ ) { 
-			my $rc = $screen->{gfx}[$x][$y] & 1; if ( $rc > 0 ) { $rc = 1; } 
-			my $gc = $screen->{gfx}[$x][$y] & 2; if ( $gc > 0 ) { $gc = 1; }
-			my $bc = $screen->{gfx}[$x][$y] & 4; if ( $bc > 0 ) { $bc = 1; }
+			my $rc = $screen->{gfx}[$phase][$x][$y] & 1; if ( $rc > 0 ) { $rc = 1; } 
+			my $gc = $screen->{gfx}[$phase][$x][$y] & 2; if ( $gc > 0 ) { $gc = 1; }
+			my $bc = $screen->{gfx}[$phase][$x][$y] & 4; if ( $bc > 0 ) { $bc = 1; }
 			print F "$rc $gc $bc\n";
 			}
 		print F "\n";
@@ -193,6 +197,52 @@ sub output_small {
 	system("convert -define png:color-type=2 $fileName $finalName");
 	unlink($fileName);
 	unlink($fileName);
+	}
+
+# This is a helper subroutine which will create a GIF. The advantage 
+# of this is that (if necessary) it will be an animated GIF, otherwise
+# a static GIF.
+# I know that GIFs are bad. I'll try to figure out how to make ImageMagick
+# do an animated PNG.
+sub output_large_gif { # Will flash if needed
+	my $screen = shift;
+	my $finalName = shift;
+
+	if ( screen_flash_invariant($screen) == 1 ) { 
+
+		output_large_png($screen, 1, "/tmp/on.png");
+		system("convert /tmp/on.png $finalName");
+		unlink("/tmp/on.png");
+
+		} else { # graphically different, so need to flash
+
+		output_large_png($screen, 1, "/tmp/on.png");
+		output_large_png($screen, 0, "/tmp/off.png");
+		system("convert -delay 100 /tmp/on.png -delay 33 /tmp/off.png -loop 0 $finalName");
+		unlink("/tmp/on.png");
+		unlink("/tmp/off.png");
+		}
+	}
+
+# And the same helper function for small graphics.
+sub output_small_gif { # Will flash if needed
+	my $screen = shift;
+	my $finalName = shift;
+
+	if ( screen_flash_invariant($screen) == 1 ) { 
+
+		output_small_png($screen, 1, "/tmp/on.png");
+		system("convert /tmp/on.png $finalName");
+		unlink("/tmp/on.png");
+
+		} else { # graphically different, so need to flash
+
+		output_small_png($screen, 1, "/tmp/on.png");
+		output_small_png($screen, 0, "/tmp/off.png");
+		system("convert -delay 100 /tmp/on.png -delay 33 /tmp/off.png -loop 0 $finalName");
+		unlink("/tmp/on.png");
+		unlink("/tmp/off.png");
+		}
 	}
 
 sub output_tigm { # text in graphics mode

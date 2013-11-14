@@ -27,7 +27,7 @@ foreach my $demofile ( <demo/input/*.m7> ) {
 
 	my @parts = split(/\//, $demofile); my $stem = pop @parts; $stem =~ s/\.m7$//g;
 
-	# Initialise the screen object we'll be using:
+	# Initialise the screen object we'll be using.
 	my $screen = new_screen();
 
 	# Read the frame from the disk:
@@ -35,22 +35,20 @@ foreach my $demofile ( <demo/input/*.m7> ) {
 
 	# Convert the characters in the frame to a graphic:
 	my $started = [gettimeofday];
-	render($screen, \@font, 1, 1);
-	#                       ^  ^--- reveal: 1=on 0=off
-	#                       `------ flash phase: 1=on 0=off
+	# the number determines whether the reveal key is being held down
+	render($screen, \@font, 1);
 	$time_render_t += tv_interval($started);
 
 	# ... and write it out to disk:
 	$started = [gettimeofday];
-	output_large($screen, "demo/output/large/$stem.png");
+	output_large_gif($screen, "demo/output/large/$stem.gif");
 	$time_output_t += tv_interval($started);
-	output_small($screen, "demo/output/small/$stem.png");
+	output_small_gif($screen, "demo/output/small/$stem.gif");
 
-	if ( -e "demo/output/trace" && -d "demo/output/trace") { 
-		open(T, ">demo/output/trace/$stem.txt");
-		print T trace_screen($screen);
-		close(T);
-		}
+	# Finally, output the trace.
+	open(T, ">demo/output/trace/$stem.txt");
+	print T trace_screen($screen);
+	close(T);
 
 	print "done\n";
 	$time_n++;
@@ -58,6 +56,6 @@ foreach my $demofile ( <demo/input/*.m7> ) {
 
 if ( $time_n > 0 ) { 
 	print "\nMean running times:\n";
-	print "render() ........ ".(sprintf("%.3f", $time_render_t/$time_n))."s\n";
-	print "output_large() .. ".(sprintf("%.3f", $time_output_t/$time_n))."s\n";
+	print "render: ".(sprintf("%.3f", $time_render_t/$time_n))."s\n";
+	print "output: ".(sprintf("%.3f", $time_output_t/$time_n))."s\n";
 	}

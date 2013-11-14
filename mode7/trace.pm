@@ -55,7 +55,8 @@ sub trace_screen {
 
 	for ( my $y = 0; $y < 216; $y++ ) { 
 		for ( my $x = 0; $x < 240; $x++ ) { 
-			my $c = $colcodes[$screen->{gfx}[$x][$y]];
+			# We use the version in which the flash characters are on
+			my $c = $colcodes[$screen->{gfx}[1][$x][$y]];
 			if ( $c eq "K" ) { $c = "."; } 
 			$trace .= $c;
 			if ( $x % 6 == 5 && $x < 239 ) { $trace .= " "; } 

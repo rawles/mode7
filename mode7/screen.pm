@@ -1,7 +1,7 @@
 package mode7::screen;
 our $VERSION = '1.00';
 use base 'Exporter';
-our @EXPORT = qw(new_screen screen_advance_cursor screen_set_cursor screen_home_cursor screen_writechar screen_clear);
+our @EXPORT = qw(new_screen screen_advance_cursor screen_set_cursor screen_home_cursor screen_writechar screen_clear screen_flash_invariant);
 use warnings;
 use strict;
 
@@ -51,7 +51,9 @@ sub new_screen {
 	#   3: separated graphics
 	my @gftrib = (); $screen->{gftrib} = \@gftrib;
 
-	# gfx[x][y] = the colour of pixel (x,y) in the output graphic.
+	# gfx[v][x][y] = the colour of pixel (x,y) in the output graphic. Versions
+	#   of the screen exist for each flash phase (and maybe for reveal mode
+	#   in a future version. v=0 means the off phase, v=1 means the on phase.
 	#   1 (red) + 2 (green) + 4 (blue)
 	# TODO: make this stucture a bitmap to save memory.
 	my @gfx = (); $screen->{gfx} = \@gfx;
@@ -126,10 +128,22 @@ sub screen_clear {
 		for ( my $y = 0; $y < 216; $y++ ) { 
 
 			# Screen pixels are black by default.
-			$screen->{gfx}[$x][$y] = 0;
+			$screen->{gfx}[0][$x][$y] = 0;
+			$screen->{gfx}[1][$x][$y] = 0;
 
 			}
 		}
+	}
+
+# Are the two versions of the screen the same pixel-wise?
+sub screen_flash_invariant { 
+	my $screen = shift;
+	for ( my $x = 0; $x < 240; $x++ ) { 
+		for ( my $y = 0; $y < 216; $y++ ) { 
+			if ( $screen->{gfx}[0][$x][$y] != $screen->{gfx}[1][$x][$y] ) { return 0; } 
+			}
+		}
+	return 1;
 	}
 
 sub screen_advance_cursor {
@@ -140,7 +154,7 @@ sub screen_advance_cursor {
 		$screen->{cursor}[1]++;
 		}
 	if ( $screen->{cursor}[1] >= 24 ) {
-		# we don't support scrolling.
+		# we don't support scrolling, so wrap to the first line.
 		$screen->{cursor}[1] = 0;
 		}
 	}
