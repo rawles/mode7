@@ -19,7 +19,7 @@ sub render {
 
         my $reveal = shift;  # are we in a reveal state?
                              # 0 concealed text hidden, 1 concealed text shown
-	if ( !defined $reveal ) { $flashphase = 1; } 
+	if ( !defined $reveal ) { $reveal = 1; } 
 	$reveal = int($reveal);
 	if ( $reveal < 0 || $reveal > 1 ) { $reveal = 1; } 
 
