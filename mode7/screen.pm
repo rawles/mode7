@@ -125,7 +125,7 @@ sub screen_clear {
 	$screen->{cursor}[1] = 0; # top of the screen
 
 	for ( my $x = 0; $x < 240; $x++ ) { 
-		for ( my $y = 0; $y < 216; $y++ ) { 
+		for ( my $y = 0; $y < 225; $y++ ) { 
 
 			# Screen pixels are black by default.
 			$screen->{gfx}[0][$x][$y] = 0;
@@ -139,7 +139,7 @@ sub screen_clear {
 sub screen_flash_invariant { 
 	my $screen = shift;
 	for ( my $x = 0; $x < 240; $x++ ) { 
-		for ( my $y = 0; $y < 216; $y++ ) { 
+		for ( my $y = 0; $y < 225; $y++ ) { 
 			if ( $screen->{gfx}[0][$x][$y] != $screen->{gfx}[1][$x][$y] ) { return 0; } 
 			}
 		}
@@ -153,7 +153,7 @@ sub screen_advance_cursor {
 		$screen->{cursor}[0] = 0;
 		$screen->{cursor}[1]++;
 		}
-	if ( $screen->{cursor}[1] >= 24 ) {
+	if ( $screen->{cursor}[1] >= 25 ) {
 		# we don't support scrolling, so wrap to the first line.
 		$screen->{cursor}[1] = 0;
 		}

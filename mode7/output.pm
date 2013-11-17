@@ -15,8 +15,8 @@ sub output_large_png {
 
 	open(F, ">$fileName");
 	binmode F, ":utf8";
-	print F "P3\n# frame\n480 432\n1\n";
-	for ( my $y = 0; $y < 216; $y += 0.5 ) { 
+	print F "P3\n# frame\n480 450\n1\n";
+	for ( my $y = 0; $y < 225; $y += 0.5 ) { 
 		for ( my $x = 0; $x < 240; $x += 0.5 ) { 
 
 			my $gx = int($x);
@@ -182,8 +182,8 @@ sub output_small_png {
 
 	open(F, ">$fileName");
 	binmode F, ":utf8";
-	print F "P3\n# frame\n240 216\n1\n";
-	for ( my $y = 0; $y < 216; $y++ ) { 
+	print F "P3\n# frame\n240 225\n1\n";
+	for ( my $y = 0; $y < 225; $y++ ) { 
 		for ( my $x = 0; $x < 240; $x++ ) { 
 			my $rc = $screen->{gfx}[$phase][$x][$y] & 1; if ( $rc > 0 ) { $rc = 1; } 
 			my $gc = $screen->{gfx}[$phase][$x][$y] & 2; if ( $gc > 0 ) { $gc = 1; }
@@ -257,7 +257,7 @@ sub output_text {
 	my $screen = shift;
 	my $text = "";
 
-	for ( my $cy = 1; $cy < 24; $cy++ ) { 
+	for ( my $cy = 1; $cy < 25; $cy++ ) { 
 		for ( my $cx = 0; $cx < 40; $cx++ ) { 
 			if ( ( $screen->{gftrib}[$cx][$cy] % 2 ) == 1 ) { $text .= " "; next; } 
 			my $ch = $screen->{frame}[$cx][$cy];

@@ -30,7 +30,7 @@ sub render {
 		$expand_double_height_down = 1; 
 		}
 
-	for ( my $cy = 0; $cy < 24; $cy++ ) { 
+	for ( my $cy = 0; $cy < 25; $cy++ ) { 
 		for ( my $cx = 0; $cx < 40; $cx++ ) { 
 			my $framechar = " ";
 			if ( defined $screen->{frame}[$cx][$cy] ) {

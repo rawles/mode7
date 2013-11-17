@@ -53,7 +53,7 @@ sub trace_screen {
 	$control{158} = "Hol";
 	$control{159} = "Rel";
 
-	for ( my $y = 0; $y < 216; $y++ ) { 
+	for ( my $y = 0; $y < 225; $y++ ) { 
 		for ( my $x = 0; $x < 240; $x++ ) { 
 			# We use the version in which the flash characters are on
 			my $c = $colcodes[$screen->{gfx}[1][$x][$y]];

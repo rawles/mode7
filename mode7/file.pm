@@ -9,7 +9,7 @@ use mode7::screen;
 sub read_frame { 
 	my $screen = shift;
 	my $fileName = shift;
-	for ( my $y = 0; $y < 24; $y++ ) { 
+	for ( my $y = 0; $y < 25; $y++ ) { 
 		for ( my $x = 0; $x < 40; $x++ ) { 
 			$screen->{frame}[$x][$y] = " ";
 			}
