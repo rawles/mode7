@@ -3,6 +3,7 @@ our $VERSION = '1.00';
 use base 'Exporter';
 our @EXPORT = qw(cc drawchar);
 use mode7::font;
+use mode7::config;
 use warnings;
 use strict;
 
@@ -65,8 +66,10 @@ sub drawchar_phase {
 	my @gfxweights = (1,2,4,8,16,64);
 	                     # the weights of each graphic cell
 
-
-	my $blank_normal_l2 = 1; # line two when switching back isnt shown
+	# BBC Microcomputers use 0, Prestel and Teletext use 1.
+	my $blank_normal_l2 = 0; # line two when switching back isnt shown
+	if ( config_get("emulation") eq "viewdata" ) { $blank_normal_l2 = 1; }
+	if ( config_get("emulation") eq "micro" ) { $blank_normal_l2 = 0; }
 
 	# Writes into @gfx instead of returning data.
 

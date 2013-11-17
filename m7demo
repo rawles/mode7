@@ -23,7 +23,7 @@ my $time_output_t = 0;
 my $time_n = 0;
 
 foreach my $demofile ( <demo/input/*.m7> ) { 
-	print "$demofile...";
+	print "$demofile...\n";
 
 	my @parts = split(/\//, $demofile); my $stem = pop @parts; $stem =~ s/\.m7$//g;
 

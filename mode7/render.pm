@@ -5,6 +5,7 @@ our @EXPORT = qw(render);
 use warnings;
 use strict;
 use mode7::draw;
+use mode7::config;
 
 # Call render at any time to update the graphics part of the screen.
 sub render { 
@@ -17,8 +18,17 @@ sub render {
 	$reveal = int($reveal);
 	if ( $reveal < 0 || $reveal > 1 ) { $reveal = 1; } 
 
-	my $allow_80 = 0; # allow black text (heresy)
-	my $allow_90 = 1; # allow black backgrounds
+	my $allow_80 = config_get("allow_80"); # allow black text (heresy)
+	my $allow_90 = config_get("allow_90"); # allow black background
+
+	# Prestel and Teletext vs BBC Micro emulation (see config.pm)
+	my $expand_double_height_down = 0; 
+	if ( config_get("emulation") eq "micro" ) { 
+		$expand_double_height_down = 0; 
+		}
+	if ( config_get("emulation") eq "viewdata" ) { 
+		$expand_double_height_down = 1; 
+		}
 
 	for ( my $cy = 0; $cy < 24; $cy++ ) { 
 		for ( my $cx = 0; $cx < 40; $cx++ ) { 
@@ -27,9 +37,12 @@ sub render {
 				$framechar = $screen->{frame}[$cx][$cy];
 				} 
 
-			#if ( $cy > 0 && $screen->{dbtrib}[$cx][$cy-1] == 1
-			##	&& $screen->{dblpart}[$cy-1] == 1 ) { 
-			if ( $cy > 0 && $screen->{dblpart}[$cy-1] == 1 ) { 
+			# BBC Micros don't render the first row of data in a 
+			# double-height pair as the second row, but viewdata and
+			# teletext do.
+			if (	$expand_double_height_down != 0 && 
+				#$screen->{dbtrib}[$cx][$cy] == 1 &&
+				$cy > 0 && $screen->{dblpart}[$cy-1] == 1 ) { 
 				$framechar = $screen->{frame}[$cx][$cy-1];
 				}
 

@@ -1,7 +1,7 @@
 package mode7::output;
 our $VERSION = '1.00';
 use base 'Exporter';
-our @EXPORT = qw(output_large_png output_small_png output_large_gif output_small_gif);
+our @EXPORT = qw(output_large_png output_small_png output_large_gif output_small_gif output_text);
 use warnings;
 use strict;
 
@@ -250,6 +250,30 @@ sub output_tigm { # text in graphics mode
 	if ( $cc >= 64 && $cc < 96 ) { return 1; } 
 	if ( $cc >= 192 && $cc < 224 ) { return 1; } 
 	return 0;
+	}
+
+# Outputs the frame as text in a single line.
+sub output_text {
+	my $screen = shift;
+	my $text = "";
+
+	for ( my $cy = 1; $cy < 24; $cy++ ) { 
+		for ( my $cx = 0; $cx < 40; $cx++ ) { 
+			if ( ( $screen->{gftrib}[$cx][$cy] % 2 ) == 1 ) { $text .= " "; next; } 
+			my $ch = $screen->{frame}[$cx][$cy];
+			if ( ord($ch) > 127 ) { $ch = chr(ord($ch)-128); } 
+			if ( ord($ch) < 32 || ord($ch) > 126 ) { $ch = " "; } 
+			$text .= $ch;
+			}
+		$text .= " ";
+		}
+
+	$text =~ s/`+/ /g;
+	$text =~ s/~+/ /g;
+	$text =~ s/\s+/ /g;
+	$text =~ s/^\s+//;
+	$text =~ s/\s+$//;
+	return $text;
 	}
 
 1;
