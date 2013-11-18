@@ -17,6 +17,7 @@ sub render {
 	if ( !defined $reveal ) { $reveal = 1; } 
 	$reveal = int($reveal);
 	if ( $reveal < 0 || $reveal > 1 ) { $reveal = 1; } 
+	my $rows = config_get('rows');
 
 	my $allow_80 = config_get("allow_80"); # allow black text (heresy)
 	my $allow_90 = config_get("allow_90"); # allow black background
@@ -30,7 +31,7 @@ sub render {
 		$expand_double_height_down = 1; 
 		}
 
-	for ( my $cy = 0; $cy < 25; $cy++ ) { 
+	for ( my $cy = 0; $cy < $rows; $cy++ ) { 
 		for ( my $cx = 0; $cx < 40; $cx++ ) { 
 			my $framechar = " ";
 			if ( defined $screen->{frame}[$cx][$cy] ) {

@@ -4,6 +4,7 @@ use base 'Exporter';
 our @EXPORT = qw(new_screen screen_advance_cursor screen_set_cursor screen_home_cursor screen_writechar screen_clear screen_flash_invariant);
 use warnings;
 use strict;
+use mode7::config;
 
 sub new_screen {
 	my %screenhash = ();
@@ -80,7 +81,8 @@ sub new_screen {
 
 sub screen_clear {
 	my $screen = shift;
-	for ( my $y = 0; $y < 25; $y++ ) { # for each row,
+	my $rows = config_get('rows');
+	for ( my $y = 0; $y < $rows; $y++ ) { # for each row,
 
 		# Initially, no double-height statuses are defined.
 		$screen->{dblpart}[$y] = 0;
@@ -125,7 +127,7 @@ sub screen_clear {
 	$screen->{cursor}[1] = 0; # top of the screen
 
 	for ( my $x = 0; $x < 240; $x++ ) { 
-		for ( my $y = 0; $y < 225; $y++ ) { 
+		for ( my $y = 0; $y < $rows*9; $y++ ) { 
 
 			# Screen pixels are black by default.
 			$screen->{gfx}[0][$x][$y] = 0;
@@ -138,8 +140,9 @@ sub screen_clear {
 # Are the two versions of the screen the same pixel-wise?
 sub screen_flash_invariant { 
 	my $screen = shift;
+	my $rows = config_get('rows');
 	for ( my $x = 0; $x < 240; $x++ ) { 
-		for ( my $y = 0; $y < 225; $y++ ) { 
+		for ( my $y = 0; $y < $rows*9; $y++ ) { 
 			if ( $screen->{gfx}[0][$x][$y] != $screen->{gfx}[1][$x][$y] ) { return 0; } 
 			}
 		}
@@ -148,12 +151,13 @@ sub screen_flash_invariant {
 
 sub screen_advance_cursor {
 	my $screen = shift;
+	my $rows = config_get('rows');
 	$screen->{cursor}[0]++;
 	if ( $screen->{cursor}[0] >= 40 ) {
 		$screen->{cursor}[0] = 0;
 		$screen->{cursor}[1]++;
 		}
-	if ( $screen->{cursor}[1] >= 25 ) {
+	if ( $screen->{cursor}[1] >= $rows ) {
 		# we don't support scrolling, so wrap to the first line.
 		$screen->{cursor}[1] = 0;
 		}

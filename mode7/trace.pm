@@ -4,11 +4,13 @@ use base 'Exporter';
 our @EXPORT = qw(trace_screen);
 use warnings;
 use strict;
+use mode7::config;
 
 sub trace_screen { 
 
 	my $screen = shift;
 	my $trace = ""; 
+	my $rows = config_get('rows');
 
 	my @colcodes = ("K", "R", "G", "Y", "B", "M", "C", "W");
 	my @gfxcodes = ("Txt", "Sol", "TxS", "Sep");
@@ -53,7 +55,7 @@ sub trace_screen {
 	$control{158} = "Hol";
 	$control{159} = "Rel";
 
-	for ( my $y = 0; $y < 225; $y++ ) { 
+	for ( my $y = 0; $y < $rows*9; $y++ ) {
 		for ( my $x = 0; $x < 240; $x++ ) { 
 			# We use the version in which the flash characters are on
 			my $c = $colcodes[$screen->{gfx}[1][$x][$y]];

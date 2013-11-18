@@ -25,6 +25,10 @@ my %config = (
 	# really use 0x9c to revert to a black background. 1=allow,
 	# 0=deny.
 	allow_90 => 1,
+
+	# The number of rows in a frame. The BBC micro uses 25, whereas
+	# teletext and viewdata use 24.
+	rows => 24,
 	);
 
 sub config_get { 

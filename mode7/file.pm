@@ -5,11 +5,13 @@ our @EXPORT = qw(read_frame read_fromdata);
 use warnings;
 use strict;
 use mode7::screen;
+use mode7::config;
 
 sub read_frame { 
 	my $screen = shift;
 	my $fileName = shift;
-	for ( my $y = 0; $y < 25; $y++ ) { 
+	my $rows = config_get('rows');
+	for ( my $y = 0; $y < $rows; $y++ ) { 
 		for ( my $x = 0; $x < 40; $x++ ) { 
 			$screen->{frame}[$x][$y] = " ";
 			}
@@ -32,6 +34,7 @@ sub read_frame {
 sub read_fromdata {
 	my $screen = shift;
 	my $data = shift;
+	my $rows = config_get('rows');
 
 	my $vdu31 = 0; my $vdu31x = 0; my $vdu31y = 0;
 
@@ -45,7 +48,7 @@ sub read_fromdata {
 		if ( $vdu31 == 2 ) {
 			$vdu31y = $cc;
 			if ( $vdu31x > 39 ) { $vdu31x = 39; } 
-			if ( $vdu31y > 24 ) { $vdu31x = 24; } 
+			if ( $vdu31y > $rows-1 ) { $vdu31x = $rows-1; } 
 			screen_set_cursor($screen, $vdu31x, $vdu31y);
 			$vdu31 = 0;
 			next;
@@ -76,7 +79,7 @@ sub read_fromdata {
 			next;
 			}
 		if ( $cc == 10 ) { # move the cursor down one line
-			$cy++; if ( $cy > 24 ) { $cy = 24; }
+			$cy++; if ( $cy > $rows-1 ) { $cy = $rows-1; }
 			$screen->{cursor}[1] = $cy;
 			next;
 			}
