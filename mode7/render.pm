@@ -50,6 +50,7 @@ sub render {
 			my $cc = ord($framechar);
 
 			if ( $allow_80 != 1 && $cc == 128 ) { 
+				# Treat this as a control character.
 				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
