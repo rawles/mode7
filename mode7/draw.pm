@@ -132,18 +132,25 @@ sub drawchar_phase {
 			# Dump the above if we're not revealed and this is in reveal mode
 			if ( ( $reveal == 0 ) && ( $screen->{cotrib}[$cx][$cy] == 1 ) ) { $pc = 0; }
 
-			# Colour the character with the correct foreground attributes
-			if ( $screen->{fgtrib}[$cx][$cy] > 0 ) { 
-				$pc &= $screen->{fgtrib}[$cx][$cy];
+			my $cpc = 0; # completed pixel code
+
+			if ( $screen->{fgtrib}[$cx][$cy] > 0 && $pc != 0 ) { 
+				$cpc = $pc & $screen->{fgtrib}[$cx][$cy];
+				}
+			if ( $screen->{fgtrib}[$cx][$cy] == 0 && $pc != 0 ) { 
+				$cpc = 0;
 				}
 
 			# Remaining pixels are now background.
-			if ( $screen->{bgtrib}[$cx][$cy] > 0 && $pc == 0 ){ 
-				$pc = $screen->{bgtrib}[$cx][$cy];
+			if ( $screen->{bgtrib}[$cx][$cy] > 0 && $pc == 0 ) { 
+				$cpc = $screen->{bgtrib}[$cx][$cy];
+				}
+			if ( $screen->{bgtrib}[$cx][$cy] == 0 && $pc == 0 ) { 
+				$cpc = 0;
 				}
 
 			# Write it into the graphical representation.
-			$screen->{gfx}[$phase][$px][$py] = $pc;
+			$screen->{gfx}[$phase][$px][$py] = $cpc;
 			}
 		}
 

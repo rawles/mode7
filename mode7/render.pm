@@ -49,12 +49,12 @@ sub render {
 
 			my $cc = ord($framechar);
 
-			if ( $allow_80 != 1 && $cc == 128 ) { 
+			if ( $allow_80 == 0 && $cc == 128 ) { 
 				# Treat this as a control character.
 				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
 				}
-			if ( ( $allow_80 == 1 && $cc == 128 )
+			if ( ( $allow_80 != 0 && $cc == 128 )
 			||   ( $cc >= 129 && $cc <= 135 ) ) { # Alpha
 				my $newcolour = $cc - 128;
 				for ( my $i = $cx + 1; $i < 40; $i++ ) { 
