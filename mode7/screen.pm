@@ -180,6 +180,9 @@ sub screen_home_cursor {
 sub screen_writechar {
 	my $screen = shift;
 	my $c = shift;
+	if ( config_get('strip_top_bit') == 1 && ord($c) > 127 ) { 
+		$c = chr(ord($c) - 128);
+		}
 	my $cx = $screen->{cursor}[0];
 	my $cy = $screen->{cursor}[1];
 	$screen->{frame}[$cx][$cy] = $c;

@@ -29,6 +29,10 @@ my %config = (
 	# The number of rows in a frame. The BBC micro uses 25, whereas
 	# teletext and viewdata use 24.
 	rows => 24,
+
+	# Do we strip the top bit when we write characters to a screen?
+	# 1=yes, 0=no
+	strip_top_bit => 24,
 	);
 
 sub config_get { 
