@@ -12,8 +12,9 @@ sub read_font {
 	binmode F, ":utf8";
 	while(<F>) { chomp; my $x = $_;
 		my @p = split(/,/, $x);
-		for ( my $i = 0; $i < 9; $i++ ) { 
-			$font[$p[0]][$i] = $p[$i+1];
+		$font[$p[0]][0] = '0';
+		for ( my $i = 1; $i < 10; $i++ ) { 
+			$font[$p[0]][$i] = $p[$i];
 			}
 		}
 	return @font;
@@ -24,7 +25,7 @@ sub font_has { # does the font contain this code?
 	my $cc = shift;
 	my @font = @{$fonthash};
 
-	if ( $#{$font[$cc]} == 8 ) { return 1; } 
+	if ( $#{$font[$cc]} == 9 ) { return 1; } 
 	return 0;
 	}
 

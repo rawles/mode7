@@ -14,10 +14,10 @@ sub cc { # Asserts that a control character is here
 	                     # 0 concealed text hidden, 1 concealed text shown
 	my $cx = shift;
 	my $cy = shift;
-	for ( my $y = 0; $y < 9; $y++ ) { 
+	for ( my $y = 0; $y < 10; $y++ ) { 
 		for ( my $x = 0; $x < 6; $x++ ) { 
 			my $px = $cx * 6 + $x;
-			my $py = $cy * 9 + $y;
+			my $py = $cy * 10 + $y;
 			my $pc = 0;
 			if ( $screen->{bgtrib}[$cx][$cy] > 0 && $pc == 0 ) { 
 				$pc = $screen->{bgtrib}[$cx][$cy];
@@ -65,6 +65,7 @@ sub drawchar_phase {
 
 	my @gfxweights = (1,2,4,8,16,64);
 	                     # the weights of each graphic cell
+	my @gyline = (0,0,0,1,1,1,1,2,2,2);
 
 	# BBC Microcomputers use 0, Prestel and Teletext use 1.
 	my $blank_normal_l2 = 0; # line two when switching back isnt shown
@@ -83,10 +84,10 @@ sub drawchar_phase {
 		$useblank = 1;
 		}
 
-	for ( my $y = 0; $y < 9; $y++ ) { 
+	for ( my $y = 0; $y < 10; $y++ ) { 
 		for ( my $x = 0; $x < 6; $x++ ) { 
 			my $px = $cx * 6 + $x; # absolute x-position
-			my $py = $cy * 9 + $y; # absolute y-position
+			my $py = $cy * 10 + $y; # absolute y-position
 			my $pc = 0;            # pixel colour
 			if ( $gfxchar == 0 ) { # text mode
 
@@ -100,7 +101,7 @@ sub drawchar_phase {
 
 				} else {       # graphic mode, solid or sep
 				my $gx = int($x/3);
-				my $gy = int($y/3);
+				my $gy = $gyline[$y];
 				my $gi = $gfxweights[$gy*2+$gx];
 				my $gt = $screen->{gftrib}[$cx][$cy];
 
@@ -118,9 +119,9 @@ sub drawchar_phase {
 				# If seperated, blank out the necessary lines.
 				if ( $gt == 3 && $x == 0 ) { $pc = 0; } 
 				if ( $gt == 3 && $x == 3 ) { $pc = 0; } 
-				if ( $gt == 3 && $y == 0 ) { $pc = 0; } 
-				if ( $gt == 3 && $y == 3 ) { $pc = 0; } 
+				if ( $gt == 3 && $y == 2 ) { $pc = 0; } 
 				if ( $gt == 3 && $y == 6 ) { $pc = 0; } 
+				if ( $gt == 3 && $y == 9 ) { $pc = 0; } 
 				}
 
 			# Dump the above if it's one of the blanked characters.
@@ -161,34 +162,26 @@ sub drawchar_phase {
 
 		if ( $screen->{dblpart}[$cy] == 1 ) { 
 			# Copying from halfway up to the bottom, and moving up.
-			for ( my $y = 8; $y >= 0; $y-- ) { 
+			for ( my $y = 9; $y >= 0; $y-- ) { 
 				my $copyfrom = int($y/2); # rows 0..4
-
-				# 8 7 6 5 4 3 2 1 0 destination
-				# ^ ^ ^ ^ ^ ^ ^ ^ ^
-				# 4 3 3 2 2 1 1 0 0 source
 
 				for ( my $x = 0; $x < 6; $x++ ) { 
 					my $px = $cx * 6 + $x;
-					my $py = $cy * 9 + $y;
-					my $pyf = $cy * 9 + $copyfrom;
+					my $py = $cy * 10 + $y;
+					my $pyf = $cy * 10 + $copyfrom;
 					$screen->{gfx}[$phase][$px][$py] = $screen->{gfx}[$phase][$px][$pyf];
 					}
 				}
 			}
 		if ( $screen->{dblpart}[$cy] == 2 ) { 
 			# Copying from halfway down to the bottom, and moving down.
-			for ( my $y = 0; $y < 9; $y++ ) { 
-				my $copyfrom = int(($y+1)/2) + 4; # rows 4..8
-
-				# 0 1 2 3 4 5 6 7 8  destination
-				# ^ ^ ^ ^ ^ ^ ^ ^ ^
-				# 4 5 5 6 6 7 7 8 8  source
+			for ( my $y = 0; $y < 10; $y++ ) { 
+				my $copyfrom = int($y/2) + 5; # rows 4..8
 
 				for ( my $x = 0; $x < 6; $x++ ) { 
 					my $px = $cx * 6 + $x;
-					my $py = $cy * 9 + $y;
-					my $pyf = $cy * 9 + $copyfrom;
+					my $py = $cy * 10 + $y;
+					my $pyf = $cy * 10 + $copyfrom;
 					$screen->{gfx}[$phase][$px][$py] = $screen->{gfx}[$phase][$px][$pyf];
 					}
 				}

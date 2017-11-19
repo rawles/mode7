@@ -55,7 +55,7 @@ sub trace_screen {
 	$control{158} = "Hol";
 	$control{159} = "Rel";
 
-	for ( my $y = 0; $y < $rows*9; $y++ ) {
+	for ( my $y = 0; $y < $rows*10; $y++ ) {
 		for ( my $x = 0; $x < 240; $x++ ) { 
 			# We use the version in which the flash characters are on
 			my $c = $colcodes[$screen->{gfx}[1][$x][$y]];
@@ -64,8 +64,8 @@ sub trace_screen {
 			if ( $x % 6 == 5 && $x < 239 ) { $trace .= " "; } 
 			}
 		$trace .= "\n";
-		if ( $y % 9 == 8 ) {
-			my $ty = int($y/9);
+		if ( $y % 10 == 9 ) {
+			my $ty = int($y/10);
 			for ( my $tx = 0; $tx < 40; $tx++ ) { 
 				$trace .= substr("      $tx,$ty", -6);
 				if ( $tx < 39 ) { $trace .= " "; } 

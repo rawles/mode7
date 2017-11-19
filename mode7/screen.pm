@@ -127,7 +127,7 @@ sub screen_clear {
 	$screen->{cursor}[1] = 0; # top of the screen
 
 	for ( my $x = 0; $x < 240; $x++ ) { 
-		for ( my $y = 0; $y < $rows*9; $y++ ) { 
+		for ( my $y = 0; $y < $rows*10; $y++ ) { 
 
 			# Screen pixels are black by default.
 			$screen->{gfx}[0][$x][$y] = 0;
@@ -142,7 +142,7 @@ sub screen_flash_invariant {
 	my $screen = shift;
 	my $rows = config_get('rows');
 	for ( my $x = 0; $x < 240; $x++ ) { 
-		for ( my $y = 0; $y < $rows*9; $y++ ) { 
+		for ( my $y = 0; $y < $rows*10; $y++ ) { 
 			if ( $screen->{gfx}[0][$x][$y] != $screen->{gfx}[1][$x][$y] ) { return 0; } 
 			}
 		}

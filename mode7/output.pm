@@ -19,8 +19,8 @@ sub output_large_png {
 
 	open(F, ">$fileName");
 	binmode F, ":utf8";
-	print F "P3\n# frame\n480 ".($rows*18)."\n1\n";
-	for ( my $y = 0; $y < $rows*9; $y += 0.5 ) { 
+	print F "P3\n# frame\n480 ".($rows*20)."\n1\n";
+	for ( my $y = 0; $y < $rows*10; $y += 0.5 ) { 
 		for ( my $x = 0; $x < 240; $x += 0.5 ) { 
 
 			my $gx = int($x);
@@ -34,7 +34,7 @@ sub output_large_png {
 			if ( $gc > 0 ) { $gc = 1; }
 			if ( $bc > 0 ) { $bc = 1; }
 
-			# sub-block
+			# sub-block in the large output
 			my $sbx = (2*$x) % 2;
 			my $sby = (2*$y) % 2;
 
@@ -42,22 +42,18 @@ sub output_large_png {
 
 			# character position in the grid
 			my $cx = int($x/6);
-			my $cy = int($y/9);
+			my $cy = int($y/10);
 
 			# sub-block for double height
 			# relative to the part of the double-height pair we're in.
 			my $sbhy = 0;
 			if ( $screen->{dbtrib}[$cx][$cy] == 1 ) { 
-				if ( $screen->{dblpart}[$cy] == 2 ) { 
-					$sbhy = ( 2 + ( ( $y%9 ) * 2 ) ) % 4;
-					} else { 
-					$sbhy = ( ( $y%9 ) * 2 ) % 4;
-					}
+				$sbhy = ( ( $y % 10 ) * 2 ) % 4;
 				}
 
 			# pixel in char
 			my $px = ( int($x) % 6 );
-			my $py = ( int($y) % 9 );
+			my $py = ( int($y) % 10 );
 
 			# character code here
 			my $cc = ord($screen->{frame}[$cx][$cy]);
@@ -72,7 +68,8 @@ sub output_large_png {
 				|| ( ( $sbhy==0 || $sbhy==1 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
 
 				# If this is line 2 of a double we should allow it to look into 
-				# its other half.
+				# its other half, ie we smooth across the join between two double
+				# height cells.
 			&&	$px > 0 && ( ( $screen->{dblpart}[$cy] == 2 && $y > 1 ) || $py > 0 )
 
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 ) 
@@ -123,7 +120,7 @@ sub output_large_png {
 			&&	( ( $sby == 1 && $screen->{dbtrib}[$cx][$cy] != 1 )
 				|| ( ( $sbhy==2 || $sbhy==3 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
 
-			&&	$px > 0 && ( ( $screen->{dblpart}[$cy] == 1 && $y < ($rows*9)-1 ) || $py < 8 )
+			&&	$px > 0 && ( ( $screen->{dblpart}[$cy] == 1 && $y < ($rows*10)-1 ) || $py < 9 )
 
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
@@ -148,7 +145,7 @@ sub output_large_png {
 			&&	( ( $sby == 1 && $screen->{dbtrib}[$cx][$cy] != 1 )
 				|| ( ( $sbhy==2 || $sbhy==3 ) && $screen->{dbtrib}[$cx][$cy] == 1 ) )
 
-			&&	$px < 5 && ( ( $screen->{dblpart}[$cy] == 1 && $y < ($rows*9)-1 ) || $py < 8 )
+			&&	$px < 5 && ( ( $screen->{dblpart}[$cy] == 1 && $y < ($rows*10)-1 ) || $py < 9 )
 
 			&&	(  ( $screen->{gftrib}[$cx][$cy] == 0 )
 				|| ( $screen->{gftrib}[$cx][$cy] == 2 )
@@ -189,8 +186,8 @@ sub output_small_png {
 
 	open(F, ">$fileName");
 	binmode F, ":utf8";
-	print F "P3\n# frame\n240 ".($rows*9)."\n1\n";
-	for ( my $y = 0; $y < $rows*9; $y++ ) { 
+	print F "P3\n# frame\n240 ".($rows*10)."\n1\n";
+	for ( my $y = 0; $y < $rows*10; $y++ ) { 
 		for ( my $x = 0; $x < 240; $x++ ) { 
 			my $rc = $screen->{gfx}[$phase][$x][$y] & 1; if ( $rc > 0 ) { $rc = 1; } 
 			my $gc = $screen->{gfx}[$phase][$x][$y] & 2; if ( $gc > 0 ) { $gc = 1; }
