@@ -56,6 +56,17 @@ sub render {
 				}
 			if ( ( $allow_80 != 0 && $cc == 128 )
 			||   ( $cc >= 129 && $cc <= 135 ) ) { # Alpha
+
+				# If switching between graphics and alpha, we have to reset the
+				# held character.
+				if ( $screen->{gftrib}[$cx][$cy] == 1
+					|| $screen->{gftrib}[$cx][$cy] == 3 ) { 
+					for ( my $i = $cx + 1; $i < 40; $i++ ) {
+						$screen->{hgchar}[$i][$cy] = 32;
+						$screen->{hgcharsep}[$i][$cy] = 0;
+						}
+					}
+
 				my $newcolour = $cc - 128;
 				for ( my $i = $cx + 1; $i < 40; $i++ ) { 
 					$screen->{fgtrib}[$i][$cy] = $newcolour;
@@ -66,6 +77,7 @@ sub render {
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{cotrib}[$i][$cy] = 0;
 					}
+
 				cc($screen,$fontref,$reveal,$cx,$cy);
 				next; 
 				}
@@ -88,9 +100,20 @@ sub render {
 
 			#140 = normal height, should also reset held graphics
 			if ( $cc == 140 ) { 
+				# If changing (but not reinforcing) height, we have to reset the
+				# held character.
+				if ( $screen->{dbtrib}[$cx][$cy] == 0
+					|| $screen->{dbtrib}[$cx][$cy] == 2 ) { 
+					for ( my $i = $cx + 1; $i < 40; $i++ ) {
+						$screen->{hgchar}[$i][$cy] = 32;
+						$screen->{hgcharsep}[$i][$cy] = 0;
+						}
+					}
+
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{dbtrib}[$i][$cy] = 2;
 					}
+
 				# we dont mess with which part it is in case
 				# user switches back 
 				cc($screen,$fontref,$reveal,$cx,$cy);
@@ -98,18 +121,20 @@ sub render {
 				}
 
 			if ( $cc == 141 ) { 
+				# If changing (but not reinforcing) height, we have to reset the
+				# held character.
+				if ( $screen->{dbtrib}[$cx][$cy] == 1 ) { 
+					for ( my $i = $cx + 1; $i < 40; $i++ ) {
+						$screen->{hgchar}[$i][$cy] = 32;
+						$screen->{hgcharsep}[$i][$cy] = 0;
+						}
+					}
 				for ( my $i = $cx; $i < 40; $i++ ) { 
 					$screen->{dbtrib}[$i][$cy] = 1;
 					}
 				if ( $screen->{dblpart}[$cy] == 0 ) { 
 					$screen->{dblpart}[$cy] = 1; 
 					$screen->{dblpart}[$cy+1] = 2; 
-					}
-				# reset held graphics
-				for ( my $i = $cx; $i < 40; $i++ ) {
-					$screen->{hgtrib}[$i][$cy] = 0;
-					$screen->{hgchar}[$i][$cy] = 32;
-					$screen->{hgcharsep}[$i][$cy] = 0;
 					}
 				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
@@ -129,6 +154,16 @@ sub render {
 				}
 			if ( ( $allow_90 && $cc == 144 ) 
 			||   ( $cc >= 145 && $cc <= 151 ) ) { # Graphics
+				# If switching between graphics and alpha, we have to reset the
+				# held character.
+				if ( $screen->{gftrib}[$cx][$cy] == 0
+					|| $screen->{gftrib}[$cx][$cy] == 2 ) { 
+					for ( my $i = $cx + 1; $i < 40; $i++ ) {
+						$screen->{hgchar}[$i][$cy] = 32;
+						$screen->{hgcharsep}[$i][$cy] = 0;
+						}
+					}
+
 				my $newcolour = $cc - 144;
 
 				# If a graphics mode already established, use
@@ -198,8 +233,6 @@ sub render {
 				# reset held graphics
 				for ( my $i = $cx + 1; $i < 40; $i++ ) {
 					$screen->{hgtrib}[$i][$cy] = 0;
-					#$screen->{hgchar}[$i][$cy] = 0;
-					#$screen->{hgcharsep}[$i][$cy] = 0;
 					}
 				cc($screen,$fontref,$reveal,$cx,$cy);
 				next;
